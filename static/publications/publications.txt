@@ -1,0 +1,13 @@
+Richong Zhang, Zhiyuan Hu, Hongyu Guo, Yongyi Mao@Syntax Encoding with Application in Authorship Attribution.@EMNLP 2018 (Accepted)
+Dingkun Long,Richong Zhang, Yongyi Mao@Prototypical Recurrent Unit.@NeuroComputing 2018
+Xiaohui Guo, Richong Zhang, Xudong Liu, Jinpeng Huai@Human mobility semantics analysis: a probabilistic and scalable approach.@GeoInformatica 2018
+Yue Wang, Richong Zhang, Cheng Xu and Yongyi Mao@The APVA-TURBO Approach To Question Answering in Knowledge Base.@COLING 2018 (Accepted)
+Jiajie Mei, Richong Zhang, Yongyi Mao and Ting Deng@On Link Prediction in Knowledge Bases: Max-K Criterion and Prediction Protocols.@SIGIR 2018
+Richong Zhang and Yongyi Mao@On the integration of crowd knowledge in pattern recognition.@Pattern Recognition Letters 2018
+Richong Zhang, Junpeng Li, Jiajie Mei and Yongyi Mao@Scalable Instance Reconstruction in Knowledge Bases via Relatedness Affiliated Embedding.@WWW 2018
+Xufeng Li, Jianlei Yang, Richong Zhang, Hongyuan Ma@A novel approach on Entity Linking for Encyclopedia Infoboxes@CCKS 2018
+Yue Wang, Richong Zhang@基于动态规划的知识库问答方法@CCKS 2018
+Richong Zhang, Fanshuang Kong, Chenyue Wang, Yongyi Mao@Embedding of Hierarchically Typed Knowledge Bases.@AAAI 2018
+Chune Li, Yongyi Mao, Richong Zhang, Jinpeng Huai@On Hyper-Parameter Estimation In Empirical Bayes: A Revisit of The MacKay Algorithm@UAI 2016
+Jianfeng Wen, Jianxin Li, Yongyi Mao, Shini Chen, Richong Zhang@On the Representation and Embedding of Knowledge Bases beyond Binary Relations.@IJCAI 2016
+Richong Zhang, Han Bao, Hailong Sun, Yanghao Wang, Xudong Liu@Recommender systems based on ranking performance optimization.@Frontiers of Computer Science 2016

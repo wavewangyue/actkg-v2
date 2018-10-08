@@ -1,0 +1,31 @@
+{
+	"nodes":[
+		{"id":0,"name":"张日崇","category":"教授"},
+		{"id":1,"name":"陈俊帆","category":"2016级博士研究生"},
+		{"id":2,"name":"包含","category":"2014级博士研究生"},
+		{"id":3,"name":"贺薇","category":"2015级硕士研究生（已毕业）"},
+		{"id":4,"name":"许程","category":"2015级硕士研究生（已毕业）"},
+		{"id":5,"name":"王玥","category":"2016级硕士研究生"},
+		{"id":6,"name":"胡志元","category":"本科生"},
+		{"id":7,"name":"吴俊爽","category":"2015级博士研究生"},
+		{"id":8,"name":"聂建","category":"2015级硕士研究生"},
+		{"id":9,"name":"李旭峰","category":"2017级硕士研究生"},
+		{"id":10,"name":"王飞","category":"2017级硕士研究生"},
+		{"id":11,"name":"胡作海","category":"2017级硕士研究生"},
+		{"id":12,"name":"王钰","category":"2018级硕士研究生"}
+	],
+	"links":[
+		{"id":0,"source":1,"target":0,"name":"导师"},
+		{"id":1,"source":2,"target":0,"name":"导师"},
+		{"id":2,"source":3,"target":0,"name":"导师"},
+		{"id":3,"source":4,"target":0,"name":"导师"},
+		{"id":4,"source":5,"target":0,"name":"导师"},
+		{"id":5,"source":6,"target":0,"name":"导师"},
+		{"id":6,"source":7,"target":0,"name":"导师"},
+		{"id":7,"source":8,"target":0,"name":"导师"},
+		{"id":8,"source":9,"target":0,"name":"导师"},
+		{"id":9,"source":10,"target":0,"name":"导师"},
+		{"id":10,"source":11,"target":0,"name":"导师"},
+		{"id":11,"source":12,"target":0,"name":"导师"}
+	]
+}

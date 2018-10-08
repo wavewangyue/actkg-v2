@@ -1,0 +1,506 @@
+{% extends "Layout.html" %}
+{% block main %}
+    <style>
+    .graph-container-wrap{
+        position: relative;
+        display: none;
+    }
+    .graph-container-wrap .range-wrap{
+        position: absolute;
+        left: 150px;
+        bottom: 30px;
+        width: 400px;
+        outline: none;
+        cursor: pointer;
+        z-index: 100;
+    }
+    .graph-container-wrap .range{
+        outline: none;
+        cursor: pointer;
+        z-index: 100;
+    }
+    #container{
+        display:none;
+    }
+    .talkbar{
+        position:absolute;
+        width: 22%;
+        min-width: 300px;
+        right:0;
+        top: 10px;
+        padding: 1em;
+        text-align: right;
+        font-size: 0.9em;
+        z-index:10;
+    }
+    .talkbubble-l{
+        margin: 0.5em 0;
+        padding: 0.8em;
+        font-size: 0.9em;
+        color:black;
+        border-radius:0.4em;
+        background-color: lightgreen;
+    }
+    .talkbubble-r{
+        margin: 0.5em 0;
+        padding: 0.8em;
+        font-size: 0.9em;
+        color:black;
+        border-radius:0.4em;
+        background-color: #CCCCCC;
+    }
+    #talkinput{
+        font-size: 0.9em;
+        text-align:right;
+        padding: 0.8em;
+        border-radius:0.2em;
+        margin: 0.5em 0;
+        width: 70%;
+        margin-left: auto;
+    }
+    .search-schame-table .title{
+        padding-top: 10px;
+    }
+    </style>
+    <link rel="stylesheet" type="text/css" href="/static/css/loading0.css">
+
+    <!--加载动画-->
+    <div class="spinner" style="z-index: 100">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+    </div>
+
+    <!--图谱界面-->
+    <div class="graph-container-wrap">
+        <div class="range-wrap">
+            <input type="range" class="js-range range" max="100" step="20" min="20" value="100">
+            <p>已显示 <span id="js-ratio">100%</span> 的节点</p>
+        </div>
+        <div id="container"></div>
+    </div>
+
+    <!--对话界面-->
+    <div class="talkbar" >
+        <div class="talkbubble-l">你好，可以在输入框搜索实体或对我提问！</div>
+    </div>
+
+    <!--主界面-->
+    <div id="interface" class="container py-5">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <div id="inputbox" class="input-group input-group-md" style="width: 560px; max-width: 100%;">
+                    <input id="input" type="text" class="form-control" style="font-size:1em;text-align:center" value="北京航空航天大学" onkeydown="if(event.keyCode==13) search()"/>
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button" onclick="search()">Graph Go!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--搜索说明界面-->
+    <div class="js-search-guide container">
+        <div class="card">
+            <div class="card-body search-schame-table">
+                <h5 class="card-title">目前支持的查询方式:</h5>
+                <table class="table table-hover table-bordered">
+                    <thead>
+                    <tr><th>查询方式</th><th>使用方法</th><th>示例</th><th>备注</th><tr>
+                    </thead>
+                    <tbody>
+                    <tr><td>实体查询</td><td>直接输入实体名</td><td>北航</td><td>支持简称或别名的重定向</td><tr>
+                    <tr><td>类别查询</td><td>c::类别名</td><td>c::人物</td><td>注意冒号为半角符号<br>支持的类别列表参照“SCHEMA”页面的一级类</td><tr>
+                    <tr><td>关系查询</td><td>r::关系名</td><td>r::配偶</td><td>注意冒号为半角符号</td><tr>
+                    <tr><td>双实体查询</td><td>实体名1 实体名2</td><td>温家宝 北航</td><td>实体名之间用空格隔开<br>暂不支持三实体及更多实体组的查询</td><tr>
+                    <tr><td>中文问答：检索型</td><td>直接输入问题</td><td>北大的校长是哪个院校毕业的</td><td>支持多跳</td><tr>
+                    <tr><td>中文问答：比较型</td><td>直接输入问题</td><td>姚明比易建联高多少</td><td>暂时支持领域：人物身高/年龄 国家人口</td><tr>
+                    <tr><td>中文问答：归纳型</td><td>直接输入问题</td><td>中国第二高的山是哪个</td><td>暂时支持领域：山峰高度</td><tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+
+    <!--实体信息模态框-->
+    <div class="modal fade" id="entityInfoModal" tabindex="-1" role="dialog" aria-labelledby="entityInfoModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="entityInfoModalTitle">详细信息</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <img id="entityInfoModalImage" class="center-block" style="padding:1em;display:none;"/>
+                    <table class="table">
+                        <tbody id="entityInfoModalTable">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--同名实体选择模态框-->
+    <div class="modal fade" id="entitySelectModal" tabindex="-1" role="dialog" aria-labelledby="entitySelectModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="entitySelectModalTitle">你是不是想找以下实体</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+                </div>
+                <div class="modal-body">
+                    <table class="table">
+                        <tbody id="entitySelectModalTable">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.bootcss.com/echarts/4.1.0/echarts.min.js"></script>
+    <!-- <script src="/static/js/application.js"></script> -->
+
+<script>
+
+    var motto = "“吾生也有涯，而知也无涯。” ——《庄子·养生主》";
+
+    var graph_data = {};  // 存放图谱数据
+
+    var window_width = window.innerWidth;
+    var window_height = window.innerHeight;
+    var siteHeader = $(".js-site-header");
+    var nav_offset = siteHeader.innerHeight();
+
+    var containerHeight = window_height-nav_offset;
+    var containerWidth = window_width;
+    
+
+    // 控制可见节点的比例
+    var ratio = 1;
+
+    var container = $("#container");
+    container.height(containerHeight);
+    container.width(containerWidth);
+    var body = $("body");
+    var loading_gif = $(".spinner");
+    $.ajaxSetup({
+        error: function (e) {
+            console.log(e);
+            loading_gif.hide();
+            alert("后台错误");
+            return false;
+        }
+    });
+    loading_init();
+
+
+    //加载动画初始化
+    function loading_init(){
+        var width = window_width*0.05;
+        loading_gif.width(width);
+        loading_gif.height(width);
+        loading_gif.css('margin-left',(window_width-width)/2);
+        loading_gif.css('margin-top',(window_height-width)/2);
+    }
+
+
+    //对话搜索框事件
+    function talk(){
+        var question = document.getElementById("talkinput").value;
+        question = $.trim(question);
+        if (question !== "") {
+            getData(question);
+        }
+    }
+
+    //主界面输入框事件
+    function search(){
+        var keyword = document.getElementById("input").value;
+        keyword = $.trim(keyword);
+        if (keyword!=="") {
+            getData(keyword);
+        }
+    }
+
+    //获取新数据
+    function getData(keyword, id){
+        $('#interface').hide();
+        $('.js-page-banner').hide();
+        $('.js-search-guide').hide();
+        $('.footer').hide();
+        body.css('overflow', 'hidden');
+        loading_gif.show();
+        refresh_talkbar(keyword, 'off');
+        //获取数据
+        var url;
+        if (id === undefined) {
+            url = "/api/robot/talk/?q=" + keyword;
+        }else{
+            url = "/api/robot/talk/?q=" + keyword + "&id=" + id;
+        }
+        //$.getJSON("/static/json/demo.json", function(result){
+        $.getJSON(url, function(result){
+            loading_gif.hide();
+            console.log(result);
+            var answer = result['answer'];
+            if (result.nodes){
+                //如果得到的数据是图谱
+                graph_data = {
+                    keyword: keyword,
+                    result: result
+                }
+                refresh_graph(keyword, result);
+            }else if (result.entities) {
+                //如果得到的数据是同名实体列表
+                var table = $('#entitySelectModalTable');
+                $("#entitySelectModalTable tr").remove();
+                result.entities.forEach(function(entity){
+                    var e_name = entity['name'];
+                    var e_subname = (("subname" in entity)&&(entity['subname'].indexOf("NO_SUBNAME") === -1)) ? entity['subname'] : "";
+                    var e_cate = (("label" in entity)&&(entity['label'].indexOf("NONE") === -1)) ? "<"+entity['label']+">" : "";
+                    var item = $("<a></a>").text(e_name+e_subname+e_cate);
+                    item.css("cursor", "pointer");
+                    item.on('click', function(){
+                        $('#entitySelectModal').modal('hide');
+                        getData(keyword, entity['neoId']);
+                    });
+                    table.append($("<tr></tr>").append($("<td></td>").append(item)));
+                });
+                $('#entitySelectModal').modal();
+            }
+            refresh_talkbar(answer, 'on');
+        });
+    }
+
+
+    //刷新对话界面的相关操作
+    function refresh_talkbar(answer, operation){
+        if (operation === 'off'){
+            var newbubble = "<div class='talkbubble-r'>"+answer+"</div>";
+            $(".talkbar").prepend(newbubble);
+            $("#talkinput").remove();
+        }else if (operation === 'on'){
+            var newbubble = "<div class='talkbubble-l' >"+answer+"</div>";
+            $(".talkbar").prepend(newbubble);
+            var talkinput = $("<input type=text class=form-control id=talkinput onkeydown='if(event.keyCode==13) talk()'/>");
+            $(".talkbar").prepend(talkinput);
+            talkinput.fadeIn();
+            talkinput.focus();
+        }
+    }
+
+    var myChart = null;
+    //初始化mychart以及点击事件
+    function refresh_graph(keyword, result){
+        $('.graph-container-wrap').show();
+        if(result.nodes && result.nodes.length > 50){
+            $('.range-wrap').show();            
+        }else{
+            $('.range-wrap').hide();
+        }
+
+        if (myChart) myChart.clear();
+        else {
+            myChart = echarts.init(document.getElementById('container'));
+            $('#container').fadeIn();
+            //对mychart的初始化
+            myChart.on('click', function (event) {
+                console.log(event);
+                if (event.dataType === 'node') {
+                    var neoId = event.data.neoId;
+                    var name = event.name;
+                    var title = $("#entityInfoModalTitle");
+                    var table = $("#entityInfoModalTable");
+                    var image = $("#entityInfoModalImage");
+                    title.text("正在查询...");
+                    image.attr("src", "/static/img/imageloading.gif");
+                    var url = "/api/graph/entity?id=" + neoId;
+                    $.getJSON(url, function (result) {
+                        var temp_baidu = "<span class='badge entity-source' style='background-color:green'>百度</span>";
+                        var temp_hudong = "<span class='badge entity-source' style='background-color:orange'>互动</span>";
+                        var temp_zhwiki = "<span class='badge entity-source' style='background-color:blue'>维基</span>";
+                        title.text(name);
+                        table.empty();
+                        for (var key in result) {
+                            if (result.hasOwnProperty(key)) {
+                                var value = result[key];
+                                if ((value.indexOf("[HD]") !== 0) && (value.indexOf("[ZHWIKI]") !== 0)) {
+                                    value = temp_baidu + value;
+                                }
+                                value = value.replace("[HD]", temp_hudong);
+                                value = value.replace("[ZHWIKI]", temp_zhwiki);
+                                table.append("<tr><td style='font-weight: bold'>" + key + "</td><td>" + value + "</td></tr>");
+                            }
+                        }
+                        $('#entityInfoModal').modal();
+                    });
+                }
+            });
+            myChart.on('dblclick', function (event) {
+                if (event.dataType === 'node') {
+                    var neoId = event.data.neoId;
+                    var name = event.name;
+                    getData(name, neoId);
+                }
+            });
+        }
+        refresh_paint(keyword, result);
+    }
+
+
+    //刷新绘图页面
+    function refresh_paint(keyword,result){
+        var nodeSize = 80;
+        var dnodeSize = 25;
+        var fontSize = 14;
+        var nodes = [];
+        var links = [];
+        var categories = [];
+        var answerpath = result.answerpath;
+        var visibleNodeIdSet = {};
+
+        result.nodes.forEach(function(node, index){
+            if ($.inArray(node.category,categories) < 0){
+                categories.push({
+                    name: node.category
+                });
+            }
+            node.symbol = 'circle';
+            node.symbolSize = nodeSize-node.value*dnodeSize;
+
+            if(index == 0){
+                node.x = (containerWidth - nodeSize)  / 2;
+                node.y = (containerHeight - nodeSize) / 2;
+                node.fixed = true;
+                console.log(node)
+            }else{
+                node.x = null;
+                node.y = null;
+            }
+
+            
+            if(index < result.nodes.length * ratio){
+                visibleNodeIdSet[node.id] = true;
+                node.itemStyle = {};
+                node.label = {
+                    show: true,
+                    position: 'right',
+                    color: '#333'
+                }
+                nodes.push(node);
+            }
+        });
+
+        result.links.forEach(function(edge){
+            if(visibleNodeIdSet[edge.target] && visibleNodeIdSet[edge.source]){
+                links.push(edge);
+            }
+        });
+        //点亮寻找的答案轨迹
+        nodes.forEach(function(node){
+            if ($.inArray(node.id,answerpath) >= 0){
+                node.itemStyle.normal = {
+                    borderColor:'yellow',
+                    borderWidth:10
+                };
+            }
+        });
+        links.forEach(function(link){
+            if (($.inArray(link.source,answerpath)>=0)&&($.inArray(link.target,answerpath)>=0))
+                link.lineStyle = {
+                    normal: {
+                        color: 'yellow',
+                        width: 10
+                    }
+                };
+        });
+        //开始绘制图像
+        var colorPalette = ['#E01F54','#001852','#e05038','#009966','#9fa8a3',
+            '#89bdd3','#e6af4b','#d3758f','#dcc392','#2e4783',
+            '#82b6e9','#ff6347','#a092f1','#0a915d','#7d4627',
+            '#6699FF','#ff6666','#3cb371','#d5b158','#38b6b6'
+        ];
+        var option = {
+            color:colorPalette,
+            backgroundColor:'white',
+            title: {
+                text: result["answer"],
+                top: '1%',
+                left: '1%',
+                textStyle:{
+                    color:"#333",
+                    fontSize: fontSize*1.8,
+                    fontWeight:'bolder'
+                },
+                subtext: '图中共有 '+ nodes.length + ' 个节点以及 ' + links.length + ' 条关系',
+                subtextStyle:{
+                    color:"#333",
+                    fontSize: fontSize,
+                    fontWeight:'bold'
+                }
+            },
+            tooltip: {
+                formatter: function (params) {
+                    if (params.dataType === 'node')
+                        return params.data.category;
+                    else
+                        return params.data.name;
+                }
+            },
+            legend:[{
+                z:0,
+                data: categories,
+                bottom: '1%',
+                left: '1%',
+                orient: 'vertical',
+                itemGap: 12,
+                selectedMode:false,
+                textStyle:{
+                    color:'#333',
+                    fontSize: fontSize*0.9,
+                    fontWeight:'bold'
+                }
+            }],
+            series:[{
+                type: 'graph',
+                layout: 'force',
+                data: nodes,
+                links: links,
+                categories: categories,
+                lineStyle: {
+                    normal: {
+                        color: 'source',
+                        width: 3,
+                        curveness: 0.2
+                    }
+                },
+                force: {
+                    repulsion: 500,
+                    layoutAnimation: false
+                },
+                roam: true,
+                focusNodeAdjacency: true,
+                animationDuration: 0
+            }],
+            textStyle: {
+                fontFamily: __config__.fontFamily,
+                fontSize: fontSize,
+                fontWeight:'bold',
+                color: '#333'
+            }
+        };
+        myChart.setOption(option);
+    }
+
+    $('.js-range').on('change', function(event){
+        var value = ratio = $(this).val();
+        $('#js-ratio').text(value + "%");
+        ratio = value / 100;
+        refresh_graph(graph_data.keyword, graph_data.result);
+    });
+</script>
+
+{% endblock %}

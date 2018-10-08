@@ -1,0 +1,30 @@
+{% extends "Layout.html" %} {% block main %}
+
+<!-- API 使用 HTML 写太麻烦，改为 markdown 文档，在网页上显示的时候解析为 HTML 即可 -->
+<!-- typo.css 用于中文排版 -->
+<link rel="stylesheet" href="/static/css/typo.css">
+<!-- marked 用于转 markdown 为 html -->
+<script src="https://cdn.bootcss.com/marked/0.4.0/marked.min.js"></script>
+
+
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+            <div class="api-content typo"></div>
+        </div>
+    </div>    
+</div>
+    
+
+
+<script>
+    $.get('/static/apis.md', function(apis_md){
+        $('.api-content').html(marked(apis_md))
+    });
+</script>
+
+<script>
+    var motto = "“穷则独善其身，达则兼济天下。” ——《孟子·尽心上·忘势》";
+</script>
+
+{% endblock %}

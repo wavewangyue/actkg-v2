@@ -1,0 +1,6 @@
+*.pyc
+/resource/word2vec/baike.vectors.bin
+.idea
+.vs
+.vscode
+fonts/

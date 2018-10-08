@@ -1,0 +1,158 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+</head>
+<body>
+	<div id="panel">
+        <div id="container" style="width:800px;height:800px">
+        </div>
+    </div>
+	
+	
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script src="http://echarts.baidu.com/gallery/vendors/echarts/echarts-all-3.js"></script>
+	<script>
+		
+		
+		var result = {
+	"nodes":[
+		{"id":0,"name":"王岐山","category":"政治人物","value":"0"},
+		{"id":1,"name":"姚明珊","category":"政治人物","value":"1"},
+		{"id":2,"name":"中国","category":"地点","value":"1"},
+		{"id":3,"name":"中国共产党","category":"政治","value":"1"},
+		{"id":4,"name":"汉族","category":"NONE","value":"1"},
+		{"id":5,"name":"西北大学","category":"教育机构","value":"1"},
+		{"id":6,"name":"郭文贵","category":"话题人物","value":"1"},
+		{"id":7,"name":"中央纪律检查委员会","category":"政治机构","value":"1"},
+		{"id":8,"name":"习近平","category":"政治人物","value":"2"},
+		{"id":9,"name":"政泉控股","category":"非政府组织","value":"2"},
+		{"id":10,"name":"公检法","category":"政府机构","value":"2"},
+		{"id":11,"name":"彭丽媛","category":"政治人物","value":"3"},
+		{"id":12,"name":"美国","category":"国家","value":"2"},
+		{"id":13,"name":"共产主义","category":"NONE","value":"1"},
+		{"id":14,"name":"反腐倡廉建设","category":"NONE","value":"3"}
+		
+	],
+	"links":[
+		{"id":0,"source":0,"target":1,"name":"妻子","level":1},
+		{"id":1,"source":0,"target":2,"name":"国籍","level":1},
+		{"id":2,"source":1,"target":2,"name":"国籍","level":1},
+		{"id":3,"source":6,"target":2,"name":"国籍","level":1},
+		{"id":4,"source":0,"target":3,"name":"所属政党","level":1},
+		{"id":5,"source":0,"target":4,"name":"民族","level":1},
+		{"id":6,"source":0,"target":5,"name":"毕业院校","level":1},
+		{"id":7,"source":0,"target":5,"name":"知名校友","level":1},
+		{"id":8,"source":0,"target":7,"name":"书记","level":1},
+		{"id":9,"source":7,"target":3,"name":"所属机构","level":1},
+		{"id":10,"source":3,"target":2,"name":"主要政党","level":1},
+		{"id":11,"source":8,"target":2,"name":"国籍","level":1},
+		{"id":12,"source":8,"target":3,"name":"所属政党","level":1},
+		{"id":13,"source":8,"target":4,"name":"民族","level":1},
+		{"id":14,"source":6,"target":0,"name":"领导人谣言","level":1},
+		{"id":15,"source":6,"target":9,"name":"实际控制","level":1},
+		{"id":16,"source":10,"target":2,"name":"所属机构","level":1},
+		{"id":17,"source":6,"target":10,"name":"行贿","level":1},
+		{"id":18,"source":8,"target":11,"name":"妻子","level":1},
+		{"id":19,"source":2,"target":12,"name":"建交","level":1},
+		{"id":20,"source":6,"target":12,"name":"逃亡","level":1},
+		{"id":21,"source":8,"target":3,"name":"总书记","level":1},
+		{"id":22,"source":0,"target":13,"name":"信仰","level":1},
+		{"id":23,"source":8,"target":13,"name":"信仰","level":1},
+		{"id":24,"source":8,"target":14,"name":"提出","level":1}
+		
+		
+	],
+	"answerpath":[0,3,9],
+	"answer":"北京"
+}
+		
+		
+		
+		paint(result);
+				
+		function paint(result){
+            var myChart = echarts.init(document.getElementById('container'));
+            var nodeSize = 80;
+			var dnodeSize = 25;
+			var fontSize = 14;
+            var nodes = [];
+            var links = [];
+            var categories = [];
+            var category_names = [];
+            result.nodes.forEach(function(node){
+                if ($.inArray(node.category,categories) < 0){
+                    category_names.push(node.category);
+                    categories.push({
+                        name: node.category
+                    });
+                }
+                node.symbol = 'circle';
+                node.symbolSize = nodeSize-node.value*dnodeSize;
+                node.x = null;
+                node.y = null;
+                node.itemStyle = null;
+                node.label = {
+                    normal: {
+                       show: true,
+                       position: 'right'
+                   }
+                };
+                nodes.push(node);
+            });
+            result.links.forEach(function(edge){
+                links.push(edge);
+            });
+            var colorPalette = ['#E01F54','#001852','#e05038','#009966','#9fa8a3',
+                    '#89bdd3','#e6af4b','#d3758f'];
+            var option = {
+                color:colorPalette,
+                backgroundColor:'white',
+                tooltip: {
+                    formatter: function (params) {
+                        return params.data.name;
+                    }
+                },
+				legend:[{
+                    data: categories,
+                    bottom: '5%',
+                    left: '5%',
+                    orient: 'vertical',
+                    itemGap: 20,
+                    selectedMode:false,
+                    textStyle:{
+                        color:'#333333'
+                    }
+                }],
+                series:[{
+                    type: 'graph',
+                    layout: 'force',
+                    data: nodes,
+                    links: links,
+                    categories: categories,
+                    lineStyle: {
+                        normal: {
+                            color: 'source',
+                            width: 5,
+                            curveness: 0.2
+                        }
+                    },
+                    force: {
+                        repulsion: 1000,
+                        layoutAnimation: false
+                    },
+                    roam: true,
+                    focusNodeAdjacency: true,
+                    animationDuration: 2000
+                }],
+                textStyle: {
+                    fontFamily: '微软雅黑',
+                    fontSize: fontSize
+                }
+            };
+            myChart.setOption(option);
+        }
+		
+	</script>
+</body>
+</html>

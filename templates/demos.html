@@ -1,0 +1,131 @@
+{% extends "Layout.html" %}
+{% block main %}
+<style>
+
+    .project-logo{
+        text-align: center;
+        display: block;
+        height: 60px;
+        border-radius:50%;
+        margin: auto;
+    }
+    .project-name{
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.2em;
+        margin: 1em 0 2em 0;
+    }
+    .project-description{
+        padding: 0 1em;
+        text-align: left;
+        line-height: 1.5em;
+        height: 180px;
+    }
+</style>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-lg-4 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <img src="/static/img/logos/zhaopinlogo.jpg" class="project-logo"/>
+                    <p class="project-name">招聘知识图谱</p>
+                    <p class="project-description">
+                        采集求职领域人物/公司/职位信息，抽取个人技能与业务要求，细化领域schema，构建职业知识图谱，进一步支持基于知识图谱的问答搜索与精准推荐应用（数据来源：智联招聘）
+                    </p>
+                    <div class="row pt-4">
+                        <div class="col-6">
+                            <button class="btn btn-inverse btn-block" type="button" onclick="window.open('http://10.1.1.28:8003')">内网入口</button>
+                        </div>
+                        <div class="col-6">
+                            <button class="btn btn-primary btn-block" type="button" onclick="window.open('http://zhaopin.demo.actkg.com')">外网入口</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-4 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <img src="/static/img/logos/ddlogo.jpg" class="project-logo"/>
+                    <p class="project-name">导弹知识图谱</p>
+                    <p class="project-description">
+                        采集世界导弹大全电子书上的导弹资料，整理结构信息，规范属性体系，补全领域实体，构建领域图谱，支撑导弹相关知识的检索与问答应用（数据来源：世界导弹大全）
+                    </p>
+                    <div class="row pt-4">
+                        <div class="col-6">
+                            <button class="btn btn-inverse btn-block" type="button" onclick="window.open('http://10.1.1.28:8004')">内网入口</button>
+                        </div>
+                        <div class="col-6">
+                            <button class="btn btn-primary btn-block" type="button" onclick="window.open('http://dd.demo.actkg.com')">外网入口</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-4 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <img src="/static/img/logos/banklogo.png" class="project-logo"/>
+                    <p class="project-name">银行知识图谱</p>
+                    <p class="project-description">
+                        采集银行法规条款以及业务说明文档，设计业务图谱schema，基于文本抽取知识，构建银行图谱，支撑银行内部业务领域内的问答与检索（数据来源：工商银行网站法规条例与业务说明）
+                    </p>
+                    <div class="row pt-4">
+                        <div class="col-6">
+                            <button class="btn btn-inverse btn-block" type="button" onclick="window.open('http://10.1.1.28:8001')">内网入口</button>
+                        </div>
+                        <div class="col-6">
+                            <button class="btn btn-primary btn-block" type="button" onclick="window.open('http://icbc.demo.actkg.com')">外网入口</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-4 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <img src="/static/img/logos/gamelogo.png" class="project-logo"/>
+                    <p class="project-name">游戏知识图谱</p>
+                    <p class="project-description">
+                        自各大游戏网站采集各类单机游戏、游戏公司、游戏玩家等相关数据，建立游戏分类与标签体系，识别实体并建立实体间关联，构建游戏图谱，支撑游戏业务领域内的问答与推荐（数据来源：Steam等游戏网站）
+                    </p>
+                    <div class="row pt-4">
+                        <div class="col-6">
+                            <button class="btn btn-inverse btn-block" type="button" onclick="window.open('http://10.1.1.28:8010')">内网入口</button>
+                        </div>
+                        <div class="col-6">
+                            <button class="btn btn-primary btn-block" type="button" onclick="window.open('http://game.demo.actkg.com')">外网入口</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-4 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <img src="/static/img/logos/techlogo.png" class="project-logo"/>
+                    <p class="project-name">科技知识与数据中心</p>
+                    <p class="project-description">
+                        采集与科技发展相关各类网络数据源，综合整理为科技舆情、科技人才库、科技成果统计分析、科技热点抽取、社会招聘情况分析等多个模块，搭建科技知识与数据的管理与分析平台，为科技领域舆情分析、科技发展态势评估、热点监控与预测等多种智能化功能提供支撑（数据来源：微博，科搜，中国工程科技知识中心，智联招聘）
+                    </p>
+                    <div class="row pt-4">
+                        <div class="col-6">
+                            <button class="btn btn-inverse btn-block" type="button" onclick="window.open('http://10.1.1.28:8011')">内网入口</button>
+                        </div>
+                        <div class="col-6">
+                            <button class="btn btn-primary btn-block" type="button" onclick="window.open('http://tech.demo.actkg.com')">外网入口</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+    var motto = "“知之愈明，则行之愈笃；行之愈笃，则知之益明。” —— 朱熹《朱子语类》";
+
+
+</script>
+
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends "Layout.html" %}
+{% block main %}
+
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>版本号</th>
+                            <th>时间</th>
+                            <th>更新内容</th>
+                            <th>贡献者</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table_body">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+    
+
+
+<script>
+
+    var motto = "“长风破浪会有时，直挂云帆济沧海。” ——李白《行路难》";
+
+    var table = $("#table_body");
+    $.get("/static/log/uplog.txt",function(data){
+        var lines = data.split("\n");
+        lines.forEach(function(line){
+            var items = line.split(" ");
+            console.log(items);
+            table.append("<tr><td>"+items[0]+"</td><td>"+items[1]+"</td><td>"+items[2]+"</td><td>"+items[3]+"</td></tr>");
+        });
+    });
+
+</script>
+
+{% endblock %}

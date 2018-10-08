@@ -1,0 +1,409 @@
+{% extends "Layout.html" %}
+{% block main %}
+
+    <style>
+    #panel{
+        position:absolute;
+        width:100%;
+        height:100%;
+        display:none;
+    }
+    #interface{
+        padding: 3em 0;
+        text-align: center;
+    }
+    .tip{
+        position:absolute;
+        top:0;
+        font-family: Helvetica;
+        font-size:1.1em;
+        width:30%;
+        margin-left:70%;
+        text-align: right;
+        padding: 1em;
+        color:lightgray;
+        display: none;
+    }
+    .talkbar{
+        position:absolute;
+        width:30%;
+        margin-left:70%;
+        padding: 1em;
+        text-align: right;
+        font-family: 微软雅黑;
+        z-index:10;
+        overflow: hidden;
+    }
+    .talkbubble{
+        margin:0 auto;
+        padding: 0.4em;
+        font-size: 1.1em;
+    }
+    #talkinput{
+        font-size: 1.1em;
+        text-align:center;
+        padding:0.4em;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius:5px;
+        margin-bottom:2%;
+        display:none;
+    }
+    </style>
+    <link rel="stylesheet" type="text/css" href="/static/css/loading0.css">
+
+    <!--加载动画-->
+    <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+    </div>
+
+    <!--图谱界面-->
+    <div id="panel"></div>
+
+    <!--对话界面-->
+    <div class="tip">PRESS 'ESC' TO WAKE <span style="color:GreenYellow">小航</span> UP</div>
+    <div class="talkbar" >
+        <input id="talkinput" type="text" onkeydown="if(event.keyCode==13) talk()"/>
+        <div class="talkbubble" style="color:#F08080">有什么可以帮你的？</div>
+    </div>
+
+    <!--主界面-->
+    <div id="interface" style="margin-bottom: 10em">
+        <div id="inputbox" class="input-group input-group-lg" style="width:40%;margin:0 auto;padding:1em" >
+            <input id="input" type="text" class="form-control" style="font-size:1.2em;text-align:center" value="北京航空航天大学" onkeydown="if(event.keyCode==13) search()"/>
+            <span class="input-group-addon" style="font-size:1.2em;cursor:pointer" onclick="search()">Graph Go!</span>
+        </div>
+    </div>
+
+    <!--实体信息模态框-->
+    <div class="modal fade" id="entityInfoModal" tabindex="-1" role="dialog" aria-labelledby="entityInfoModalTitle" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only"></span></button>
+                    <h4 class="modal-title" id="entityInfoModalTitle">详细信息</h4>
+                </div>
+                <div class="modal-body">
+                    <img id="entityInfoModalImage" style="padding:1em"/>
+                    <table class="table">
+                        <tbody id="entityInfoModalTable">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--同名实体选择模态框-->
+    <div class="modal fade" id="entitySelectModal" tabindex="-1" role="dialog" aria-labelledby="entitySelectModalTitle" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only"></span></button>
+                    <h4 class="modal-title" id="entitySelectModalTitle">详细信息</h4>
+                </div>
+                <div class="modal-body">
+                    <table class="table">
+                        <tbody id="entitySelectModalTable">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts-all-3.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+
+<script>
+
+    var pagename = "graph";
+    var myChart = null;
+    var nodeSize = 80;
+    var dnodeSize = 25;
+    var fontSize = 14;
+
+    var my_nav = $(".my_nav");
+    var nav_offset = my_nav.innerHeight();
+    $(".tip").css("top",nav_offset);
+    $(".talkbar").css("top",nav_offset);
+    var body = $("body");
+    body.css('overflow','hidden');
+    body.keydown(function(event){
+        if(event.keyCode==27) talkboxshow();
+    });
+    $.ajaxSetup({
+        error: function (e) {
+            console.log(e);
+            if (myChart != null) myChart.hideLoading();
+            alert("后台错误");
+            return false;
+        }
+    });
+    loading_init();
+
+
+//加载动画初始化
+function loading_init(){
+    var window_width = $(document.body).width();
+    var window_height = $(document.body).height();
+    var loading_gif = $(".spinner");
+    var width = window_width*0.05;
+    loading_gif.width(width);
+    loading_gif.height(width);
+    loading_gif.css('margin-left',(window_width-width)/2);
+    loading_gif.css('margin-top',(window_height-width)/2);
+}
+
+
+function talkboxshow(){
+    $(".tip").fadeToggle();
+    $(".talkbar").fadeToggle();
+    $("#talkinput").focus();
+}
+
+//主界面搜索框事件
+function talk(){
+    var question = document.getElementById("talkinput").value;
+    question = $.trim(question);
+    if (question!="") {
+        getData(question);
+    }
+}
+
+//对话输入框事件
+function search(){
+    var keyword = document.getElementById("input").value;
+    keyword = $.trim(keyword);
+    if (keyword!="") {
+        getData(keyword);
+    }
+    $(".tip").css("top",0);
+    $(".talkbar").css("top",0);
+}
+
+//获取新数据
+function getData(keyword, id){
+    $('#interface').hide();
+    $('.header').hide();
+    $('.footer').hide();
+    $('.my_nav').hide();
+    $('.spinner').show();
+    refresh_talkbar(keyword, 'off');
+    //获取数据
+    var url;
+    if (id == undefined) {
+        url = "/api/robot/talk/?q=" + keyword;
+    }else{
+        url = "/api/robot/talk/?q=" + keyword + "&id=" + id;
+    }
+    //$.getJSON("/static/json/demo.json", function(result){
+    $.getJSON(url, function(result){
+        $('.spinner').hide();
+        console.log(result);
+        var answer = result['answer'];
+        if (result.nodes){
+            //如果得到的数据是图谱
+            refresh_graph(keyword, result);
+        }else if (result.entities) {
+            //如果得到的数据是同名实体列表
+            $('#entitySelectModalTitle').text(keyword);
+            var table = $('#entitySelectModalTable');
+            $("#entitySelectModalTable tr").remove();
+            result.entities.forEach(function(entity){
+                var item = $("<a></a>").text(entity['name']+entity['subname']);
+                item.css("cursor", "pointer");
+                item.on('click', function(){
+                    $('#entitySelectModal').modal('hide');
+                    getData(keyword, entity['neoId']);
+                });
+                table.append($("<tr></tr>").append($("<td></td>").append(item)));
+            });
+            $('#entitySelectModal').modal();
+        }else{
+            //如果得到的数据是字符串
+        }
+        refresh_talkbar(answer, 'on');
+    });
+}
+
+
+//刷新对话界面的相关操作
+function refresh_talkbar(answer, operation){
+    if (operation == 'off'){
+        var newbubble = "<div class='talkbubble' style='color:lightblue'>"+answer+"</div>";
+        $(".talkbar").append(newbubble);
+    }else if (operation == 'on'){
+        var newbubble = "<div class='talkbubble' style='color:#F08080'>"+answer+"</div>";
+        $(".talkbar").append(newbubble);
+        var talkinput = $("#talkinput");
+        talkinput.fadeIn();
+        talkinput.val('');
+        talkinput.focus();
+    }
+}
+
+
+//初始化mychart以及点击事件
+function refresh_graph(keyword, result){
+    $('#panel').remove();
+    $('body').append("<div id='panel'></div>");
+    $('#panel').fadeIn();
+    //对mychart的初始化
+    myChart = echarts.init(document.getElementById('panel'));
+    myChart.on('click', function (event) {
+        console.log(event);
+        if (event.dataType == 'node'){
+            var neoId = event.data.neoId;
+            var name = event.name;
+            var title = $("#entityInfoModalTitle");
+            var table = $("#entityInfoModalTable");
+            var image = $("#entityInfoModalImage");
+            title.text("正在查询...");
+            $("#entityInfoModalTable tr").remove();
+            image.attr("src","/static/img/imageloading.gif");
+            var url = "/api/graph/entity?id="+neoId;
+            $.getJSON(url, function(result){
+                title.text(name);
+                image.attr("src",result.image);
+                for (var key in result){
+                    if (key != 'image')
+                        table.append("<tr><td style='font-weight: bold'>"+key+"</td><td>"+result[key]+"</td></tr>");
+                }
+            });
+            $('#entityInfoModal').modal();
+        }
+    });
+    myChart.on('dblclick', function (event) {
+        if (event.dataType == 'node'){
+            var neoId = event.data.neoId;
+            var name = event.name;
+            getData(name, neoId);
+        }
+    });
+    refresh_paint(keyword, result);
+}
+
+
+//刷新绘图页面
+function refresh_paint(keyword,result){
+    var nodes = [];
+    var links = [];
+    var categories = [];
+    var answerpath = result.answerpath;
+    var category_names = [];
+    result.nodes.forEach(function(node){
+        if ($.inArray(node.category,categories) < 0){
+            category_names.push(node.category);
+            categories.push({
+                name: node.category
+            });
+        }
+        node.symbol = 'circle';
+        node.symbolSize = nodeSize-node.value*dnodeSize;
+        node.x = null;
+        node.y = null;
+        node.itemStyle = null;
+        node.label = {
+            normal: {
+                show: true,
+                position: 'right'
+            }
+        };
+        nodes.push(node);
+    });
+    result.links.forEach(function(edge){
+        links.push(edge);
+    });
+    //点亮寻找的答案轨迹
+    nodes.forEach(function(node){
+        if ($.inArray(node.id,answerpath) >= 0)
+            node.itemStyle = {
+                normal: {
+                    borderColor:'GreenYellow',
+                    borderWidth:8
+                }
+            };
+    });
+    links.forEach(function(link){
+        if (($.inArray(link.source,answerpath)>=0)&&($.inArray(link.target,answerpath)>=0))
+            link.lineStyle = {
+                normal: {
+                    color: 'GreenYellow',
+                    width: 8
+                }
+            };
+    });
+    //开始绘制图像
+    var colorPalette = ['#FF9999','#ff7824','#fae26b','#b8ffb8','#5fd9cd','#60a7e7','#ddc8e6','#a56746','#f07484', '#c3c5c9','#fffce6'];
+    var option = {
+
+        color: colorPalette,
+        title: {
+            text: keyword,
+            top: '1%',
+            left: '1%',
+            textStyle:{
+                color:"GreenYellow",
+                fontSize: fontSize*1.2
+            },
+            subtext: '图中共有 '+result.nodes.length+' 个节点以及 '+result.links.length+' 条关系',
+            subtextStyle:{
+                color:"GreenYellow",
+                fontSize: fontSize
+            }
+        },
+        tooltip: {
+            formatter: function (params) {
+                if (params.dataType == 'node')
+                    return params.data.category;
+                else
+                    return params.data.name;
+            }
+        },
+        legend:[{
+            z:0,
+            data: categories,
+            bottom: '1%',
+            left: '1%',
+            orient: 'vertical',
+            itemGap: 12,
+            selectedMode:false,
+            textStyle:{
+                color:'lightgray',
+                fontSize: fontSize*0.9
+            }
+        }],
+        series:[{
+            type: 'graph',
+            layout: 'force',
+            data: nodes,
+            links: links,
+            categories: categories,
+            lineStyle: {
+                normal: {
+                    color: 'source',
+                    width: 2,
+                    curveness: 0.2
+                }
+            },
+            force: {
+                repulsion: 300,
+                layoutAnimation: false
+            },
+            roam: true,
+            focusNodeAdjacency: true,
+            animationDuration: 2000
+        }],
+        textStyle: {
+            fontFamily: '微软雅黑',
+            fontSize: fontSize
+        }
+    };
+    myChart.setOption(option);
+}
+</script>
+
+{% endblock %}

@@ -1,0 +1,970 @@
+{% extends "Layout.html" %}
+{% block main %}
+
+    <style>
+        .area{
+            text-align: center;
+            background-color: transparent;
+            font-weight: bold;
+            font-size: 1em;
+            padding: 1em;
+            width:100%;
+        }
+
+        .area .title{
+            font-size: 20px;
+            margin-bottom: 50px;
+        }
+
+        .chart{
+            margin-bottom: 50px;
+        }
+        /*!统计区*/
+		.axis{
+			font-size: 12px
+		}
+        .axis path,
+        .axis line{
+            fill: none;
+            stroke: #333333;
+            shape-rendering: crispEdges;
+        }
+        .axis text {
+            fill:#333333;
+        }
+        .mytext_statis {
+            fill: #333333;
+            text-anchor: middle;
+        }
+        .tulitext_statis{
+            fill: #333333;
+            text-anchor: left;
+        }
+        #number_statis {
+            fill: #333333;
+        }
+
+        /*!功能区*/
+        .mytext_function{
+            cursor:pointer;
+            text-anchor: middle;
+        }
+        .myrect_function{
+            stroke:#616161;
+            stroke-width:1;
+            cursor:pointer;
+        }
+        .pagerect_function{
+            stroke:#616161;
+            stroke-width:1;
+            cursor:pointer;
+        }
+        .Mylabel_function{
+            cursor:pointer;
+            text-anchor: middle;
+        }
+        .Myprop_function{
+            text-anchor: middle;
+        }
+    </style>
+    <div class="container mb-4">
+        <div class="card">
+            <div class="card-body">
+                <div class=area id='area1'>
+                    <h2 class="title">统计 <span style="color:Crimson">S</span>TATI<span style="color:Crimson">S</span>TIC<span style="color:Crimson">S</span></h2>
+                    <p>PART 1 : 实体统计 <span style="color:Navy">ENTITIES</span></p>
+                    <div class="chart" id="container0"></div>
+                    <p>PART 2 : 标签统计 <span style="color:SeaGreen">LABELS</span></p>
+                    <div class="chart" id="container1"></div>
+                    <p>PART 3 : 属性统计 <span style="color:OliveDrab">PROPERTIES</span></p>
+                    <div class="chart" id="container2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mb-4">
+        <div class="card">
+            <div class="card-body">
+                <div class=area id='area2'>
+                    <h2 class="title">体系 S<span style="color:OrangeRed">CHE</span>MA</h2>
+                    <p>PART 1 : 属性合并 <span style="color:Chocolate">ATTRIBUTE MERGE</span></p>
+                    <div class="chart" id="container3"></div>
+                    <p>PART 2 : 关系聚类 <span style="color:DarkSlateGray">RELATION CLUSTERING</span></p>
+                    <div class="chart" id="chart4" style="width: 100%; height: 1000px"></div>
+                    <p>PART 3 : 类别体系 <span style="color:Indigo">CATEGORIES</span></p>
+                    <div class="chart" id="container5"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mb-4">
+        <div class="card">
+            <div class="card-body">
+                <div class=area id="area3">
+                    <h2 class="title">实体融合 <span style="color:Green">FU</span>SION</h2>
+                    <img src="/static/img/display/pic002.png" style="width:80%">
+                    <img src="/static/img/display/pic003.png" style="width:80%">
+                    <img src="/static/img/display/pic004.png" style="width:80%">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mb-4">
+        <div class="card">
+            <div class="card-body">
+                <div class=area id='area4'>
+                    <h2 class="title">推理 <span style="color:IndianRed">R</span>EASON<span style="color:IndianRed">ING</span></h2>
+                    <img src="/static/img/display/pic001.png" style="width:70%">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts-all-3.js"></script>
+    <script src="/static/js/d3.min.js"></script>
+
+    <script>
+        var motto = "“但知下学而自然上达，此但自言其反己自修，循序渐进耳。” ——朱熹《论语》注";
+
+        d3init_area1();
+        d3init_area2();
+
+        var window_width = $(document.body).width()*0.9;
+        $.ajaxSetup({
+            error: function (e) {
+                console.log(e);
+                alert("找不到JSON文件");
+            }
+        });
+        chart4();
+
+        function chart4(){
+            var myChart = echarts.init(document.getElementById('chart4'));
+            $.getJSON('/static/json/relation_clustering.json', function(data){
+                var formatUtil = echarts.format;
+
+                function getLevelOption() {
+                    return [
+                        {
+                            itemStyle: {
+                                normal: {
+                                    borderColor: '#555',
+                                    borderWidth: 5,
+                                    gapWidth: 5
+                                }
+                            }
+                        },
+                        {
+                            colorSaturation: [0.3, 0.4],
+                            itemStyle: {
+                                normal: {
+                                    borderWidth: 5,
+                                    gapWidth: 1,
+                                    borderColorSaturation: 0.6
+                                }
+                            }
+                        }
+                    ];
+                }
+                var option = {
+                    tooltip: {
+                        formatter: function (info) {
+                            var treePathInfo = info.treePathInfo;
+                            var treePath = [];
+                            for (var i = 0; i < treePathInfo.length; i++) {
+                                treePath.push(treePathInfo[i].name);
+                            }
+                            return [formatUtil.encodeHTML(treePath.join('/'))].join('');
+                        }
+                    },
+                    series: [
+                        {
+                            name:'关系',
+                            type:'treemap',
+                            visibleMin: 0,
+                            roam:false,
+                            top:50,
+                            bottom:0,
+                            zoomToNodeRatio:0.4,
+                            label: {
+                                normal: {
+                                    show: true,
+                                    formatter: '{b}',
+                                    textStyle:{
+                                        fontSize:14
+                                    }
+                                }
+                            },
+                            upperLabel: {
+                                normal: {
+                                    show: true,
+                                    height: 30,
+                                    textStyle:{
+                                        fontSize:14
+                                    }
+                                }
+                            },
+                            itemStyle: {
+                                normal: {
+                                    borderColor: '#fff'
+                                }
+                            },
+                            breadcrumb:{
+                                top:0,
+                                height:40,
+                                itemStyle:{
+                                    normal:{
+                                        textStyle:{
+                                            fontSize:16
+                                        }
+                                    }
+                                }
+                            },
+                            levels: getLevelOption(),
+                            data: data
+                        }
+                    ]
+                };
+                myChart.setOption(option);
+            });
+        }
+
+//////////////////////////////////statistics////////////////////////////////////////////
+function d3init_area1(){
+    var titles = ["词条总数","具有标签的词条数","具有属性的词条数","标签总数","词条平均标签数","属性总数","词条平均属性个数"];
+    var items = ["百度百科","互动百科","中文维基"];
+    var dataset = new Array([9568051 , 3360805, 859660],
+        [9096673, 2764991, 0],
+        [8237439, 827840, 36354],
+        [27197113, 11424989, 0],
+        [2.84, 3.40, 0],
+        [47651291, 7058922, 271066],
+        [4.98, 2.10, 0.31]);
+    var color = d3.scale.category10();
+    var svg = new Array();
+    var padding = {left:100, right:30, top:40, bottom:30};
+    var width = $(".container").width() * 0.9;
+    var height = 300;
+    var rectPadding = 40;
+    //NO.0/////////////////////////////////////////////////
+    svg.push(d3.select("body")
+        .select("#container0")
+        .append("svg")
+        .attr("width", width)
+        .attr("height", height));
+    var xScale = d3.scale.ordinal()
+        .domain(d3.range(dataset[0].length))
+        .rangeRoundBands([0, height - padding.top - padding.bottom]);
+    var yScale = d3.scale.linear()
+        .domain([0,d3.max(dataset[0])])
+        .range([0, width - padding.left - padding.right]);
+    var yAxis = d3.svg.axis()
+        .scale(yScale)
+        .orient("bottom");
+    svg[0].append("g")
+        .attr("class","axis")
+        .attr("transform","translate(" + padding.left + "," + (height-padding.bottom) + ")")
+        .call(yAxis);
+    svg[0].append("line")
+        .attr("x1",padding.left)
+        .attr("y1",padding.top)
+        .attr("x2",padding.left)
+        .attr("y2",height - padding.bottom)
+        .attr("stroke","gray")
+        .attr("stroke-width",2);
+    svg[0].selectAll(".mytext_statis")
+        .data(items)
+        .enter()
+        .append("text")
+        .attr("class","mytext_statis")
+        .attr("transform","translate(0," + padding.top + ")")
+        .attr("x", function(){
+            return 50;
+        } )
+        .attr("y",function(d,i){
+            return xScale(i) + xScale.rangeBand()/2;
+        })
+        .text(function(d){
+            return d;
+        });
+    //rect 0 0
+    svg[0].selectAll("#MyRect0")
+        .data(dataset[0])
+        .enter()
+        .append("rect")
+        .attr("class","MyRect")
+        .attr("id","MyRect0")
+        .attr("transform","translate(" + padding.left + "," + (padding.top-5) + ")")
+        .attr("x",function(d,i){
+            return 1;
+        } )
+        .attr("y",function(d,i){
+            return xScale(i) + rectPadding/2;
+        })
+        .attr("width", 0)
+        .attr("height", function(d){
+            return rectPadding;
+        })
+        .attr("fill",function(d,i){
+            return "gray";
+        })
+        .on("mouseover",function(d,i){
+            d3.select(this).attr("fill","gold");
+            svg[0].append("text")
+                .attr("id","number_statis")
+                .attr("transform","translate(" + (padding.left-50) + "," + (padding.top-10) + ")")
+                .attr("x",yScale(d))
+                .attr("y",xScale(i) + xScale.rangeBand()/4)
+                .text(d);
+        })
+        .on("mouseout",function(d,i){
+            d3.select(this).attr("fill",color(0));
+            svg[0].select("#number_statis").remove();
+        });
+    //rect 0 1
+    svg[0].selectAll("#MyRect1")
+        .data(dataset[1])
+        .enter()
+        .append("rect")
+        .attr("class","MyRect")
+        .attr("id","MyRect1")
+        .attr("transform","translate(" + padding.left + "," + (padding.top-5) + ")")
+        .attr("x",function(d,i){
+            return 1;
+        } )
+        .attr("y",function(d,i){
+            return xScale(i) + rectPadding/2;
+        })
+        .attr("width", 0)
+        .attr("height", function(d){
+            return rectPadding/2;
+        })
+        .attr("fill",function(d,i){
+            return "gray";
+        })
+        .on("mouseover",function(d,i){
+            d3.select(this).attr("fill","gold");
+            svg[0].append("text")
+                .attr("id","number_statis")
+                .attr("transform","translate(" + (padding.left-50) + "," + (padding.top-10) + ")")
+                .attr("x",yScale(d))
+                .attr("y",xScale(i) + xScale.rangeBand()/4)
+                .text(d);
+        })
+        .on("mouseout",function(d,i){
+            d3.select(this).attr("fill",color(1));
+            svg[0].select("#number_statis").remove();
+        });
+    //rect 0 2
+    svg[0].selectAll("#MyRect2")
+        .data(dataset[2])
+        .enter()
+        .append("rect")
+        .attr("class","MyRect")
+        .attr("id","MyRect2")
+        .attr("transform","translate(" + padding.left + "," + (padding.top-5+rectPadding/2) + ")")
+        .attr("x",function(d,i){
+            return 1;
+        } )
+        .attr("y",function(d,i){
+            return xScale(i) + rectPadding/2;
+        })
+        .attr("width", 0)
+        .attr("height", function(d){
+            return rectPadding/2;
+        })
+        .attr("fill",function(d,i){
+            return "gray";
+        })
+        .on("mouseover",function(d,i){
+            d3.select(this).attr("fill","gold");
+            svg[0].append("text")
+                .attr("id","number_statis")
+                .attr("transform","translate(" + (padding.left-50) + "," + (padding.top+rectPadding+10) + ")")
+                .attr("x",yScale(d))
+                .attr("y",xScale(i) + xScale.rangeBand()/4)
+                .text(d);
+        })
+        .on("mouseout",function(d,i){
+            d3.select(this).attr("fill",color(2));
+            svg[0].select("#number_statis").remove();
+        });
+    //图例
+    for (var i = 0;i < 3;i++){
+        svg[0].append("rect")
+            .attr("width",10)
+            .attr("height",10)
+            .attr("x",width-padding.right-150)
+            .attr("y",height-padding.bottom-50-i*30)
+            .attr("fill",color(i));
+        svg[0].append("text")
+            .attr("class","tulitext_statis")
+            .attr("x",width-padding.right-135)
+            .attr("y",height-padding.bottom-40-i*30)
+            .text(titles[i]);
+    }
+    //start
+    svg[0].selectAll(".MyRect")
+        .transition()
+        .duration(1500)
+        .attr("width", function(d){
+            return yScale(d);
+        })
+        .attr("fill",function(d,i){
+            return color(parseInt(i/3));
+        });
+    //NO 1/////////////////////////////////////////////////////
+    svg.push(d3.select("body")
+        .select("#container1")
+        .append("svg")
+        .attr("width", width)
+        .attr("height", height));
+    var yScale1 = d3.scale.linear()
+        .domain([0,d3.max(dataset[3])])
+        .range([0, width - padding.left - padding.right]);
+    var yAxis1 = d3.svg.axis()
+        .scale(yScale1)
+        .orient("bottom");
+    var yScale2 = d3.scale.linear()
+        .domain([0,d3.max(dataset[4])])
+        .range([0, width - padding.left - padding.right]);
+    var yAxis2 = d3.svg.axis()
+        .scale(yScale2)
+        .orient("top");
+    svg[1].append("g")
+        .attr("class","axis")
+        .attr("transform","translate(" + padding.left + "," + (height-padding.bottom) + ")")
+        .call(yAxis1);
+    svg[1].append("g")
+        .attr("class","axis")
+        .attr("transform","translate(" + padding.left + "," + (padding.top) + ")")
+        .call(yAxis2);
+    svg[1].append("line")
+        .attr("x1",padding.left)
+        .attr("y1",padding.top)
+        .attr("x2",padding.left)
+        .attr("y2",height - padding.bottom)
+        .attr("stroke","gray")
+        .attr("stroke-width",2);
+    svg[1].selectAll(".mytext_statis")
+        .data(items)
+        .enter()
+        .append("text")
+        .attr("class","mytext_statis")
+        .attr("transform","translate(0," + padding.top + ")")
+        .attr("x", function(){
+            return 50;
+        } )
+        .attr("y",function(d,i){
+            return xScale(i) + xScale.rangeBand()/2;
+        })
+        .text(function(d){
+            return d;
+        });
+    //rect 1 0
+    svg[1].selectAll("#MyRect0")
+        .data(dataset[3])
+        .enter()
+        .append("rect")
+        .attr("class","MyRect")
+        .attr("id","MyRect0")
+        .attr("transform","translate(" + padding.left + "," + (padding.top+rectPadding/2) + ")")
+        .attr("x",function(d,i){
+            return 1;
+        } )
+        .attr("y",function(d,i){
+            return xScale(i) + rectPadding/2;
+        })
+        .attr("width", 0)
+        .attr("height", function(d){
+            return rectPadding/2;
+        })
+        .attr("fill",function(d,i){
+            return "gray";
+        })
+        .on("mouseover",function(d,i){
+            d3.select(this).attr("fill","gold");
+            svg[1].append("text")
+                .attr("id","number_statis")
+                .attr("transform","translate(" + (padding.left-50) + "," + (padding.top+rectPadding+15) + ")")
+                .attr("x",yScale1(d))
+                .attr("y",xScale(i) + xScale.rangeBand()/4)
+                .text(d);
+        })
+        .on("mouseout",function(d,i){
+            d3.select(this).attr("fill",color(3));
+            svg[1].select("#number_statis").remove();
+        });
+    //rect 1 1
+    svg[1].selectAll("#MyRect1")
+        .data(dataset[4])
+        .enter()
+        .append("rect")
+        .attr("class","MyRect")
+        .attr("id","MyRect1")
+        .attr("transform","translate(" + padding.left + "," + (padding.top) + ")")
+        .attr("x",function(d,i){
+            return 1;
+        } )
+        .attr("y",function(d,i){
+            return xScale(i) + rectPadding/2;
+        })
+        .attr("width", 0)
+        .attr("height", function(d){
+            return rectPadding/2;
+        })
+        .attr("fill",function(d,i){
+            return "gray";
+        })
+        .on("mouseover",function(d,i){
+            d3.select(this).attr("fill","gold");
+            svg[1].append("text")
+                .attr("id","number_statis")
+                .attr("transform","translate(" + (padding.left-20) + "," + (padding.top-5) + ")")
+                .attr("x",yScale2(d))
+                .attr("y",xScale(i) + xScale.rangeBand()/4)
+                .text(d);
+        })
+        .on("mouseout",function(d,i){
+            d3.select(this).attr("fill",color(4));
+            svg[1].select("#number_statis").remove();
+        });
+    //图例
+    for (var i = 0;i < 2;i++){
+        svg[1].append("rect")
+            .attr("width",10)
+            .attr("height",10)
+            .attr("x",width-padding.right-150)
+            .attr("y",height-padding.bottom-50-i*30)
+            .attr("fill",color(i+3));
+        svg[1].append("text")
+            .attr("class","tulitext_statis")
+            .attr("x",width-padding.right-135)
+            .attr("y",height-padding.bottom-40-i*30)
+            .text(titles[i+3]);
+    }
+    //start
+    svg[1].selectAll(".MyRect")
+        .transition()
+        .duration(1500)
+        .attr("width", function(d,i){
+            if (i/3 >= 1) return yScale2(d);
+            else return yScale1(d);
+        })
+        .attr("fill",function(d,i){
+            return color(parseInt(i/3)+3);
+        });
+    //NO 2/////////////////////////////////////////////////////
+    svg.push(d3.select("body")
+        .select("#container2")
+        .append("svg")
+        .attr("width", width)
+        .attr("height", height));
+    var yScale3 = d3.scale.linear()
+        .domain([0,d3.max(dataset[5])])
+        .range([0, width - padding.left - padding.right]);
+    var yAxis3 = d3.svg.axis()
+        .scale(yScale3)
+        .orient("bottom");
+    var yScale4 = d3.scale.linear()
+        .domain([0,d3.max(dataset[6])])
+        .range([0, width - padding.left - padding.right]);
+    var yAxis4 = d3.svg.axis()
+        .scale(yScale4)
+        .orient("top");
+    svg[2].append("g")
+        .attr("class","axis")
+        .attr("transform","translate(" + padding.left + "," + (height-padding.bottom) + ")")
+        .call(yAxis3);
+    svg[2].append("g")
+        .attr("class","axis")
+        .attr("transform","translate(" + padding.left + "," + (padding.top) + ")")
+        .call(yAxis4);
+    svg[2].append("line")
+        .attr("x1",padding.left)
+        .attr("y1",padding.top)
+        .attr("x2",padding.left)
+        .attr("y2",height - padding.bottom)
+        .attr("stroke","gray")
+        .attr("stroke-width",2);
+    svg[2].selectAll(".mytext_statis")
+        .data(items)
+        .enter()
+        .append("text")
+        .attr("class","mytext_statis")
+        .attr("transform","translate(0," + padding.top + ")")
+        .attr("x", function(){
+            return 50;
+        } )
+        .attr("y",function(d,i){
+            return xScale(i) + xScale.rangeBand()/2;
+        })
+        .text(function(d){
+            return d;
+        });
+    //rect 2 0
+    svg[2].selectAll("#MyRect0")
+        .data(dataset[5])
+        .enter()
+        .append("rect")
+        .attr("class","MyRect")
+        .attr("id","MyRect0")
+        .attr("transform","translate(" + padding.left + "," + (padding.top+rectPadding/2) + ")")
+        .attr("x",function(d,i){
+            return 1;
+        } )
+        .attr("y",function(d,i){
+            return xScale(i) + rectPadding/2;
+        })
+        .attr("width", 0)
+        .attr("height", function(d){
+            return rectPadding/2;
+        })
+        .attr("fill",function(d,i){
+            return "gray";
+        })
+        .on("mouseover",function(d,i){
+            d3.select(this).attr("fill","gold");
+            svg[2].append("text")
+                .attr("id","number_statis")
+                .attr("transform","translate(" + (padding.left-50) + "," + (padding.top+rectPadding+15) + ")")
+                .attr("x",yScale3(d))
+                .attr("y",xScale(i) + xScale.rangeBand()/4)
+                .text(d);
+        })
+        .on("mouseout",function(d,i){
+            d3.select(this).attr("fill",color(5));
+            svg[2].select("#number_statis").remove();
+        });
+    //rect 2 1
+    svg[2].selectAll("#MyRect1")
+        .data(dataset[6])
+        .enter()
+        .append("rect")
+        .attr("class","MyRect")
+        .attr("id","MyRect1")
+        .attr("transform","translate(" + padding.left + "," + (padding.top) + ")")
+        .attr("x",function(d,i){
+            return 1;
+        } )
+        .attr("y",function(d,i){
+            return xScale(i) + rectPadding/2;
+        })
+        .attr("width", 0)
+        .attr("height", function(d){
+            return rectPadding/2;
+        })
+        .attr("fill",function(d,i){
+            return "gray";
+        })
+        .on("mouseover",function(d,i){
+            d3.select(this).attr("fill","gold");
+            svg[2].append("text")
+                .attr("id","number_statis")
+                .attr("transform","translate(" + (padding.left-20) + "," + (padding.top-5) + ")")
+                .attr("x",yScale4(d))
+                .attr("y",xScale(i) + xScale.rangeBand()/4)
+                .text(d);
+        })
+        .on("mouseout",function(d,i){
+            d3.select(this).attr("fill",color(6));
+            svg[2].select("#number_statis").remove();
+        });
+    //start
+    svg[2].selectAll(".MyRect")
+        .transition()
+        .duration(1500)
+        .attr("width", function(d,i){
+            if (i/3 >= 1) return yScale4(d);
+            else return yScale3(d);
+        })
+        .attr("fill",function(d,i){
+            return color(parseInt(i/3)+5);
+        });
+    //图例
+    for (var i = 0;i < 2;i++){
+        svg[2].append("rect")
+            .attr("width",10)
+            .attr("height",10)
+            .attr("x",width-padding.right-150)
+            .attr("y",height-padding.bottom-height/3-10-i*30)
+            .attr("fill",color(i+5));
+        svg[2].append("text")
+            .attr("class","tulitext_statis")
+            .attr("x",width-padding.right-135)
+            .attr("y",height-padding.bottom-height/3-i*30)
+            .text(titles[i+5]);
+    }
+}
+
+
+//////////////////////////////////function////////////////////////////////////////////
+function d3init_area2() {
+
+    var color = d3.scale.category20();
+    var color10 = d3.scale.category10();
+    var width = 1000;
+    var height = 500;
+    var svg = new Array();
+    var padding = {left:10, right:0, top:30, bottom:0};
+    var data = new Array();
+    var datashow = new Array();
+    var flags = new Array();
+    var PageNow = 0;
+    var PageNow2 = 0;
+    var types = new Array();
+    var typelabel= new Array();
+    var ppts = new Array();
+    var r;
+    var allLabels;
+    var allLabelsName = new Array();
+    var LabelNow = 0;
+
+    //属性聚合/////////////////////////////////////////////////////////////
+    var numx = 10;
+    var numy = 10;
+    svg.push(d3.select("body")
+        .select("#container3")
+        .append("svg")
+        .attr("width", width)
+        .attr("height", height));
+    d3.json("/static/json/attribute_aggregation.json",function(error,root){
+        if( error ){
+            alert("找不到JSON文件");
+        }
+        data = root.data;
+        //页数选择区
+        for (var i = 0;i < 11;i++){
+            var g0 = svg[0].append("g")
+                .attr("class","Myg0");
+            g0.append("rect")
+                .attr("class","pagerect_function")
+                .attr("id","page"+i)
+                .attr("width",15)
+                .attr("height",15)
+                .attr("x",width-350+i*30)
+                .attr("y",1)
+                .attr("fill",function(){
+                    if (i == 0) return "#414141";
+                    else return "white";
+                });
+        }
+        svg[0].selectAll(".pagerect_function")
+            .on("mouseover",function(){
+                d3.select(this).attr("fill","#818181");
+            })
+            .on("mouseout",function(d,i){
+                d3.select(this).attr("fill",function(){
+                    if (i != PageNow) return "white";
+                    else return "#414141";
+                });
+            })
+            .on("click",function(d,i){
+                for (var j = 0;j < numx*numy;j++){
+                    if (data[j+i*numx*numy] != null)
+                        datashow[j] = data[j+i*numx*numy];
+                    else{
+                        var p = {left:" ", right:" "};
+                        datashow[j] = p;
+                    }
+                }
+                svg[0].selectAll(".mytext_function")
+                    .text(function(d,x){
+                        if (!flags[x]) return datashow[x].left;
+                        else return datashow[x].right;
+                    });
+                svg[0].selectAll(".pagerect_function").attr("fill","white");
+                d3.select(this).attr("fill","#414141");
+                PageNow = i;
+            });
+        //矩阵区
+        for (var i = 0;i < numx;i++){
+            for (var j = 0;j < numy;j++){
+                if (Math.random() > 0.5) flags.push(false);
+                else flags.push(true);
+                datashow.push(data[i*numx+j]);
+                var g = svg[0].append("g")
+                    .attr("class","Myg");
+                g.append("rect")
+                    .attr("class","myrect_function")
+                    .attr("id","rect"+(i*numx+j))
+                    .attr("width",(width-padding.left-padding.right)/numx)
+                    .attr("height",(height-padding.top-padding.bottom)/numy)
+                    .attr("x",padding.left+((width-padding.left-padding.right)/numx)*i)
+                    .attr("y",padding.top+((height-padding.top-padding.bottom)/numy)*j)
+                    .attr("fill",function(){
+                        if (!flags[i*numx+j]) return "white";
+                        else return "#212121";
+                    });
+                g.append("text")
+                    .attr("class","mytext_function")
+                    .attr("id","text"+(i*numx+j))
+                    .attr("x",padding.left+((width-padding.left-padding.right)/numx)*(i+0.5))
+                    .attr("y",padding.top+((height-padding.top-padding.bottom)/numy)*(j+0.5)+5)
+                    .attr("fill",function(){
+                        if (!flags[i*numx+j]) return "#616161";
+                        else return "white";
+                    })
+                    .text(function(){
+                        if (!flags[i*numx+j]) return datashow[i*numx+j].left;
+                        else return datashow[i*numx+j].right;
+                    });
+            }
+            svg[0].selectAll(".Myg")
+                .on("click",function(d,i){
+                    if (!flags[i]){
+                        svg[0].select("#rect"+i).transition()
+                            .duration(200)
+                            .attr("fill","#212121");
+                        svg[0].select("#text"+i).transition()
+                            .duration(200)
+                            .attr("fill","white")
+                            .text(datashow[i].right);
+                        flags[i] = true;
+                    }else{
+                        svg[0].select("#rect"+i).transition()
+                            .duration(200)
+                            .attr("fill","white");
+                        svg[0].select("#text"+i).transition()
+                            .duration(200)
+                            .attr("fill","#616161")
+                            .text(datashow[i].left);
+                        flags[i] = false;
+                    }
+                });
+        }
+    });
+
+    //属性划类/////////////////////////////////////////////////////
+    svg.push(d3.select("body")
+        .select("#container4")
+        .append("svg"));
+
+    //类别体系///////////////////////////////////////////////////////////////////
+    svg.push(d3.select("body")
+        .select("#container5")
+        .append("svg")
+        .attr("width", width)
+        .attr("height", height));
+    d3.json("/static/json/category_attribute.json",function(error,root){
+        if( error ){
+            alert("找不到JSON文件");
+        }
+        allLabels = root;
+        svg[2].append("line")
+            .attr("stroke","#414141")
+            .attr("stroke-width",3)
+            .attr("x1",padding.left+60)
+            .attr("y1",padding.top+(height-padding.top-padding.bottom)/2)
+            .attr("x2",width/2+60)
+            .attr("y2",padding.top+(height-padding.top-padding.bottom)/2);
+        svg[2].append("rect")
+            .attr("width",(width-padding.left-padding.right)/2-50)
+            .attr("height",(height-padding.top-padding.bottom))
+            .attr("x",padding.left+50)
+            .attr("y",padding.top)
+            .attr("rx",20)
+            .attr("fill","#414141");
+        svg[2].append("rect")
+            .attr("width",(width-padding.left-padding.right)/2-50)
+            .attr("height",(height-padding.top-padding.bottom))
+            .attr("x",width/2+50)
+            .attr("y",padding.top)
+            .attr("rx",20)
+            .attr("fill","#E1E1E1")
+            .attr("stroke","#414141")
+            .attr("stroke-width",3);
+        for (key in allLabels){
+            svg[2].append("text")
+                .attr("class","Mylabel_function")
+                .text(key);
+            allLabelsName.push(key);
+        }
+        svg[2].selectAll(".Mylabel_function")
+            .attr("fill",function(d,i){
+                if (i == 0) return "gold";
+                else return "white";
+            })
+            .attr("x",function(d,i){
+                return padding.left+50+((width-padding.left-padding.right)/2-50)/2+(i%3-1)*100;
+            })
+            .attr("y",function(d,i){
+                return padding.top+40+parseInt(i/3)*40;
+            })
+            .on("mouseover",function(){
+                d3.select(this).attr("fill","#818181");
+            })
+            .on("mouseout",function(d,i){
+                d3.select(this).attr("fill",function(){
+                    if (i == LabelNow) return "gold";
+                    else return "white";
+                });
+            })
+            .on("click",function(d,i){
+                svg[2].selectAll(".Mylabel_function").attr("fill","white");
+                d3.select(this).attr("fill","gold");
+                LabelNow = i;
+                $(".Myprop_function").fadeOut(200,function(){
+                    svg[2].selectAll(".Myprop_function").remove();
+                    var datatemp0 = allLabels[allLabelsName[i]];
+                    svg[2].selectAll(".Myprop_function")
+                        .data(datatemp0)
+                        .enter()
+                        .append("text")
+                        .attr("class","Myprop_function")
+                        .text(function(d){
+                            return d[0];
+                        })
+                        .attr("fill",function(d,x){
+                            return color10(x%10);
+                        })
+                        .attr("x",width/2+50+((width-padding.left-padding.right)/2-50)/2)
+                        .attr("y",20);
+                    svg[2].selectAll(".Myprop_function")
+                        .transition()
+                        .duration(200)
+                        .delay(function(d,x){
+                            return x*100;
+                        })
+                        .attr("x",function(d,x){
+                            return width/2+50+((width-padding.left-padding.right)/2-50)/2+(x%2-0.5)*((width-padding.left-padding.right)/2-50)/4;
+                        })
+                        .attr("y",function(d,x){
+                            return padding.top+40+parseInt(x/2)*40;
+                        });
+                });
+            });
+        var datatemp = allLabels[allLabelsName[0]];
+        svg[2].selectAll(".Myprop_function")
+            .data(datatemp)
+            .enter()
+            .append("text")
+            .attr("class","Myprop_function")
+            .text(function(d){
+                return d[0];
+            })
+            .attr("fill",function(d,i){
+                return color10(i%10);
+            })
+            .attr("x",width/2+50+((width-padding.left-padding.right)/2-50)/2)
+            .attr("y",20);
+        svg[2].selectAll(".Myprop_function")
+            .transition()
+            .duration(200)
+            .delay(function(d,i){
+                return i*100;
+            })
+            .attr("x",function(d,i){
+                return width/2+50+((width-padding.left-padding.right)/2-50)/2+(i%2-0.5)*((width-padding.left-padding.right)/2-50)/4;
+            })
+            .attr("y",function(d,i){
+                return padding.top+40+parseInt(i/2)*40;
+            });
+
+    });
+}
+
+    </script>
+
+{% endblock %}

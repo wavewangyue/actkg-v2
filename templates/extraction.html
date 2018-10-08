@@ -1,0 +1,218 @@
+{% extends "Layout.html" %}
+{% block main %}
+
+    <style>
+        th{
+            text-align: center
+        }
+        #container{
+            width: 100%;
+            height: 800px;
+        }
+        .card-title{
+            font-size: 18px;
+            margin: 0;
+            padding: 0;
+            line-height: 34px;
+        }
+        #text-content{
+            margin-top: 20px;            
+        }
+        #text-content p{
+            border-top: 1px solid #ccc;
+            padding-top: 2em;
+            margin-top: .4em;
+        }
+        .triple_container span{
+            color: white;
+            font-size: 0.8em;
+            font-weight: bold;
+            background-color: #34495E;
+            border-radius: 0.2em;
+            margin-right: 1em;
+            padding: .5em 1em;
+            line-height:4em;
+        }
+    </style>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-8"><h2 class="card-title">文本内容与抽取结果三元组</h2></div>
+                            <div class="col-md-4  d-flex justify-content-md-end">
+                                <button class="btn btn-success" type="button" onclick="$('#textInputModal').modal()">更换文本</button>
+                            </div>
+                        </div>
+                        <div id="text-content"></div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="card">
+                    <div id="container_shell" class="card-body">
+                        <div id="container" class="d-flex justify-content-center align-items-center">
+                            <img src="/static/img/imageloading.gif" style="width: 200px;"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>       
+    </div>
+
+    <!--更换文本模态框-->
+    <div class="modal fade" id="textInputModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">更换文本</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <textarea class="form-control" id='content-input' rows="15" placeholder='在此输入文本'></textarea>
+                        </div>
+                    </form>
+                    <button class="btn btn-large btn-success float-right" type="button" onclick="extract()">提交</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts-all-3.js"></script>
+
+    <script>
+
+        var motto = "“善张网者引其纲，不一一摄万目而後得。” ——《韩非子》";
+
+        var statements = [];
+        var content_init = '柏林是德国首都，也是德国最大的城市，现有居民约340万人。柏林位于德国东北部，四面被勃兰登堡州环绕，施普雷河流经该市。勃兰登堡州是在两德统一之后重新组建起来的联邦州，在1945年德国战败之后，归属于波兰。施普雷河起源于劳西茨山，在柏林地区汇入哈弗尔河，是哈弗尔河的左支流。柏林以以崇尚自由生活方式和现代精神的年轻人和艺术家而闻名。1976到1978年，英国摇滚歌手大卫·鲍威居住于柏林，在这期间及之后创作了“柏林三部曲”，这三张专辑曾被视为音乐性上最好的作品。2016年8月，柏林市长迈克尔·穆勒在其故居仪式上亲自为其揭匾。';
+
+        $.ajaxSetup({
+            error: function (e) {
+                console.log(e);
+                alert("后台错误");
+                return false;
+            }
+        });
+
+        $('#content-input').val(content_init);
+        extract();
+
+        function extract(){
+            var content = $.trim($('#content-input').val());
+            if (content != "") {
+                $.getJSON("/api/nlp/extraction/?content="+content, function (result) {
+                    console.log(result);
+
+                    var $text_content = $("#text-content");
+                    $text_content.empty();
+                    result['results'].forEach(function (rst) {
+                        $text_content.append('<p>'+rst['sentence']+'</p>');
+                        var triples_html = "";
+                        rst['triples'].forEach(function (triple) {
+                            triples_html += '<span > '+triple.join(' -> ')+' </span>';
+                        });
+                        if (triples_html !== "")
+                            $text_content.append("<div class=triple_container>"+triples_html+"<div>");
+                    });
+
+                    paint(result['graph']);
+                });
+                $('#textInputModal').modal('hide');
+            }
+            $('#content-input').val('');
+        }
+
+        function paint(result){
+            $('#container').remove();
+            $('#container_shell').append("<div id='container'></div>");
+            var myChart = echarts.init(document.getElementById('container'));
+            var nodeSize = 35;
+            var fontSize = 15;
+            var nodes = [];
+            var links = [];
+            var categories = [];
+            result.nodes.forEach(function(node){
+                if ($.inArray(node.category,categories) < 0){
+                    categories.push({
+                        name: node.category
+                    });
+                }
+                node.symbol = 'circle';
+                node.symbolSize = nodeSize;
+                node.x = null;
+                node.y = null;
+                node.itemStyle = null;
+                node.label = {
+                    normal: {
+                       show: true,
+                       position: 'right'
+                   }
+                };
+                nodes.push(node);
+            });
+            result.links.forEach(function(edge){
+                links.push(edge);
+            });
+            var colorPalette = ['#E01F54','#001852','#e05038','#009966','#9fa8a3',
+                    '#89bdd3','#e6af4b','#d3758f'];
+            var option = {
+                color:colorPalette,
+                backgroundColor:'white',
+                title: {
+                    text: '抽取异构图',
+                    top: '1%',
+                    left: '1%',
+                    textStyle:{
+                        color:"#333333",
+                        fontSize: fontSize*1.8,
+                        fontWeight:'bolder'
+                    },
+                    subtext: '图中共有 '+result.nodes.length+' 个节点以及 '+result.links.length+' 条关系',
+                    subtextStyle:{
+                        color:"#333333",
+                        fontSize: fontSize,
+                        fontWeight:'bold'
+                    }
+                },
+                tooltip: {
+                    formatter: function (params) {
+                        return params.data.name;
+                    }
+                },
+                series:[{
+                    type: 'graph',
+                    layout: 'force',
+                    data: nodes,
+                    links: links,
+                    categories: categories,
+                    lineStyle: {
+                        normal: {
+                            color: 'source',
+                            width: 5,
+                            curveness: 0.2
+                        }
+                    },
+                    force: {
+                        repulsion: 1000,
+                        layoutAnimation: false
+                    },
+                    roam: true,
+                    focusNodeAdjacency: true,
+                    animationDuration: 2000
+                }],
+                textStyle: {
+                    fontSize: fontSize,
+                    fontFamily: __config__.fontFamily,
+                }
+            };
+            myChart.setOption(option);
+        }
+    </script>
+
+{% endblock %}

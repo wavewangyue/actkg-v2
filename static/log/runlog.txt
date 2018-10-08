@@ -1,0 +1,1338 @@
+2017-11-14 12:36:43,542 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-14 12:36:43,546 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-14 12:36:43,839 - DEBUG - __init__.py:163 - Loading model cost 0.297 seconds.
+2017-11-14 12:36:43,841 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-14 12:36:45,503 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 12:36:47,723 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 12:40:24,959 - INFO - serviceQA.py:16 - question:北航的知名校友
+2017-11-14 12:40:24,996 - INFO - serviceQA.py:24 - segment result:北航/j 知名/v 校友/n 
+2017-11-14 12:41:51,776 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-14 12:41:51,779 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-14 12:41:52,073 - DEBUG - __init__.py:163 - Loading model cost 0.297 seconds.
+2017-11-14 12:41:52,073 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-14 12:41:53,750 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 12:41:56,019 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 12:42:05,351 - INFO - serviceQA.py:16 - question:北航
+2017-11-14 12:42:05,385 - INFO - serviceQA.py:24 - segment result:北航/j 
+2017-11-14 12:42:28,405 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-14 12:42:28,410 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-14 12:42:28,704 - DEBUG - __init__.py:163 - Loading model cost 0.298 seconds.
+2017-11-14 12:42:28,704 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-14 12:42:30,401 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 12:42:33,710 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-14 12:42:33,713 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-14 12:42:34,006 - DEBUG - __init__.py:163 - Loading model cost 0.296 seconds.
+2017-11-14 12:42:34,006 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-14 12:42:35,684 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 12:42:37,954 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 12:42:43,071 - INFO - serviceQA.py:16 - question:北京航空航天大学
+2017-11-14 12:42:43,105 - INFO - serviceQA.py:24 - segment result:北京航空航天大学/nz 
+2017-11-14 12:42:55,279 - INFO - serviceQA.py:16 - question:北航的知名校友
+2017-11-14 12:42:55,280 - INFO - serviceQA.py:24 - segment result:北航/j 知名/v 校友/n 
+2017-11-14 12:44:32,012 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-14 12:44:32,015 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-14 12:44:32,306 - DEBUG - __init__.py:163 - Loading model cost 0.295 seconds.
+2017-11-14 12:44:32,306 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-14 12:44:33,967 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 12:44:36,242 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 12:44:45,838 - INFO - serviceQA.py:16 - question:北航的知名校友
+2017-11-14 12:44:45,871 - INFO - serviceQA.py:24 - segment result:北航/j 知名/v 校友/n 
+2017-11-14 12:45:00,348 - INFO - serviceQA.py:16 - question:北航的校长
+2017-11-14 12:45:00,349 - INFO - serviceQA.py:24 - segment result:北航/j 校长/nz 
+2017-11-14 12:45:45,951 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-14 12:45:45,956 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-14 12:45:46,250 - DEBUG - __init__.py:163 - Loading model cost 0.298 seconds.
+2017-11-14 12:45:46,250 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-14 12:45:47,926 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 12:45:50,187 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 12:45:58,046 - INFO - serviceQA.py:16 - question:北航的校长
+2017-11-14 12:45:58,079 - INFO - serviceQA.py:24 - segment result:北航/j 校长/nz 
+2017-11-14 12:46:12,961 - INFO - serviceQA.py:16 - question:北京
+2017-11-14 12:46:12,963 - INFO - serviceQA.py:24 - segment result:北京/nz 
+2017-11-14 12:46:31,946 - INFO - serviceQA.py:16 - question:北京交通大学
+2017-11-14 12:46:31,947 - INFO - serviceQA.py:24 - segment result:北京交通大学/nz 
+2017-11-14 12:47:00,490 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-14 12:47:00,493 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-14 12:47:00,775 - DEBUG - __init__.py:163 - Loading model cost 0.284 seconds.
+2017-11-14 12:47:00,775 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-14 12:47:02,411 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 12:47:04,622 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 12:47:12,512 - INFO - serviceQA.py:16 - question:北航的校长
+2017-11-14 12:47:12,548 - INFO - serviceQA.py:24 - segment result:北航/j 校长/nz 
+2017-11-14 12:47:45,308 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-14 12:47:45,312 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-14 12:47:45,595 - DEBUG - __init__.py:163 - Loading model cost 0.287 seconds.
+2017-11-14 12:47:45,595 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-14 12:47:47,239 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 12:47:49,473 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 12:47:56,479 - INFO - serviceQA.py:17 - question:北航的校长
+2017-11-14 12:47:56,513 - INFO - serviceQA.py:25 - segment result:北航/j 校长/nz 
+2017-11-14 12:51:32,315 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-14 12:51:32,319 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-14 12:51:32,595 - DEBUG - __init__.py:163 - Loading model cost 0.280 seconds.
+2017-11-14 12:51:32,595 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-14 12:51:34,226 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 12:51:36,440 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 12:51:57,515 - INFO - serviceQA.py:17 - question:北航的校长
+2017-11-14 12:51:57,540 - INFO - serviceQA.py:25 - segment result:北航/j 校长/nz 
+2017-11-14 12:53:03,056 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-14 12:53:03,059 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-14 12:53:03,346 - DEBUG - __init__.py:163 - Loading model cost 0.290 seconds.
+2017-11-14 12:53:03,346 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-14 12:53:05,030 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 12:53:07,397 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 12:53:16,736 - INFO - serviceQA.py:17 - question:北航的校长
+2017-11-14 12:53:16,775 - INFO - serviceQA.py:25 - segment result:北航/j 校长/nz 
+2017-11-14 12:53:28,710 - INFO - serviceQA.py:17 - question:北航的校歌的作者
+2017-11-14 12:53:28,713 - INFO - serviceQA.py:25 - segment result:北航/j 校歌/n 作者/nz 
+2017-11-14 12:53:48,825 - INFO - serviceQA.py:17 - question:北航的校长的毕业学校
+2017-11-14 12:53:48,826 - INFO - serviceQA.py:25 - segment result:北航/j 校长/nz 毕业/n 学校/nz 
+2017-11-14 12:54:40,809 - INFO - serviceQA.py:17 - question:北航的知名校友
+2017-11-14 12:54:40,811 - INFO - serviceQA.py:25 - segment result:北航/j 知名/v 校友/n 
+2017-11-14 12:55:38,881 - INFO - serviceQA.py:17 - question:北航的主要院系
+2017-11-14 12:55:38,882 - INFO - serviceQA.py:25 - segment result:北航/j 主要/b 院系/n 
+2017-11-14 12:55:53,421 - INFO - serviceQA.py:17 - question:北京航空航天大学的校训
+2017-11-14 12:55:53,423 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 校训/n 
+2017-11-14 12:56:48,930 - INFO - serviceQA.py:17 - question:北京高科大学联盟的所属地区
+2017-11-14 12:56:48,937 - INFO - serviceQA.py:25 - segment result:北京/nz 高科/nr 大学/nz 联盟/j 所属/b 地区/n 
+2017-11-14 12:57:06,953 - INFO - serviceQA.py:17 - question:北京高科大学联盟的知名校友
+2017-11-14 12:57:06,960 - INFO - serviceQA.py:25 - segment result:北京/nz 高科/nr 大学/nz 联盟/j 知名/v 校友/n 
+2017-11-14 12:57:24,905 - INFO - serviceQA.py:17 - question:北航
+2017-11-14 12:57:24,907 - INFO - serviceQA.py:25 - segment result:北航/j 
+2017-11-14 12:58:45,385 - INFO - serviceQA.py:17 - question:中华人民共和国的简称的代表事物
+2017-11-14 12:58:45,387 - INFO - serviceQA.py:25 - segment result:中华人民共和国/nz 简称/v 代表/n 事物/n 
+2017-11-14 12:59:09,937 - INFO - serviceQA.py:17 - question:中华人民共和国的主要城市
+2017-11-14 12:59:09,938 - INFO - serviceQA.py:25 - segment result:中华人民共和国/nz 主要/b 城市/ns 
+2017-11-14 12:59:49,825 - INFO - serviceQA.py:17 - question:北航的知名校友
+2017-11-14 12:59:49,828 - INFO - serviceQA.py:25 - segment result:北航/j 知名/v 校友/n 
+2017-11-14 13:02:25,950 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-14 13:02:25,953 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-14 13:02:26,240 - DEBUG - __init__.py:163 - Loading model cost 0.291 seconds.
+2017-11-14 13:02:26,240 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-14 13:02:27,940 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 13:02:30,213 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 13:02:38,815 - INFO - serviceQA.py:17 - question:北航的知名校友
+2017-11-14 13:02:38,846 - INFO - serviceQA.py:25 - segment result:北航/j 知名/v 校友/n 
+2017-11-14 13:05:02,016 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-14 13:05:02,019 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-14 13:05:02,302 - DEBUG - __init__.py:163 - Loading model cost 0.286 seconds.
+2017-11-14 13:05:02,302 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-14 13:05:03,923 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 13:05:06,181 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 13:05:16,776 - INFO - serviceQA.py:17 - question:北航的知名校友
+2017-11-14 13:05:16,809 - INFO - serviceQA.py:25 - segment result:北航/j 知名/v 校友/n 
+2017-11-14 13:06:09,128 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-14 13:06:09,131 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-14 13:06:09,421 - DEBUG - __init__.py:163 - Loading model cost 0.294 seconds.
+2017-11-14 13:06:09,421 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-14 13:06:11,114 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 13:17:55,525 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-14 13:17:55,528 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-14 13:17:55,822 - DEBUG - __init__.py:163 - Loading model cost 0.297 seconds.
+2017-11-14 13:17:55,822 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-14 13:17:57,536 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 13:17:59,839 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 13:18:12,489 - INFO - serviceQA.py:17 - question:北大的校长是哪个院校毕业的
+2017-11-14 13:18:12,523 - INFO - serviceQA.py:25 - segment result:北大/j 校长/nz 是/v 哪个/r 院校/n 毕业/n 
+2017-11-14 13:18:27,249 - INFO - serviceQA.py:17 - question:北航的校长是哪个院校毕业的
+2017-11-14 13:18:27,252 - INFO - serviceQA.py:25 - segment result:北航/j 校长/nz 是/v 哪个/r 院校/n 毕业/n 
+2017-11-14 13:18:42,368 - INFO - serviceQA.py:17 - question:北航有哪些知名校友
+2017-11-14 13:18:42,368 - INFO - serviceQA.py:25 - segment result:北航/j 有/v 哪些/r 知名/v 校友/n 
+2017-11-14 13:19:04,048 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-14 13:19:04,052 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-14 13:19:04,341 - DEBUG - __init__.py:163 - Loading model cost 0.293 seconds.
+2017-11-14 13:19:04,341 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-14 14:04:13,535 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-14 14:04:13,538 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-14 14:04:13,811 - DEBUG - __init__.py:163 - Loading model cost 0.276 seconds.
+2017-11-14 14:04:13,811 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-14 14:04:15,426 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 14:04:17,604 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 14:04:29,153 - INFO - serviceQA.py:17 - question:周恩来是哪里的人
+2017-11-14 14:04:29,194 - INFO - serviceQA.py:25 - segment result:周恩来/nz 是/v 哪里/r 人/n 
+2017-11-14 14:05:44,387 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-14 14:05:44,391 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-14 14:05:44,710 - DEBUG - __init__.py:163 - Loading model cost 0.322 seconds.
+2017-11-14 14:05:44,710 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-14 14:05:46,447 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 14:05:49,796 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-14 14:05:49,799 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-14 14:05:50,101 - DEBUG - __init__.py:163 - Loading model cost 0.304 seconds.
+2017-11-14 14:05:50,101 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-14 14:05:51,776 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 14:05:54,055 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 14:06:01,964 - INFO - serviceQA.py:17 - question:周恩来是哪里的人
+2017-11-14 14:06:02,009 - INFO - serviceQA.py:25 - segment result:周恩来/nz 是/v 哪里/r 人/n 
+2017-11-14 14:08:10,683 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-14 14:08:10,686 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-14 14:08:10,961 - DEBUG - __init__.py:163 - Loading model cost 0.279 seconds.
+2017-11-14 14:08:10,961 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-14 14:08:12,572 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 14:08:14,757 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 14:08:27,457 - INFO - serviceQA.py:17 - question:周恩来是哪里人
+2017-11-14 14:08:27,490 - INFO - serviceQA.py:25 - segment result:周恩来/nz 是/v 哪里/r 人/n 
+2017-11-14 14:09:13,161 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-14 14:09:13,164 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-14 14:09:13,450 - DEBUG - __init__.py:163 - Loading model cost 0.288 seconds.
+2017-11-14 14:09:13,450 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-14 14:09:15,078 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 14:09:17,322 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 14:09:27,089 - INFO - serviceQA.py:17 - question:周恩来是哪里人
+2017-11-14 14:09:27,127 - INFO - serviceQA.py:25 - segment result:周恩来/nz 是/v 哪里/r 人/n 
+2017-11-14 14:09:54,338 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-14 14:09:54,342 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-14 14:09:54,625 - DEBUG - __init__.py:163 - Loading model cost 0.287 seconds.
+2017-11-14 14:09:54,627 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-14 14:09:56,289 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 14:09:58,568 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 14:10:00,871 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-14 14:10:00,874 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-14 14:10:01,181 - DEBUG - __init__.py:163 - Loading model cost 0.311 seconds.
+2017-11-14 14:10:01,183 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-14 14:10:02,974 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 14:10:05,285 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 14:10:13,226 - INFO - serviceQA.py:17 - question:周恩来是哪里人
+2017-11-14 14:10:13,262 - INFO - serviceQA.py:25 - segment result:周恩来/nz 是/v 哪里/r 人/n 
+2017-11-14 14:10:36,397 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-14 14:10:36,400 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-14 14:10:36,691 - DEBUG - __init__.py:163 - Loading model cost 0.295 seconds.
+2017-11-14 14:10:36,691 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-14 14:10:38,358 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 14:10:40,596 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 14:10:54,358 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-14 14:10:54,361 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-14 14:10:54,644 - DEBUG - __init__.py:163 - Loading model cost 0.287 seconds.
+2017-11-14 14:10:54,644 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-14 14:10:56,286 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 14:10:58,540 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 14:11:05,161 - INFO - serviceQA.py:17 - question:周恩来是哪里人
+2017-11-14 14:11:05,196 - INFO - serviceQA.py:25 - segment result:周恩来/nz 是/v 哪里/r 人/n 
+2017-11-14 14:11:41,668 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-14 14:11:41,673 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-14 14:11:41,957 - DEBUG - __init__.py:163 - Loading model cost 0.288 seconds.
+2017-11-14 14:11:41,957 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-14 14:11:43,598 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 14:11:45,888 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 14:11:53,201 - INFO - serviceQA.py:17 - question:周恩来是哪里人
+2017-11-14 14:11:53,234 - INFO - serviceQA.py:25 - segment result:周恩来/nz 是/v 哪里/r 人/n 
+2017-11-14 14:12:32,904 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-14 14:12:32,907 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-14 14:12:33,207 - DEBUG - __init__.py:163 - Loading model cost 0.302 seconds.
+2017-11-14 14:12:33,207 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-14 14:12:34,871 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 14:12:37,115 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 14:12:47,819 - INFO - serviceQA.py:17 - question:周恩来是哪里人
+2017-11-14 14:12:47,851 - INFO - serviceQA.py:25 - segment result:周恩来/nz 是/v 哪里/r 人/n 
+2017-11-14 14:13:16,276 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-14 14:13:16,279 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-14 14:13:16,576 - DEBUG - __init__.py:163 - Loading model cost 0.301 seconds.
+2017-11-14 14:13:16,578 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-14 14:13:18,355 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 14:13:20,736 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 14:13:44,214 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-14 14:13:44,217 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-14 14:13:44,532 - DEBUG - __init__.py:163 - Loading model cost 0.317 seconds.
+2017-11-14 14:13:44,532 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-14 14:13:46,191 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 14:13:48,404 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 14:13:56,867 - INFO - serviceQA.py:17 - question:周恩来是哪里人
+2017-11-14 14:13:56,900 - INFO - serviceQA.py:25 - segment result:周恩来/nz 是/v 哪里/r 人/n 
+2017-11-14 14:14:22,858 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-14 14:14:22,861 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-14 14:14:23,138 - DEBUG - __init__.py:163 - Loading model cost 0.281 seconds.
+2017-11-14 14:14:23,138 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-14 14:14:24,767 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 14:14:26,997 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 14:14:34,627 - INFO - serviceQA.py:17 - question:周恩来是哪里人
+2017-11-14 14:14:34,661 - INFO - serviceQA.py:25 - segment result:周恩来/nz 是/v 哪里/r 人/n 
+2017-11-14 14:15:25,305 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-14 14:15:25,309 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-14 14:15:25,592 - DEBUG - __init__.py:163 - Loading model cost 0.286 seconds.
+2017-11-14 14:15:25,592 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-14 14:15:27,227 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 14:15:29,490 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 14:15:47,114 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-14 14:15:47,117 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-14 14:15:47,400 - DEBUG - __init__.py:163 - Loading model cost 0.286 seconds.
+2017-11-14 14:15:47,400 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-14 14:15:49,022 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 14:15:51,253 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 14:16:01,059 - INFO - serviceQA.py:17 - question:周恩来是哪里人
+2017-11-14 14:16:01,094 - INFO - serviceQA.py:25 - segment result:周恩来/nz 是/v 哪里/r 人/n 
+2017-11-14 14:16:55,336 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-14 14:16:55,341 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-14 14:16:55,621 - DEBUG - __init__.py:163 - Loading model cost 0.284 seconds.
+2017-11-14 14:16:55,621 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-14 14:16:57,394 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 14:16:59,484 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-14 14:16:59,487 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-14 14:16:59,763 - DEBUG - __init__.py:163 - Loading model cost 0.278 seconds.
+2017-11-14 14:16:59,763 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-14 14:17:01,401 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 14:17:03,624 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 14:18:26,710 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-14 14:18:26,713 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-14 14:18:26,993 - DEBUG - __init__.py:163 - Loading model cost 0.284 seconds.
+2017-11-14 14:18:26,993 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-14 14:18:28,630 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 14:18:30,881 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 14:18:40,516 - INFO - serviceQA.py:17 - question:周恩来是哪里人
+2017-11-14 14:18:40,549 - INFO - serviceQA.py:25 - segment result:周恩来/nz 是/v 哪里/r 人/n 
+2017-11-14 14:18:55,815 - INFO - serviceQA.py:17 - question:北航的占地面积
+2017-11-14 14:18:55,815 - INFO - serviceQA.py:25 - segment result:北航/j 占地面积/nz 
+2017-11-14 14:19:14,877 - INFO - serviceQA.py:17 - question:北京航空航天大学的占地面积
+2017-11-14 14:19:14,878 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 占地面积/nz 
+2017-11-14 14:19:30,802 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-14 14:19:30,805 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-14 14:19:31,092 - DEBUG - __init__.py:163 - Loading model cost 0.291 seconds.
+2017-11-14 14:19:31,092 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-14 14:19:32,783 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 14:19:35,085 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 14:19:46,257 - INFO - serviceQA.py:17 - question:北航的占地面积
+2017-11-14 14:19:46,292 - INFO - serviceQA.py:25 - segment result:北航/j 占地面积/nz 
+2017-11-14 14:21:39,237 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-14 14:21:39,242 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-14 14:21:39,529 - DEBUG - __init__.py:163 - Loading model cost 0.291 seconds.
+2017-11-14 14:21:39,530 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-14 14:21:41,201 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 14:21:43,483 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 14:22:01,506 - INFO - serviceQA.py:17 - question:北航的占地面积
+2017-11-14 14:22:01,542 - INFO - serviceQA.py:25 - segment result:北航/j 占地面积/nz 
+2017-11-14 14:42:29,834 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-14 14:42:29,838 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-14 14:42:30,118 - DEBUG - __init__.py:163 - Loading model cost 0.285 seconds.
+2017-11-14 14:42:30,118 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-14 14:42:31,744 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 14:42:33,974 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 14:43:03,377 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-11-14 14:43:03,401 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2017-11-14 14:43:31,924 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-11-14 14:43:31,926 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2017-11-14 14:43:41,461 - INFO - serviceQA.py:17 - question:北航
+2017-11-14 14:43:41,463 - INFO - serviceQA.py:25 - segment result:北航/j 
+2017-11-14 14:51:02,605 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-14 14:51:02,608 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-14 14:51:02,888 - DEBUG - __init__.py:163 - Loading model cost 0.282 seconds.
+2017-11-14 14:51:02,888 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-14 14:51:04,489 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 14:51:06,690 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-14 14:53:09,338 - INFO - serviceQA.py:17 - question:北航的现任校长是哪个学校毕业的
+2017-11-14 14:53:09,367 - INFO - serviceQA.py:25 - segment result:北航/j 现任/n 校长/nz 是/v 哪个/r 学校/nz 毕业/n 
+2017-11-14 14:53:09,595 - WARNING - base.py:152 - Not Found: /favicon.ico
+2017-11-14 14:53:51,901 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-11-14 14:53:51,901 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2017-11-14 14:54:09,219 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-11-14 14:54:09,220 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2017-11-14 14:55:35,275 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-11-14 14:55:35,276 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2017-11-14 14:56:15,427 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-11-14 14:56:15,428 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2017-11-14 15:26:50,667 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-11-14 15:26:50,668 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2017-11-14 15:27:22,088 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-11-14 15:27:22,088 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2017-11-14 15:27:34,625 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-11-14 15:27:34,628 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2017-11-14 15:27:49,913 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-11-14 15:27:49,914 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2017-11-14 15:28:03,530 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-11-14 15:28:03,532 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2017-11-14 15:29:00,556 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-11-14 15:29:00,558 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2017-11-14 15:29:26,971 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-11-14 15:29:26,973 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2017-11-14 15:29:37,112 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-11-14 15:29:37,115 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2017-11-14 15:30:19,148 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-11-14 15:30:19,150 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2017-11-14 15:31:22,732 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-11-14 15:31:22,733 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2017-11-14 15:32:15,190 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-11-14 15:32:15,191 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2017-11-14 15:32:29,674 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-11-14 15:32:29,676 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2017-11-14 15:33:17,186 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-11-14 15:33:17,187 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2017-11-14 15:33:58,196 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-11-14 15:33:58,197 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2017-11-14 15:39:33,934 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-11-14 15:39:33,936 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2017-11-14 15:40:07,092 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-11-14 15:40:07,094 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2017-11-14 15:42:46,325 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-11-14 15:42:46,325 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2017-11-14 15:43:00,411 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-11-14 15:43:00,413 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2017-11-14 15:43:44,211 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-11-14 15:43:44,213 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2017-11-14 15:44:22,947 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-11-14 15:44:22,950 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2017-11-14 15:47:47,532 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-11-14 15:47:47,535 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2017-11-14 15:48:00,687 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-11-14 15:48:00,690 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2017-11-14 15:48:21,759 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-11-14 15:48:21,762 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2017-11-14 15:48:49,108 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-11-14 15:48:49,111 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2017-11-14 15:49:37,108 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-11-14 15:49:37,111 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2017-11-14 15:49:52,234 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-11-14 15:49:52,236 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2017-11-15 14:50:34,507 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-15 14:50:34,523 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-15 14:50:34,851 - DEBUG - __init__.py:163 - Loading model cost 0.344 seconds.
+2017-11-15 14:50:34,851 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-15 14:50:36,884 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-15 14:50:39,278 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-15 14:50:56,841 - WARNING - base.py:152 - Not Found: /api/schema/entity/
+2017-11-15 14:50:56,907 - WARNING - base.py:152 - Not Found: /favicon.ico
+2017-11-15 14:51:41,788 - ERROR - exception.py:135 - Internal Server Error: /api/graph/schema/entity/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\workspace\WinPycharm\actkg\graph\views.py", line 89, in get_category_entities
+    result['entities'].append({'name':entity_info['name']})
+TypeError: 'int' object has no attribute '__getitem__'
+2017-11-15 14:53:57,345 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-15 14:53:57,359 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-15 14:53:57,641 - DEBUG - __init__.py:163 - Loading model cost 0.296 seconds.
+2017-11-15 14:53:57,641 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-15 14:53:59,236 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-15 14:54:01,378 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-15 14:54:05,996 - WARNING - base.py:152 - Not Found: /api/graph/schema/entity/
+2017-11-15 14:54:10,338 - ERROR - exception.py:135 - Internal Server Error: /api/schema/entity/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\workspace\WinPycharm\actkg\graph\views.py", line 90, in get_category_entities
+    result['entities'].append({'name':entity_info['name']})
+TypeError: 'int' object has no attribute '__getitem__'
+2017-11-15 14:54:30,961 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-15 14:54:30,976 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-15 14:54:31,259 - DEBUG - __init__.py:163 - Loading model cost 0.297 seconds.
+2017-11-15 14:54:31,259 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-15 14:54:32,885 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-15 14:54:35,026 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-15 14:54:38,650 - ERROR - exception.py:135 - Internal Server Error: /api/schema/entity/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\workspace\WinPycharm\actkg\graph\views.py", line 89, in get_category_entities
+    result['entities'].append({'name':entity_info['name']})
+TypeError: 'int' object has no attribute '__getitem__'
+2017-11-15 14:54:59,497 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-15 14:54:59,497 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-15 14:54:59,779 - DEBUG - __init__.py:163 - Loading model cost 0.282 seconds.
+2017-11-15 14:54:59,779 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-15 14:55:01,390 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-15 14:55:03,548 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-15 14:55:06,778 - ERROR - exception.py:135 - Internal Server Error: /api/schema/entity/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\workspace\WinPycharm\actkg\graph\views.py", line 90, in get_category_entities
+    result['entities'].append({'name':entity_info['name']})
+TypeError: 'int' object has no attribute '__getitem__'
+2017-11-15 14:55:24,861 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-15 14:55:24,861 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-15 14:55:25,141 - DEBUG - __init__.py:163 - Loading model cost 0.280 seconds.
+2017-11-15 14:55:25,141 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-15 14:55:26,752 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-15 14:55:28,894 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-15 14:55:31,729 - ERROR - exception.py:135 - Internal Server Error: /api/schema/entity/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\workspace\WinPycharm\actkg\graph\views.py", line 90, in get_category_entities
+    result['entities'].append({'name':entity_info['name']})
+TypeError: 'int' object has no attribute '__getitem__'
+2017-11-15 14:56:05,828 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-15 14:56:05,828 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-15 14:56:06,108 - DEBUG - __init__.py:163 - Loading model cost 0.280 seconds.
+2017-11-15 14:56:06,108 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-15 14:56:07,703 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-15 14:56:47,049 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-15 14:56:47,069 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-15 14:56:47,331 - DEBUG - __init__.py:163 - Loading model cost 0.281 seconds.
+2017-11-15 14:56:47,331 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-15 14:56:48,926 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-15 14:56:51,053 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-15 14:56:54,828 - ERROR - exception.py:135 - Internal Server Error: /api/schema/entity/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\workspace\WinPycharm\actkg\graph\views.py", line 90, in get_category_entities
+    result['entities'].append({'name':entity_info['name']})
+TypeError: 'int' object has no attribute '__getitem__'
+2017-11-15 14:57:16,086 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-15 14:57:16,086 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-15 14:57:16,368 - DEBUG - __init__.py:163 - Loading model cost 0.281 seconds.
+2017-11-15 14:57:16,368 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-15 14:57:17,996 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-15 14:57:20,107 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-15 14:57:23,348 - ERROR - exception.py:135 - Internal Server Error: /api/schema/entity/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\workspace\WinPycharm\actkg\graph\views.py", line 91, in get_category_entities
+    result['entities'].append({'name':entity_info['name']})
+TypeError: 'int' object has no attribute '__getitem__'
+2017-11-15 14:58:38,615 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-15 14:58:38,615 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-15 14:58:38,887 - DEBUG - __init__.py:163 - Loading model cost 0.271 seconds.
+2017-11-15 14:58:38,887 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-15 14:58:40,509 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-15 14:58:42,687 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-15 15:58:56,678 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-11-15 15:58:56,681 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2017-11-15 16:14:27,368 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-15 16:14:27,368 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-15 16:14:27,634 - DEBUG - __init__.py:163 - Loading model cost 0.266 seconds.
+2017-11-15 16:14:27,634 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-15 16:14:29,213 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-15 16:14:31,355 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-15 16:20:43,302 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-15 16:20:43,302 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-15 16:20:43,569 - DEBUG - __init__.py:163 - Loading model cost 0.266 seconds.
+2017-11-15 16:20:43,569 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-15 16:21:09,982 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-15 16:21:09,996 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-15 16:21:10,266 - DEBUG - __init__.py:163 - Loading model cost 0.284 seconds.
+2017-11-15 16:21:10,266 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-15 16:21:12,061 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-15 16:21:14,174 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-15 16:43:33,181 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-15 16:43:33,184 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-15 16:43:33,492 - DEBUG - __init__.py:163 - Loading model cost 0.310 seconds.
+2017-11-15 16:43:33,492 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-15 16:43:35,505 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-15 16:46:11,375 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-15 16:46:11,381 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-15 16:46:11,670 - DEBUG - __init__.py:163 - Loading model cost 0.293 seconds.
+2017-11-15 16:46:11,670 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-15 16:46:13,578 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-15 16:46:15,821 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-15 17:05:01,132 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-15 17:05:01,132 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-15 17:05:01,430 - DEBUG - __init__.py:163 - Loading model cost 0.297 seconds.
+2017-11-15 17:05:01,430 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-15 17:05:03,322 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-15 17:05:05,480 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-15 17:18:54,469 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-15 17:18:54,469 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-15 17:18:54,757 - DEBUG - __init__.py:163 - Loading model cost 0.289 seconds.
+2017-11-15 17:18:54,757 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-15 17:18:56,628 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-15 17:18:58,721 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-20 15:30:01,115 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-20 15:30:01,158 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-20 15:30:01,453 - DEBUG - __init__.py:163 - Loading model cost 0.325 seconds.
+2017-11-20 15:30:01,453 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-20 15:39:47,160 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-20 15:39:47,174 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-20 15:39:47,486 - DEBUG - __init__.py:163 - Loading model cost 0.326 seconds.
+2017-11-20 15:39:47,486 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-20 15:39:49,632 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-20 15:39:52,440 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-20 15:44:21,377 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-20 15:44:21,380 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-20 15:44:21,696 - DEBUG - __init__.py:163 - Loading model cost 0.318 seconds.
+2017-11-20 15:44:21,696 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-20 15:44:23,799 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-20 15:44:26,423 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-20 16:07:09,164 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-20 16:07:09,176 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-20 16:07:09,460 - DEBUG - __init__.py:163 - Loading model cost 0.297 seconds.
+2017-11-20 16:07:09,460 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-20 16:07:11,385 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-20 16:07:13,677 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-20 16:14:29,296 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-20 16:14:29,299 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-20 16:14:29,585 - DEBUG - __init__.py:163 - Loading model cost 0.289 seconds.
+2017-11-20 16:14:29,585 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-20 16:14:31,542 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-20 16:14:33,801 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-20 16:16:45,759 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-20 16:16:45,769 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-20 16:16:46,056 - DEBUG - __init__.py:163 - Loading model cost 0.298 seconds.
+2017-11-20 16:16:46,058 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-20 16:16:47,973 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-20 16:16:50,240 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-20 16:47:05,456 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-20 16:47:05,459 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-20 16:47:05,747 - DEBUG - __init__.py:163 - Loading model cost 0.292 seconds.
+2017-11-20 16:47:05,747 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-20 16:47:07,684 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-20 16:47:09,951 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-21 16:53:01,638 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-21 16:53:01,667 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-21 16:53:02,009 - DEBUG - __init__.py:163 - Loading model cost 0.351 seconds.
+2017-11-21 16:53:02,009 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-21 16:53:04,437 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-21 16:53:07,072 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-21 17:37:41,469 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-21 17:37:41,471 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-21 17:37:41,756 - DEBUG - __init__.py:163 - Loading model cost 0.287 seconds.
+2017-11-21 17:37:41,756 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-21 17:37:43,721 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-21 17:37:45,960 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-22 12:56:25,378 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-22 12:56:25,378 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-22 12:56:25,658 - DEBUG - __init__.py:163 - Loading model cost 0.281 seconds.
+2017-11-22 12:56:25,658 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-22 12:56:27,549 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-22 12:56:29,740 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-22 12:58:23,875 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-22 12:58:23,875 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-22 12:58:24,171 - DEBUG - __init__.py:163 - Loading model cost 0.297 seconds.
+2017-11-22 12:58:24,171 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-22 12:58:26,016 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-22 12:58:28,187 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-22 13:05:13,875 - WARNING - base.py:152 - Not Found: /favicon.ico
+2017-11-22 13:26:09,658 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-22 13:26:09,658 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-22 13:26:09,940 - DEBUG - __init__.py:163 - Loading model cost 0.282 seconds.
+2017-11-22 13:26:09,940 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-22 13:26:11,927 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-22 13:26:14,131 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-27 17:14:12,275 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-27 17:14:12,368 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-27 17:14:12,650 - DEBUG - __init__.py:163 - Loading model cost 0.281 seconds.
+2017-11-27 17:14:12,650 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-27 17:19:36,404 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-27 17:19:36,404 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-27 17:19:36,670 - DEBUG - __init__.py:163 - Loading model cost 0.266 seconds.
+2017-11-27 17:19:36,670 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-27 17:19:38,546 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-27 17:19:41,234 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-29 17:20:01,319 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-29 17:20:01,335 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-29 17:20:01,599 - DEBUG - __init__.py:163 - Loading model cost 0.265 seconds.
+2017-11-29 17:20:01,599 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-29 17:20:04,056 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-29 17:20:06,540 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-29 17:20:35,898 - WARNING - base.py:152 - Not Found: /favicon.ico
+2017-11-29 17:24:59,033 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-11-29 17:24:59,033 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-11-29 17:24:59,332 - DEBUG - __init__.py:163 - Loading model cost 0.298 seconds.
+2017-11-29 17:24:59,332 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-11-29 17:25:01,253 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-11-29 17:25:03,520 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-12-12 13:47:46,391 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-12-12 13:47:46,407 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-12-12 13:47:46,688 - DEBUG - __init__.py:163 - Loading model cost 0.282 seconds.
+2017-12-12 13:47:46,688 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-12-12 13:47:49,096 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-12-12 13:47:51,911 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-12-12 13:48:22,244 - WARNING - base.py:152 - Not Found: /favicon.ico
+2017-12-12 13:48:46,428 - INFO - serviceQA.py:17 - question:北航的现任校长是哪个学校毕业的
+2017-12-12 13:48:46,456 - INFO - serviceQA.py:25 - segment result:北航/j 现任/n 校长/nz 是/v 哪个/r 学校/nz 毕业/n 
+2017-12-12 13:49:10,553 - INFO - serviceQA.py:17 - question:北航的占地面积是多少
+2017-12-12 13:49:10,553 - INFO - serviceQA.py:25 - segment result:北航/j 占地面积/nz 是/v 多少/m 
+2017-12-12 13:59:59,328 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-12-12 13:59:59,329 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2017-12-12 14:02:39,457 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-12-12 14:02:39,457 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2017-12-12 14:04:36,466 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-12-12 14:04:36,467 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2017-12-12 14:09:00,829 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-12-12 14:09:00,829 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-12-12 14:09:01,128 - DEBUG - __init__.py:163 - Loading model cost 0.298 seconds.
+2017-12-12 14:09:01,128 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-12-12 14:09:03,121 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-12-12 14:09:05,542 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-12-12 14:10:57,688 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-12-12 14:10:57,723 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2017-12-12 14:11:13,757 - INFO - serviceQA.py:17 - question:北航
+2017-12-12 14:11:13,759 - INFO - serviceQA.py:25 - segment result:北航/j 
+2017-12-12 14:12:57,849 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-12-12 14:12:57,851 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2017-12-12 14:13:41,874 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-12-12 14:13:41,875 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2017-12-12 14:14:07,151 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-12-12 14:14:07,151 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-12-12 14:14:07,431 - DEBUG - __init__.py:163 - Loading model cost 0.281 seconds.
+2017-12-12 14:14:07,431 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-12-12 14:14:09,385 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-12-12 14:14:11,779 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-12-12 14:19:46,641 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-12-12 14:19:46,670 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2017-12-12 14:24:59,921 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-12-12 14:24:59,921 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2017-12-12 14:31:47,096 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-12-12 14:31:47,098 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2017-12-12 14:32:10,063 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-12-12 14:32:10,065 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2017-12-12 14:33:45,046 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-12-12 14:33:45,049 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2017-12-12 14:43:49,809 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-12-12 14:43:49,812 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-12-12 14:43:50,096 - DEBUG - __init__.py:163 - Loading model cost 0.286 seconds.
+2017-12-12 14:43:50,096 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-12-12 14:43:52,101 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-12-12 14:43:54,453 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-12-29 17:14:04,650 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2017-12-29 17:14:04,681 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2017-12-29 17:14:04,963 - DEBUG - __init__.py:163 - Loading model cost 0.281 seconds.
+2017-12-29 17:14:04,963 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2017-12-29 17:14:07,338 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-12-29 17:14:09,950 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2017-12-29 17:14:22,999 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-12-29 17:14:23,026 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2017-12-29 17:14:47,165 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-12-29 17:14:47,167 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2017-12-29 17:19:54,655 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-12-29 17:19:54,657 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2017-12-29 17:30:00,897 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-12-29 17:30:00,898 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2017-12-29 17:30:32,236 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-12-29 17:30:32,237 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2017-12-29 17:32:12,440 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-12-29 17:32:12,441 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2017-12-29 17:32:27,438 - INFO - serviceQA.py:17 - question:国务院
+2017-12-29 17:32:27,440 - INFO - serviceQA.py:25 - segment result:国务院/nt 
+2017-12-29 17:33:07,829 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2017-12-29 17:33:07,832 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2018-01-03 12:05:29,503 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-01-03 12:05:29,528 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-01-03 12:05:29,832 - DEBUG - __init__.py:163 - Loading model cost 0.312 seconds.
+2018-01-03 12:05:29,832 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-01-03 12:05:49,374 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-01-03 12:05:49,374 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-01-03 12:05:49,674 - DEBUG - __init__.py:163 - Loading model cost 0.301 seconds.
+2018-01-03 12:05:49,674 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-01-03 12:05:51,625 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-01-03 12:05:54,423 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-01-03 12:06:41,438 - ERROR - exception.py:135 - Internal Server Error: /api/graph/graph/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\workspace\WinPycharm\actkg\graph\views.py", line 20, in graph
+    response = HttpResponse(json.dumps(serviceKG.knowledge_graph(question, neoid=neoid, autopick=autopick), ensure_ascii=False))
+  File "D:\workspace\WinPycharm\actkg\graph\serviceKG.py", line 13, in knowledge_graph
+    return decorate(neoid, style='BASIC')
+  File "D:\workspace\WinPycharm\actkg\graph\serviceKG.py", line 46, in decorate
+    result = bloom(data)
+  File "D:\workspace\WinPycharm\actkg\graph\serviceKG.py", line 110, in bloom
+    new_node = {'id': 0, 'name': entity_info['name'], 'category': entity_info['label'], 'neoId': root, 'value': 0}
+KeyError: 'label'
+2018-01-03 12:07:06,710 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-01-03 12:07:06,713 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-01-03 12:07:07,006 - DEBUG - __init__.py:163 - Loading model cost 0.296 seconds.
+2018-01-03 12:07:07,006 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-01-03 12:07:09,052 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-01-03 12:07:11,529 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-01-03 12:07:14,805 - ERROR - exception.py:135 - Internal Server Error: /api/graph/graph/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\workspace\WinPycharm\actkg\graph\views.py", line 20, in graph
+    response = HttpResponse(json.dumps(serviceKG.knowledge_graph(question, neoid=neoid, autopick=autopick), ensure_ascii=False))
+  File "D:\workspace\WinPycharm\actkg\graph\serviceKG.py", line 13, in knowledge_graph
+    return decorate(neoid, style='BASIC')
+  File "D:\workspace\WinPycharm\actkg\graph\serviceKG.py", line 46, in decorate
+    result = bloom(data)
+  File "D:\workspace\WinPycharm\actkg\graph\serviceKG.py", line 111, in bloom
+    new_node = {'id': 0, 'name': entity_info['name'], 'category': entity_info['label'], 'neoId': root, 'value': 0}
+KeyError: 'label'
+2018-01-03 12:08:10,957 - INFO - serviceQA.py:17 - question:中央委员会
+2018-01-03 12:08:10,960 - INFO - serviceQA.py:25 - segment result:中央委员会/nt 
+2018-01-03 12:09:13,390 - INFO - serviceQA.py:17 - question:中央委员会
+2018-01-03 12:09:13,391 - INFO - serviceQA.py:25 - segment result:中央委员会/nt 
+2018-01-03 12:09:33,283 - INFO - serviceQA.py:17 - question:嘻嘻哈哈
+2018-01-03 12:09:33,285 - INFO - serviceQA.py:25 - segment result:嘻嘻哈哈/z 
+2018-01-03 12:09:41,757 - INFO - serviceQA.py:17 - question:safasdasd
+2018-01-03 12:09:41,759 - INFO - serviceQA.py:25 - segment result:safasdasd/eng 
+2018-01-03 12:09:52,956 - INFO - serviceQA.py:17 - question:周怡
+2018-01-03 12:09:52,960 - INFO - serviceQA.py:25 - segment result:周怡/nr 
+2018-01-03 12:10:01,917 - INFO - serviceQA.py:17 - question:周瓜
+2018-01-03 12:10:01,923 - INFO - serviceQA.py:25 - segment result:周瓜/nr 
+2018-01-03 12:10:15,105 - INFO - serviceQA.py:17 - question:雾霾
+2018-01-03 12:10:15,108 - INFO - serviceQA.py:25 - segment result:雾/n 霾/g 
+2018-01-03 12:10:28,404 - INFO - serviceQA.py:17 - question:霾
+2018-01-03 12:10:28,404 - INFO - serviceQA.py:25 - segment result:霾/g 
+2018-01-03 12:14:36,582 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2018-01-03 12:14:36,586 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2018-01-03 12:14:45,548 - INFO - serviceQA.py:17 - question:中央委员会
+2018-01-03 12:14:45,549 - INFO - serviceQA.py:25 - segment result:中央委员会/nt 
+2018-01-03 12:15:24,941 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2018-01-03 12:15:24,943 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2018-01-03 12:15:30,851 - INFO - serviceQA.py:17 - question:中央委员会
+2018-01-03 12:15:30,852 - INFO - serviceQA.py:25 - segment result:中央委员会/nt 
+2018-01-03 12:16:59,509 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-01-03 12:16:59,509 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-01-03 12:16:59,793 - DEBUG - __init__.py:163 - Loading model cost 0.284 seconds.
+2018-01-03 12:16:59,793 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-01-03 12:17:01,762 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-01-03 12:17:04,355 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-01-03 12:17:17,407 - INFO - serviceQA.py:17 - question:中央委员会
+2018-01-03 12:17:17,434 - INFO - serviceQA.py:25 - segment result:中央委员会/nt 
+2018-01-03 12:17:55,592 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-01-03 12:17:55,595 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-01-03 12:17:55,895 - DEBUG - __init__.py:163 - Loading model cost 0.302 seconds.
+2018-01-03 12:17:55,895 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-01-03 12:17:57,937 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-01-03 12:18:00,368 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-01-03 12:18:09,489 - INFO - serviceQA.py:17 - question:中央委员会
+2018-01-03 12:18:09,519 - INFO - serviceQA.py:25 - segment result:中央委员会/nt 
+2018-01-03 12:18:31,474 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-01-03 12:18:31,474 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-01-03 12:18:31,799 - DEBUG - __init__.py:163 - Loading model cost 0.325 seconds.
+2018-01-03 12:18:31,799 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-01-03 12:18:33,795 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-01-03 12:18:36,282 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-01-03 12:18:43,025 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-01-03 12:18:43,025 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-01-03 12:18:43,305 - DEBUG - __init__.py:163 - Loading model cost 0.281 seconds.
+2018-01-03 12:18:43,305 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-01-03 12:18:45,211 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-01-03 12:18:47,480 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-01-03 12:18:52,407 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2018-01-03 12:18:52,440 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2018-01-03 12:19:07,125 - INFO - serviceQA.py:17 - question:中央委员会
+2018-01-03 12:19:07,127 - INFO - serviceQA.py:25 - segment result:中央委员会/nt 
+2018-01-03 12:19:42,529 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-01-03 12:19:42,532 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-01-03 12:19:42,825 - DEBUG - __init__.py:163 - Loading model cost 0.296 seconds.
+2018-01-03 12:19:42,825 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-01-03 12:19:44,799 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-01-03 12:19:47,221 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-01-03 12:20:14,421 - INFO - serviceQA.py:17 - question:中央委员会
+2018-01-03 12:20:14,448 - INFO - serviceQA.py:25 - segment result:中央委员会/nt 
+2018-01-03 12:21:14,696 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-01-03 12:21:14,697 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-01-03 12:21:14,993 - DEBUG - __init__.py:163 - Loading model cost 0.298 seconds.
+2018-01-03 12:21:14,993 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-01-03 12:21:17,168 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-01-03 12:21:19,622 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-01-03 12:23:50,299 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-01-03 12:23:50,299 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-01-03 12:23:50,605 - DEBUG - __init__.py:163 - Loading model cost 0.307 seconds.
+2018-01-03 12:23:50,605 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-01-03 12:23:52,634 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-01-03 12:23:55,088 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-01-03 12:24:10,240 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-01-03 12:24:10,256 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-01-03 12:24:10,526 - DEBUG - __init__.py:163 - Loading model cost 0.287 seconds.
+2018-01-03 12:24:10,542 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-01-03 12:24:12,496 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-01-03 12:24:14,904 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-01-03 12:26:24,992 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-01-03 12:26:24,993 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-01-03 12:26:25,285 - DEBUG - __init__.py:163 - Loading model cost 0.293 seconds.
+2018-01-03 12:26:25,285 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-01-03 12:26:27,388 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-01-03 12:26:29,780 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-01-03 12:26:40,436 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-01-03 12:26:40,451 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-01-03 12:26:40,739 - DEBUG - __init__.py:163 - Loading model cost 0.303 seconds.
+2018-01-03 12:26:40,739 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-01-03 12:26:42,732 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-01-03 12:26:45,111 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-01-03 12:26:59,122 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-01-03 12:26:59,122 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-01-03 12:26:59,426 - DEBUG - __init__.py:163 - Loading model cost 0.303 seconds.
+2018-01-03 12:26:59,426 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-01-03 12:27:01,384 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-01-03 12:27:03,730 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-01-03 12:29:24,589 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-01-03 12:29:24,589 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-01-03 12:29:24,864 - DEBUG - __init__.py:163 - Loading model cost 0.274 seconds.
+2018-01-03 12:29:24,864 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-01-03 12:29:26,848 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-01-03 12:29:29,470 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-01-03 12:29:41,167 - INFO - serviceQA.py:17 - question:中央委员会
+2018-01-03 12:29:41,197 - INFO - serviceQA.py:25 - segment result:中央委员会/nt 
+2018-01-03 12:31:10,211 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-01-03 12:31:10,213 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-01-03 12:31:10,506 - DEBUG - __init__.py:163 - Loading model cost 0.294 seconds.
+2018-01-03 12:31:10,506 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-01-03 12:31:12,480 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-01-03 12:31:14,915 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-01-03 12:31:45,849 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-01-03 12:31:45,851 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-01-03 12:31:46,140 - DEBUG - __init__.py:163 - Loading model cost 0.290 seconds.
+2018-01-03 12:31:46,140 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-01-03 12:31:48,197 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-01-03 12:31:50,622 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-01-03 12:31:53,519 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2018-01-03 12:31:53,545 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2018-01-03 12:32:47,592 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-01-03 12:32:47,595 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-01-03 12:32:47,888 - DEBUG - __init__.py:163 - Loading model cost 0.296 seconds.
+2018-01-03 12:32:47,888 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-01-03 12:32:49,846 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-01-03 12:32:52,312 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-02-02 17:29:06,233 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-02-02 17:29:07,339 - DEBUG - __init__.py:145 - Dumping model to file cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-02-02 17:29:07,569 - DEBUG - __init__.py:163 - Loading model cost 1.321 seconds.
+2018-02-02 17:29:07,569 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-02-02 17:29:10,032 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-02-02 17:29:12,713 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-02-02 17:29:39,058 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-02-02 17:29:39,061 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-02-02 17:29:39,344 - DEBUG - __init__.py:163 - Loading model cost 0.285 seconds.
+2018-02-02 17:29:39,344 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-02-02 17:29:41,826 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-02-02 17:29:44,213 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-02-02 17:30:43,290 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-02-02 17:30:43,292 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-02-02 17:30:43,700 - DEBUG - __init__.py:163 - Loading model cost 0.409 seconds.
+2018-02-02 17:30:43,700 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-02-02 17:30:45,667 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-02-02 17:30:48,007 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-02-02 17:31:49,848 - ERROR - exception.py:135 - Internal Server Error: /test/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: test() takes no arguments (1 given)
+2018-02-02 17:31:50,280 - WARNING - base.py:152 - Not Found: /favicon.ico
+2018-02-02 17:32:16,164 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-02-02 17:32:16,165 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-02-02 17:32:16,450 - DEBUG - __init__.py:163 - Loading model cost 0.287 seconds.
+2018-02-02 17:32:16,450 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-02-02 17:32:18,378 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-02-02 17:32:20,684 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-02-02 17:32:23,555 - ERROR - exception.py:135 - Internal Server Error: /test/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\workspace\WinPycharm\actkg\graph\views.py", line 97, in test
+    owlSubServers.test()
+  File "D:\workspace\WinPycharm\actkg\graph\owlSubServers.py", line 36, in test
+    result = urllib2.urlopen(url).read()
+  File "C:\Python27\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Python27\lib\urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "C:\Python27\lib\urllib2.py", line 452, in _open
+    'unknown_open', req)
+  File "C:\Python27\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "C:\Python27\lib\urllib2.py", line 1266, in unknown_open
+    raise URLError('unknown url type: %s' % type)
+URLError: <urlopen error unknown url type: 10.1.1.28>
+2018-02-02 17:33:54,868 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-02-02 17:33:54,871 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-02-02 17:33:55,153 - DEBUG - __init__.py:163 - Loading model cost 0.283 seconds.
+2018-02-02 17:33:55,153 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-02-02 17:33:57,187 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-02-02 17:33:59,799 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-02-02 17:36:27,194 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-02-02 17:36:27,197 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-02-02 17:36:27,486 - DEBUG - __init__.py:163 - Loading model cost 0.290 seconds.
+2018-02-02 17:36:27,486 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-02-02 17:36:29,543 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-02-02 17:36:31,944 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-02-02 17:36:36,904 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-02-02 17:36:36,907 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-02-02 17:36:38,697 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-02-02 17:36:38,698 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-02-02 17:36:38,977 - DEBUG - __init__.py:163 - Loading model cost 0.280 seconds.
+2018-02-02 17:36:38,979 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-02-02 17:36:40,894 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-02-02 17:36:43,174 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-02-02 17:36:50,996 - ERROR - owlSubServers.py:41 - Error: Sub server 20005 raise an error, please check
+2018-02-02 17:36:50,996 - ERROR - exception.py:135 - Internal Server Error: /test/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\workspace\WinPycharm\actkg\graph\views.py", line 97, in test
+    owlSubServers.test()
+  File "D:\workspace\WinPycharm\actkg\graph\owlSubServers.py", line 42, in test
+    return json.loads(result)
+  File "C:\Python27\lib\json\__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python27\lib\json\decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+TypeError: expected string or buffer
+2018-02-02 17:37:45,631 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-02-02 17:37:45,632 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-02-02 17:37:45,923 - DEBUG - __init__.py:163 - Loading model cost 0.292 seconds.
+2018-02-02 17:37:45,923 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-02-02 17:37:47,828 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-02-02 17:37:50,086 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-02-02 17:37:57,588 - ERROR - owlSubServers.py:41 - Error: Sub server 20005 raise an error, please check
+2018-02-02 17:37:57,589 - ERROR - exception.py:135 - Internal Server Error: /test/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view graph.views.test didn't return an HttpResponse object. It returned None instead.
+2018-02-02 17:38:35,410 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-02-02 17:38:35,411 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-02-02 17:38:35,686 - DEBUG - __init__.py:163 - Loading model cost 0.276 seconds.
+2018-02-02 17:38:35,686 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-02-02 17:38:37,632 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-02-02 17:38:39,861 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-02-02 17:38:42,990 - ERROR - owlSubServers.py:41 - Error: Sub server 20005 raise an error, please check
+2018-02-02 17:38:42,990 - ERROR - exception.py:135 - Internal Server Error: /test/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view graph.views.test didn't return an HttpResponse object. It returned None instead.
+2018-02-02 17:41:28,430 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-02-02 17:41:28,433 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-02-02 17:41:28,733 - DEBUG - __init__.py:163 - Loading model cost 0.303 seconds.
+2018-02-02 17:41:28,733 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-02-02 17:41:30,737 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-02-02 17:41:33,167 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-02-02 17:43:02,461 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-02-02 17:43:02,463 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-02-02 17:43:02,779 - DEBUG - __init__.py:163 - Loading model cost 0.318 seconds.
+2018-02-02 17:43:02,779 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-02-03 16:20:35,127 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-02-03 16:20:35,155 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-02-03 16:20:35,467 - DEBUG - __init__.py:163 - Loading model cost 0.314 seconds.
+2018-02-03 16:20:35,467 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-02-03 16:20:37,954 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-02-03 16:20:40,579 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-02-03 16:26:03,661 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-02-03 16:26:03,663 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-02-03 16:26:03,957 - DEBUG - __init__.py:163 - Loading model cost 0.296 seconds.
+2018-02-03 16:26:03,957 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-02-03 16:26:06,029 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-02-03 16:26:08,440 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-02-03 16:34:36,105 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-02-03 16:34:36,108 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-02-03 16:34:36,400 - DEBUG - __init__.py:163 - Loading model cost 0.293 seconds.
+2018-02-03 16:34:36,400 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-02-03 16:34:38,496 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-02-03 16:34:40,940 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-02-03 16:37:12,612 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-02-03 16:37:12,615 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-02-03 16:37:12,904 - DEBUG - __init__.py:163 - Loading model cost 0.290 seconds.
+2018-02-03 16:37:12,904 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-02-03 16:37:15,030 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-02-03 16:37:17,438 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-02-03 16:40:07,668 - INFO - serviceQA.py:17 - question:姚明
+2018-02-03 16:40:07,704 - INFO - serviceQA.py:25 - segment result:姚明/nz 
+2018-02-06 13:34:28,474 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-02-06 13:34:28,506 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-02-06 13:34:28,875 - DEBUG - __init__.py:163 - Loading model cost 0.385 seconds.
+2018-02-06 13:34:28,875 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-02-06 13:34:31,381 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-02-06 13:34:33,809 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-02-06 13:35:21,950 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-02-06 13:35:21,950 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-02-06 13:35:22,237 - DEBUG - __init__.py:163 - Loading model cost 0.287 seconds.
+2018-02-06 13:35:22,237 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-02-06 13:35:24,171 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-02-06 13:35:26,446 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-02-06 13:36:05,259 - INFO - serviceQA.py:17 - question:北航的现任校长是哪个学校毕业的
+2018-02-06 13:36:05,288 - INFO - serviceQA.py:25 - segment result:北航/j 现任/n 校长/nz 是/v 哪个/r 学校/nz 毕业/n 
+2018-02-06 13:39:39,599 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-02-06 13:39:39,599 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-02-06 13:39:39,881 - DEBUG - __init__.py:163 - Loading model cost 0.281 seconds.
+2018-02-06 13:39:39,881 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-02-06 13:39:41,792 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-02-06 13:39:44,181 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-02-06 13:39:47,555 - INFO - serviceQA.py:17 - question:北航的现任校长是哪个学校毕业的
+2018-02-06 13:39:47,592 - INFO - serviceQA.py:25 - segment result:北航/j 现任/n 校长/nz 是/v 哪个/r 学校/nz 毕业/n 
+2018-02-06 13:40:17,989 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-02-06 13:40:17,992 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-02-06 13:40:18,273 - DEBUG - __init__.py:163 - Loading model cost 0.284 seconds.
+2018-02-06 13:40:18,273 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-02-06 13:40:20,226 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-02-06 13:40:22,434 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-02-06 13:40:26,301 - INFO - serviceQA.py:17 - question:北航
+2018-02-06 13:40:26,329 - INFO - serviceQA.py:25 - segment result:北航/j 
+2018-02-06 13:40:34,332 - INFO - serviceQA.py:17 - question:北航的占地面积
+2018-02-06 13:40:34,332 - INFO - serviceQA.py:25 - segment result:北航/j 占地面积/nz 
+2018-02-06 13:41:02,315 - INFO - serviceQA.py:17 - question:周恩来是哪里的人
+2018-02-06 13:41:02,316 - INFO - serviceQA.py:25 - segment result:周恩来/nz 是/v 哪里/r 人/n 
+2018-02-06 13:41:18,834 - INFO - serviceQA_simple.py:16 - question:周恩来是哪里的人
+2018-02-06 13:41:18,839 - INFO - serviceQA_simple.py:24 - segment result:周恩来/nz 是/v 哪里/r 人/n 
+2018-02-06 13:41:28,588 - INFO - serviceQA_simple.py:16 - question:北航的校长
+2018-02-06 13:41:28,588 - INFO - serviceQA_simple.py:24 - segment result:北航/j 校长/nz 
+2018-02-06 13:42:38,826 - INFO - serviceQA.py:17 - question:周恩来是哪里的人
+2018-02-06 13:42:38,828 - INFO - serviceQA.py:25 - segment result:周恩来/nz 是/v 哪里/r 人/n 
+2018-02-06 13:43:00,352 - INFO - serviceQA_simple.py:16 - question:周恩来是哪里的人
+2018-02-06 13:43:00,355 - INFO - serviceQA_simple.py:24 - segment result:周恩来/nz 是/v 哪里/r 人/n 
+2018-03-23 11:33:55,459 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-03-23 11:33:56,533 - DEBUG - __init__.py:145 - Dumping model to file cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-03-23 11:33:56,763 - DEBUG - __init__.py:163 - Loading model cost 1.289 seconds.
+2018-03-23 11:33:56,763 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-03-23 11:33:59,243 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-03-23 11:34:01,845 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-03-26 15:26:22,292 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-03-26 15:26:22,311 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-03-26 15:26:22,601 - DEBUG - __init__.py:163 - Loading model cost 0.294 seconds.
+2018-03-26 15:26:22,601 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-03-26 15:26:25,085 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-03-26 15:26:27,805 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-03-26 15:27:44,627 - INFO - serviceQA.py:17 - question:周恩来
+2018-03-26 15:27:44,654 - INFO - serviceQA.py:25 - segment result:周恩来/nz 
+2018-03-26 15:28:40,960 - INFO - serviceQA.py:17 - question:邓颖超
+2018-03-26 15:28:40,960 - INFO - serviceQA.py:25 - segment result:邓颖超/nr 
+2018-03-26 15:28:44,720 - INFO - serviceQA.py:17 - question:周恩来
+2018-03-26 15:28:44,720 - INFO - serviceQA.py:25 - segment result:周恩来/nz 
+2018-03-26 15:30:35,039 - INFO - serviceQA.py:17 - question:李时珍
+2018-03-26 15:30:35,040 - INFO - serviceQA.py:25 - segment result:李时珍/nr 
+2018-03-26 15:33:44,470 - INFO - serviceQA.py:17 - question:谢道韫
+2018-03-26 15:33:44,470 - INFO - serviceQA.py:25 - segment result:谢道韫/nr 
+2018-03-26 15:35:48,404 - INFO - serviceQA.py:17 - question:秦始皇
+2018-03-26 15:35:48,404 - INFO - serviceQA.py:25 - segment result:秦始皇/nr 
+2018-03-26 15:37:23,007 - INFO - serviceQA.py:17 - question:奥巴马
+2018-03-26 15:37:23,009 - INFO - serviceQA.py:25 - segment result:奥巴马/ns 
+2018-03-26 15:38:58,352 - INFO - serviceQA.py:17 - question:罗阳
+2018-03-26 15:38:58,352 - INFO - serviceQA.py:25 - segment result:罗阳/ns 
+2018-03-26 15:39:17,207 - INFO - serviceQA.py:17 - question:江泽民
+2018-03-26 15:39:17,207 - INFO - serviceQA.py:25 - segment result:江泽民/nz 
+2018-03-26 15:39:45,441 - INFO - serviceQA.py:17 - question:钱学森
+2018-03-26 15:39:45,443 - INFO - serviceQA.py:25 - segment result:钱学森/nr 
+2018-03-26 15:40:30,210 - INFO - serviceQA.py:17 - question:梁启超
+2018-03-26 15:40:30,210 - INFO - serviceQA.py:25 - segment result:梁启超/nr 
+2018-03-26 15:41:10,158 - INFO - serviceQA.py:17 - question:北航
+2018-03-26 15:41:10,158 - INFO - serviceQA.py:25 - segment result:北航/j 
+2018-03-26 15:44:06,921 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-03-26 15:44:06,924 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-03-26 15:44:07,224 - DEBUG - __init__.py:163 - Loading model cost 0.304 seconds.
+2018-03-26 15:44:07,224 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-03-26 15:44:09,308 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-03-26 15:44:11,744 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-03-26 15:44:19,709 - INFO - serviceQA.py:17 - question:北京
+2018-03-26 15:44:19,733 - INFO - serviceQA.py:25 - segment result:北京/nz 
+2018-03-26 15:45:22,457 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-03-26 15:45:22,461 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-03-26 15:45:22,755 - DEBUG - __init__.py:163 - Loading model cost 0.297 seconds.
+2018-03-26 15:45:22,756 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-03-26 15:45:24,796 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-03-26 15:45:27,144 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-03-26 15:45:34,536 - INFO - serviceQA.py:17 - question:北京
+2018-03-26 15:45:34,562 - INFO - serviceQA.py:25 - segment result:北京/nz 
+2018-03-26 15:45:46,007 - INFO - serviceQA.py:17 - question:中国
+2018-03-26 15:45:46,007 - INFO - serviceQA.py:25 - segment result:中国/ns 
+2018-03-26 15:46:53,098 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-03-26 15:46:53,104 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-03-26 15:46:53,430 - DEBUG - __init__.py:163 - Loading model cost 0.331 seconds.
+2018-03-26 15:46:53,430 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-03-26 15:46:55,599 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-03-26 15:46:57,931 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-03-26 15:47:04,273 - INFO - serviceQA.py:17 - question:北京
+2018-03-26 15:47:04,299 - INFO - serviceQA.py:25 - segment result:北京/nz 
+2018-03-26 15:47:31,187 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-03-26 15:47:31,193 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-03-26 15:47:31,484 - DEBUG - __init__.py:163 - Loading model cost 0.296 seconds.
+2018-03-26 15:47:31,484 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-03-26 15:47:33,515 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-03-26 15:47:35,838 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-03-26 15:47:44,236 - INFO - serviceQA.py:17 - question:北京
+2018-03-26 15:47:44,262 - INFO - serviceQA.py:25 - segment result:北京/nz 
+2018-03-26 15:48:20,332 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-03-26 15:48:20,335 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-03-26 15:48:20,628 - DEBUG - __init__.py:163 - Loading model cost 0.297 seconds.
+2018-03-26 15:48:20,628 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-03-26 15:48:22,690 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-03-26 15:48:25,003 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-03-26 15:48:32,048 - INFO - serviceQA.py:17 - question:北京
+2018-03-26 15:48:32,076 - INFO - serviceQA.py:25 - segment result:北京/nz 
+2018-03-26 15:49:04,265 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-03-26 15:49:04,269 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-03-26 15:49:04,559 - DEBUG - __init__.py:163 - Loading model cost 0.295 seconds.
+2018-03-26 15:49:04,559 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-03-26 15:49:06,618 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-03-26 15:49:09,114 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-03-26 15:49:15,434 - INFO - serviceQA.py:17 - question:北京
+2018-03-26 15:49:15,460 - INFO - serviceQA.py:25 - segment result:北京/nz 
+2018-03-26 15:49:40,042 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-03-26 15:49:40,046 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-03-26 15:49:40,339 - DEBUG - __init__.py:163 - Loading model cost 0.298 seconds.
+2018-03-26 15:49:40,339 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-03-26 15:49:42,371 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-03-26 15:49:44,832 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-03-26 15:50:02,888 - INFO - serviceQA.py:17 - question:北京
+2018-03-26 15:50:02,913 - INFO - serviceQA.py:25 - segment result:北京/nz 
+2018-03-26 15:50:36,895 - INFO - serviceQA.py:17 - question:北航校友
+2018-03-26 15:50:36,897 - INFO - serviceQA.py:25 - segment result:北航/j 校友/n 
+2018-03-26 15:53:31,627 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2018-03-26 15:53:31,628 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2018-03-26 15:53:43,457 - INFO - serviceQA.py:17 - question:北航的占地面积
+2018-03-26 15:53:43,457 - INFO - serviceQA.py:25 - segment result:北航/j 占地面积/nz 
+2018-03-26 15:56:53,956 - INFO - serviceQA.py:17 - question:北航校友
+2018-03-26 15:56:53,956 - INFO - serviceQA.py:25 - segment result:北航/j 校友/n 
+2018-04-26 08:46:59,040 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-04-26 08:47:00,026 - DEBUG - __init__.py:145 - Dumping model to file cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-04-26 08:47:00,239 - DEBUG - __init__.py:163 - Loading model cost 1.182 seconds.
+2018-04-26 08:47:00,239 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-04-26 08:47:02,713 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-04-26 08:47:05,006 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-04-26 08:47:35,296 - ERROR - owlSubServers.py:47 - Error: Sub server 20005 raise an error, please check
+2018-04-26 08:47:35,298 - INFO - serviceQA.py:17 - question:北航的占地面积
+2018-04-26 08:47:35,336 - INFO - serviceQA.py:25 - segment result:北航/j 占地面积/nz 
+2018-04-26 08:47:36,415 - ERROR - owlSubServers.py:14 - Error: Sub server 20001 raise an error, please check
+2018-04-26 08:49:19,167 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-04-26 08:49:19,168 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-04-26 08:49:19,434 - DEBUG - __init__.py:163 - Loading model cost 0.267 seconds.
+2018-04-26 08:49:19,434 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-04-26 08:49:21,529 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-04-26 08:49:23,923 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-04-26 08:49:35,650 - ERROR - owlSubServers.py:47 - Error: Sub server 20005 raise an error, please check
+2018-04-26 08:49:35,650 - INFO - serviceQA.py:17 - question:北航的占地面积
+2018-04-26 08:49:35,677 - INFO - serviceQA.py:25 - segment result:北航/j 占地面积/nz 
+2018-04-26 08:49:36,709 - ERROR - owlSubServers.py:14 - Error: Sub server 20001 raise an error, please check
+2018-04-26 08:49:37,716 - ERROR - owlSubServers.py:25 - Error: Sub server 20002 raise an error, please check
+2018-05-09 13:19:56,301 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-05-09 13:19:56,326 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-05-09 13:19:56,641 - DEBUG - __init__.py:163 - Loading model cost 0.328 seconds.
+2018-05-09 13:19:56,641 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-05-09 13:19:59,276 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-05-09 13:20:02,598 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-05-09 13:20:26,132 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2018-05-09 13:20:26,157 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2018-05-09 13:20:40,221 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2018-05-09 13:20:40,221 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2018-05-09 13:22:35,091 - INFO - serviceQA.py:17 - question:北京航空航天大学
+2018-05-09 13:22:35,091 - INFO - serviceQA.py:25 - segment result:北京航空航天大学/nz 
+2018-05-09 13:24:54,714 - INFO - serviceQA.py:17 - question:北京
+2018-05-09 13:24:54,714 - INFO - serviceQA.py:25 - segment result:北京/nz 
+2018-05-09 13:40:03,710 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-05-09 13:40:03,713 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-05-09 13:40:04,013 - DEBUG - __init__.py:163 - Loading model cost 0.303 seconds.
+2018-05-09 13:40:04,013 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-05-09 13:40:06,072 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-05-09 13:40:08,378 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-05-09 13:42:32,732 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-05-09 13:42:32,736 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-05-09 13:42:33,058 - DEBUG - __init__.py:163 - Loading model cost 0.326 seconds.
+2018-05-09 13:42:33,058 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-05-09 13:42:35,351 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-05-09 13:42:37,937 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-05-09 13:47:57,375 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-05-09 13:47:57,378 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-05-09 13:47:57,674 - DEBUG - __init__.py:163 - Loading model cost 0.299 seconds.
+2018-05-09 13:47:57,674 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-05-09 13:47:59,730 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-05-09 13:48:02,042 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-05-09 13:48:40,676 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-05-09 13:48:40,680 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-05-09 13:48:40,973 - DEBUG - __init__.py:163 - Loading model cost 0.297 seconds.
+2018-05-09 13:48:40,973 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-05-09 13:48:42,994 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-05-09 13:48:45,286 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-05-09 13:54:00,466 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-05-09 13:54:00,470 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-05-09 13:54:00,763 - DEBUG - __init__.py:163 - Loading model cost 0.297 seconds.
+2018-05-09 13:54:00,763 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-05-09 13:54:02,785 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-05-09 13:54:05,059 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-05-09 13:58:36,861 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-05-09 13:58:36,865 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-05-09 13:58:37,161 - DEBUG - __init__.py:163 - Loading model cost 0.299 seconds.
+2018-05-09 13:58:37,161 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-05-09 13:58:39,194 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-05-09 13:58:41,467 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-05-09 14:05:22,687 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-05-09 14:05:22,691 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-05-09 14:05:22,983 - DEBUG - __init__.py:163 - Loading model cost 0.295 seconds.
+2018-05-09 14:05:22,983 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-05-09 14:05:25,049 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-05-09 14:05:27,309 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-05-09 14:06:10,049 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-05-09 14:06:10,052 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-05-09 14:06:10,362 - DEBUG - __init__.py:163 - Loading model cost 0.314 seconds.
+2018-05-09 14:06:10,362 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-05-09 14:06:12,506 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-05-09 14:06:14,846 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-05-09 14:32:16,506 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-05-09 14:32:16,512 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-05-09 14:32:16,819 - DEBUG - __init__.py:163 - Loading model cost 0.313 seconds.
+2018-05-09 14:32:16,819 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-05-09 14:32:19,078 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-05-09 14:32:21,469 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-05-09 15:04:05,743 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-05-09 15:04:05,746 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-05-09 15:04:06,055 - DEBUG - __init__.py:163 - Loading model cost 0.312 seconds.
+2018-05-09 15:04:06,055 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-05-09 15:04:08,141 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-05-09 15:04:10,470 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-05-09 15:04:44,753 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-05-09 15:04:44,759 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-05-09 15:04:45,062 - DEBUG - __init__.py:163 - Loading model cost 0.308 seconds.
+2018-05-09 15:04:45,062 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-05-09 15:04:47,138 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-05-09 15:04:49,480 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-05-09 15:05:47,938 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-05-09 15:05:47,943 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-05-09 15:05:48,240 - DEBUG - __init__.py:163 - Loading model cost 0.301 seconds.
+2018-05-09 15:05:48,240 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-05-09 15:05:50,325 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-05-09 15:05:52,710 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-05-09 15:14:50,315 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-05-09 15:14:50,319 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-05-09 15:14:50,625 - DEBUG - __init__.py:163 - Loading model cost 0.310 seconds.
+2018-05-09 15:14:50,625 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-05-09 15:14:52,721 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-05-09 15:14:55,079 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-05-09 15:16:39,943 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-05-09 15:16:39,947 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-05-09 15:16:40,246 - DEBUG - __init__.py:163 - Loading model cost 0.303 seconds.
+2018-05-09 15:16:40,246 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-05-09 15:16:42,295 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-05-09 15:16:44,673 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\actkg/resource/word2vec/baike.vectors.bin
+2018-05-09 15:18:47,805 - INFO - serviceQA.py:17 - question:中国共产党
+2018-05-09 15:18:47,806 - INFO - serviceQA.py:25 - segment result:中国共产党/nz 
+2018-09-12 09:02:35,569 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-09-12 09:02:36,641 - DEBUG - __init__.py:145 - Dumping model to file cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-09-12 09:02:36,885 - DEBUG - __init__.py:163 - Loading model cost 1.317 seconds.
+2018-09-12 09:02:36,887 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-09-12 09:02:39,582 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\zhixing/resource/word2vec/baike.vectors.bin
+2018-09-12 09:02:42,424 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\zhixing/resource/word2vec/baike.vectors.bin
+2018-09-12 09:45:20,052 - DEBUG - __init__.py:111 - Building prefix dict from the default dictionary ...
+2018-09-12 09:45:20,053 - DEBUG - __init__.py:131 - Loading model from cache c:\users\wangyue\appdata\local\temp\jieba.cache
+2018-09-12 09:45:20,368 - DEBUG - __init__.py:163 - Loading model cost 0.317 seconds.
+2018-09-12 09:45:20,369 - DEBUG - __init__.py:164 - Prefix dict has been built succesfully.
+2018-09-12 09:45:22,555 - INFO - keyedvectors.py:191 - loading projection weights from D:\workspace\WinPycharm\zhixing/resource/word2vec/baike.vectors.bin
+2018-09-12 09:45:24,940 - INFO - keyedvectors.py:253 - loaded (209969L, 200L) matrix from D:\workspace\WinPycharm\zhixing/resource/word2vec/baike.vectors.bin

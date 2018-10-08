@@ -1,0 +1,323 @@
+{% extends "Layout.html" %}
+{% block main %}
+<style>
+    .infoball-wrap{
+        margin: auto;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    .infoball{
+        text-align: center;
+        float: left;
+        border-radius: 100%;
+        background-color:#dddddd;
+        height: 160px;
+        width: 160px;
+        font-size: 1em;
+        font-weight:bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 10px solid;
+        margin: 20px 0;
+    }
+    @media (max-width: 850px){
+        .infoball{
+            border-radius: 5px;
+            height: auto;
+            width: 100%;
+            border-width: 2px;
+            padding: 10px 0;
+            margin: 15px 0;
+        }
+    }
+    .infoball p{
+        margin: 0;
+    }
+    .bignumber{
+        font-size: 1.3em;
+    }
+
+    #svg-container svg{
+        max-width: 400px;
+    }
+</style>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-xl-5 d-flex mb-4 mb-xl-0">
+            <div class="card" style="width: 100%;">
+                <div id="svg-container" class="card-body p-0 d-flex align-items-center justify-content-center">
+
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-xl-7 d-flex">
+            <div class="card" style="width: 100%;">
+                <div class="card-body d-flex">
+                    <div class="infoball-wrap">
+                        <div class="infoball" style="border-color:#CC3333; color:#CC3333;">
+                            <p>实体实例数<br><span class="bignumber" id="bignumber1">0</span></p>
+                        </div>
+                        <div class="infoball" style="border-color:#009966;color: #009966">
+                            <p>关系实例数<br><span class="bignumber" id="bignumber2">0</span></p>
+                        </div>
+                        <div class="infoball" style="border-color:#003366;color: #003366">
+                            <p>知识条目数<br><span class="bignumber" id="bignumber3">0</span></p>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="infoball" style="border-color:#666699;color:#666699;">
+                            <p>实体种类数<br><span class="bignumber" id="bignumber4">0</span></p>
+                        </div>
+                        <div class="infoball" style="border-color:#FF6600;color: #FF6600">
+                            <p>关系种类数<br><span class="bignumber" id="bignumber5">0</span></p>
+                        </div>
+                        <div class="infoball" style="border-color:#666666;color: #666666">
+                            <p>属性种类数<br><span class="bignumber" id="bignumber6">0</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.bootcss.com/d3/3.5.5/d3.min.js"></script>
+<script src="/static/js/countUp.js"></script>
+
+<script>
+
+    var motto = "知行中文图谱管理系统，言你所思，见我所知";
+
+    window.onload = function () {
+        d3init();
+        new CountUp("bignumber1", 0, 10921453, 0, 2.5).start();
+        new CountUp("bignumber2", 0, 13522532, 0, 2.5).start();
+        new CountUp("bignumber3", 0, 51339398, 0, 2.5).start();
+        new CountUp("bignumber4", 0, 21, 0, 2.5).start();
+        new CountUp("bignumber5", 0, 17085, 0, 2.5).start();
+        new CountUp("bignumber6", 0, 34215, 0, 2.5).start();
+    };
+
+
+function d3init(){
+    var width = 400;
+    var height = width;
+    var colorset = d3.scale.category10();
+    //svg
+    var time = 0;
+    var delay = 50;
+    var r_max = 200;
+
+    var svg = d3.select("body")
+        .select("#svg-container")
+        .append("svg")
+        .attr("width", "100%")
+        .attr("height", "100%")
+        .attr("viewBox", "0,0,400,400")
+        .attr("preserveAspectRatio", "xMinYMin meet");
+    //arcs
+    var pie = d3.layout.pie();
+    var arc = new Array();
+    var arcs = new Array();
+    var piedata = pie([1,1,1,1,1,1]);
+    var piedata1 = pie([1,1,1,1]);
+    var piedata2 = pie([1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]);
+    var piedata3 = pie([1,1,1,1,1,1,1,1,1,1]);
+    var r_d = r_max/15;
+
+    arc[0] = d3.svg.arc()
+        .innerRadius(r_d*2)
+        .outerRadius(r_d*2.8);
+    arc[1] = d3.svg.arc()
+        .innerRadius(r_d/2)
+        .outerRadius(r_d*1.5);
+    arc[2] = d3.svg.arc()
+        .innerRadius(r_d*3)
+        .outerRadius(r_d*3.8);
+    arc[3] = d3.svg.arc()
+        .innerRadius(r_d*4)
+        .outerRadius(r_d*5);
+    arc[4] = d3.svg.arc()
+        .innerRadius(r_d*4.6)
+        .outerRadius(r_d*5.8);
+    arc[5] = d3.svg.arc()
+        .innerRadius(r_d*5.7)
+        .outerRadius(r_d*6.8);
+    arc[6] = d3.svg.arc()
+        .innerRadius(r_d*7)
+        .outerRadius(r_d*7.8);
+    arc[7] = d3.svg.arc()
+        .innerRadius(r_d*8)
+        .outerRadius(r_d*9);
+    arc[8] = d3.svg.arc()
+        .innerRadius(r_d*8.8)
+        .outerRadius(r_d*9.8);
+    arcs[0] = svg.selectAll(".g0")
+        .data(piedata)
+        .enter()
+        .append("g")
+        .attr("class","g0")
+        .attr("transform","translate("+(width/2)+","+(height/2)+")")
+        .append("path")
+        .attr("fill",function(d,i){
+            return colorset(i+1);
+        })
+        .attr("d",function(d){
+            return arc[0](d);
+        });
+    arcs[1] = svg.selectAll(".g1")
+        .data(piedata)
+        .enter()
+        .append("g")
+        .attr("class","g1")
+        .attr("transform","translate("+width/2+","+(height/2)+")")
+        .append("path")
+        .attr("fill",function(d,i){
+            if (i%2 != 0) return "transparent";
+            else return colorset(i+1);
+        })
+        .attr("d",function(d){
+            return arc[1](d);
+        });
+    arcs[2] = svg.selectAll(".g2")
+        .data(piedata)
+        .enter()
+        .append("g")
+        .attr("class","g2")
+        .attr("transform","translate("+width/2+","+(height/2)+")")
+        .append("path")
+        .attr("fill",function(d,i){
+            if (i%2 == 0) return "transparent";
+            else return colorset(i+1);
+        })
+        .attr("d",function(d){
+            return arc[2](d);
+        });
+    arcs[3] = svg.selectAll(".g3")
+        .data(piedata1)
+        .enter()
+        .append("g")
+        .attr("class","g3")
+        .attr("transform","translate("+width/2+","+(height/2)+")")
+        .append("path")
+        .attr("fill",function(d,i){
+            if (i%2 == 0) return "transparent";
+            else return "white";
+        })
+        .attr("d",function(d){
+            return arc[3](d);
+        });
+    arcs[4] = svg.selectAll(".g4")
+        .data(piedata1)
+        .enter()
+        .append("g")
+        .attr("class","g4")
+        .attr("transform","translate("+width/2+","+(height/2)+")")
+        .append("path")
+        .attr("fill",function(d,i){
+            if (i%2 != 0) return "transparent";
+            else return d3.rgb("white").darker();
+        })
+        .attr("d",function(d){
+            return arc[4](d);
+        });
+    arcs[5] = svg.selectAll(".g5")
+        .data(piedata1)
+        .enter()
+        .append("g")
+        .attr("class","g5")
+        .attr("transform","translate("+width/2+","+(height/2)+")")
+        .append("path")
+        .attr("fill",function(d,i){
+            return d3.rgb("white").darker();
+        })
+        .attr("d",function(d){
+            return arc[5](d);
+        });
+    arcs[6] = svg.selectAll(".g6")
+        .data(piedata2)
+        .enter()
+        .append("g")
+        .attr("class","g6")
+        .attr("transform","translate("+width/2+","+(height/2)+")")
+        .append("path")
+        .attr("fill",function(d,i){
+            if (i%2 != 0) return "transparent";
+            else return colorset((i/2)%6+1);
+        })
+        .attr("d",function(d){
+            return arc[6](d);
+        });
+    arcs[7] = svg.selectAll(".g7")
+        .data(piedata1)
+        .enter()
+        .append("g")
+        .attr("class","g7")
+        .attr("transform","translate("+width/2+","+(height/2)+")")
+        .append("path")
+        .attr("fill",function(d,i){
+            return d3.rgb("white").darker();
+        })
+        .attr("d",function(d){
+            return arc[7](d);
+        });
+    arcs[8] = svg.selectAll(".g8")
+        .data(piedata3)
+        .enter()
+        .append("g")
+        .attr("class","g8")
+        .attr("transform","translate("+width/2+","+(height/2)+")")
+        .append("path")
+        .attr("fill",function(d,i){
+            if (i%2 == 0) return colorset(i/2%6+1);
+            else return "transparent";
+        })
+        .attr("d",function(d){
+            return arc[8](d);
+        });
+
+    //flash
+    d3.timer(function(){
+        time++;
+        if (time == delay*7) time = 0;
+        if (time%delay == 0){
+            svg.selectAll(".MyText")
+                .transition()
+                .duration(1000)
+                .style("fill",colorset(time/delay));
+            arcs[3].transition()
+                .duration(1000)
+                .style("fill",function(d,i){
+                    if (i%2 == 0) return "transparent";
+                    return colorset(time/delay);
+                });
+            arcs[4].transition()
+                .duration(1000)
+                .style("fill",function(d,i){
+                    if (i%2 != 0) return "transparent";
+                    return colorset(time/delay);
+                });
+            arcs[5].transition()
+                .duration(1000)
+                .style("fill",function(d,i){
+                    return colorset(time/delay);
+                });
+            arcs[7].transition()
+                .duration(1000)
+                .style("fill",function(d,i){
+                    return colorset(time/delay);
+                });
+        }
+        arcs[0].attr("transform","rotate(-"+time+")");
+        arcs[1].attr("transform","rotate("+time/2+")");
+        arcs[2].attr("transform","rotate("+time*2+")");
+        arcs[6].attr("transform","rotate(-"+time/4+")");
+    });
+}
+
+</script>
+
+{% endblock %}

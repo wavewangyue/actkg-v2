@@ -1,0 +1,46 @@
+{% extends "Layout.html" %}
+{% block main %}
+
+    
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>作者</th>
+                            <th>论文名称</th>
+                            <th>会议/期刊</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table_body">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+    <script>
+
+        var motto = "";
+
+        var table = $("#table_body");
+        $.get("/static/publications/publications.txt",function(data){
+            var lines = data.split("\n");
+            var lineno = 1;
+            lines.forEach(function(line){
+                line = line.trim();
+                if(line){                
+                    var items = line.split("@");
+                
+                    table.append("<tr><td>"+lineno+"</td><td>"+items[0]+"</td><td>"+items[1]+"</td><td>"+items[2]+"</td></tr>");
+                    lineno += 1;
+                }
+            });
+        });
+
+    </script>
+
+{% endblock %}

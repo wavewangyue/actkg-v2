@@ -1,0 +1,165 @@
+{% extends "Layout.html" %}
+{% block main %}
+{% verbatim %}
+    <style>
+        .cate-unit{
+            color: #333;
+            font-size: 1em;
+            line-height: 2em;
+            margin-right: 1em;
+            border-bottom: none;
+        }
+        .cate-unit:hover,
+        .cate-unit.active{
+            cursor: pointer;
+            color: #000;
+            border-bottom: 2px solid #000;
+        }
+        .graph-container{
+            height: 500px;
+        }
+        .subscript{
+            font-size: 0.5em;
+            color: pink;
+        }
+        #schema{
+            min-height: 400px;
+        }
+    </style>
+    <div class="container" id="schema">
+       <div class="card">
+           <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <p class="pagetitle">{{ summary }}</p>
+                        <template v-if="layers.length > 0">
+                            <template
+                                v-for="(layer, level) in layers"
+                            >
+                                <div
+                                    v-if="!schema[layer.name] || schema[layer.name].length == 0"
+                                    class="alert alert-info"
+                                >这是一个叶子类</div>
+                                <div v-else class="card mb-4">
+                                    <div class="card-header">LAYER {{ level + 1}}</div>
+                                    <div class="card-body">
+                                        <a
+                                            class="cate-unit"
+                                            v-for="(cate, cateIndex) in schema[layer.name]"
+                                            v-on:click="unfold(level, cate[0], cateIndex)"
+                                            v-bind:class="{ active: cateIndex == layer.activeIndex }"
+                                        >{{ cate[0] }}({{ cate[1] }})</a>
+                                    </div>
+                                </div>
+                            </template>
+                        </template>
+    
+                        <div class="card graph-wrap mb-4" v-if="activeCategory != null">
+                            <div class="card-body">
+                                <div id="graph" class="graph-container"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-header">{{ activeCategory }} 类的固有属性:</div>
+                            <table class="table">
+                                <thead>
+                                    <tr><th>属性名</th><th>类</th><th>型</th><th>完整度</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr v-for="attribute in attributes">
+                                        <td v-for="item in attribute">{{ item }}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+       </div>
+    </div>
+    
+
+    <script src="https://cdn.bootcss.com/echarts/4.1.0/echarts.min.js"></script>
+    <script src="/static/plugin/graph.js"></script>
+    <script src="https://cdn.bootcss.com/vue/2.5.16/vue.js"></script>
+
+    <script>
+        $.ajaxSetup({
+            error: function (e) {
+                console.log(e);
+                alert("找不到JSON文件");
+            }
+        });
+
+        new Vue({
+            el: "#schema",
+            data: {
+                summary: "共 21 根类与 1051 叶子类",
+                schema: null,
+                layers: [],
+                activeCategory: null,
+                attributes: null
+            },
+            mounted: function () {
+                var _this = this;
+                $.getJSON("/static/json/schema.json",function(json){
+                    _this.schema = json;
+                    _this.layers.push({
+                        name: 'ROOT',
+                        activeIndex: -1
+                    });
+                });
+            },
+            methods:{
+                unfold: function(parentLevel, cate, activeIndex){
+                    this.activeCategory = cate;
+                    this.layers.splice(parentLevel + 1);
+                    var parentLayer = this.layers.pop();
+                    parentLayer.activeIndex = activeIndex;
+                    this.layers.push(parentLayer);           
+                    this.layers.push({
+                        name: cate,
+                        activeIndex: -1
+                    });
+                    this.updateAttributes();
+                    this.updateGraph();
+                },
+                updateAttributes: function(){
+                    var _this = this;
+                    $.getJSON("/api/schema/attribute/?cate=" + this.activeCategory, function (attributes) {
+                        _this.attributes = attributes;
+                    });
+                },
+                updateGraph: function(){
+                    //更新实体图谱层
+                    var _this = this;
+                    $.getJSON("/api/schema/entity/?cate=" + this.activeCategory, function (entities) {
+                        result = {};
+                        result['cate'] = _this.activeCategory;
+                        result['nodes'] = entities;
+                        result['links'] = [];
+                        paint(result);
+                    });
+                }
+            }
+        });
+
+
+
+
+        //画图
+        function paint(result){
+            $('#graph').graph({
+                data: result
+            });
+        }
+    
+    </script>
+
+    <script>
+        var motto = "“离娄之明，公输子之巧，不以规矩，不能成方圆。” ——《孟子·离娄上》";
+    </script>
+{% endverbatim %}
+{% endblock %}

@@ -1,0 +1,156 @@
+{% extends "Layout.html" %}
+{% block main %}
+    <style>
+        th{
+            text-align: center
+        }
+        #container{
+            width: 100%;
+            height: 800px;
+        }
+        .card-title{
+            font-size: 18px;
+            margin: 0;
+            padding: 0;
+            line-height: 34px;
+        }
+        #text_content{
+            text-align: left;
+            color:#333333;
+            padding-top: 30px;
+            border-top: 1px solid #ccc;
+            margin-top: 20px;
+            line-height: 1.8em;
+        }
+        #card1 hr{
+            height:1px;
+            border:none;
+            width:50%;
+            border-top:1px solid lightgray;
+            margin-left:2em
+        }
+        #text_content a{
+            cursor: pointer;
+            color: #007bff;
+        }
+        #text_content a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6 mb-4">
+                <div class="card" id="card1">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h2 class = card-title>文本内容与链接结果</h2>
+                            </div>
+                            <div class="col-md-6 d-flex justify-content-md-end"><button class="btn btn-sm btn-primary" type="button" onclick="$('#textInputModal').modal()">更换文本</button></div>
+                        </div>
+                        <div id="text_content">内容加载中……</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div id="container_shell">
+                            <div id="container" class="d-flex justify-content-center align-items-center">
+                                <img src="/static/img/imageloading.gif" style="height: 200px;margin-top: 150px"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--更换文本模态框-->
+    <div class="modal fade" id="textInputModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">更换文本</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <textarea class="form-control" id='content_input' rows="15" placeholder='在此输入文本' style="font-size: 1em;width: 90%;margin-left: 5%"></textarea>
+                        </div>
+                    </form>
+                    <button class="btn btn-large btn-success" type="button" style="margin-bottom: 1em" onclick="linking()">提交</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script type="text/javascript" src="https://cdn.bootcss.com/echarts/4.1.0/echarts.min.js"></script>
+    <script src="/static/plugin/graph.js"></script>
+    <script>
+
+        var motto = "“权衡在手，明镜当台，可以摧邪辅正，可以去伪存真。” ——释惟白《续传灯录》";
+
+        var statements = [];
+        var content_init = '刚刚在党的第十八界中共中央第一次全体会议上当选的中共中央总书记习近平和中共中央政治局常委李克强、张德江、俞正声、刘云山、王岐山、张高丽，15日上午在人民大会堂同采访十八大的中外记者亲切见面。\n' +
+            '人民大会堂东侧大厅鲜花盛开，暖意融融，气氛庄重而热烈。500多名中外记者早早来到这里等候，准备争抢在第一时间报道新一届中共最高领导层的首次集体公开亮相。11时53分，习近平等7位十八届中共中央政治局常委，在热烈的掌声中步入大会堂东侧大厅，微笑着向在场的中外记者挥手致意。党的十八大新闻发言人蔡名照向大家介绍后，习近平首先向记者朋友们表示问候。他说，记者朋友们对十八大作了大量报道，向世界传递了许多“中国声音”。他代表大会秘书处向大家表示衷心的感谢。\n' +
+            '习近平指出，这个重大责任，就是对民族的责任。我们的民族是伟大的民族。在五千多年的文明发展历程中，中华民族为人类文明进步作出了不可磨灭的贡献。近代以后，我们的民族历经磨难，中华民族到了最危险的时候。自那时以来，为了实现中华民族伟大复兴，无数仁人志士奋起抗争，但一次又一次地失败了。中国共产党成立后，团结带领人民前仆后继、顽强奋斗，把贫穷落后的旧中国变成日益走向繁荣富强的新中国，中华民族伟大复兴展现出前所未有的光明前景。我们的责任，就是要团结带领全党全国各族人民，接过历史的接力棒，继续为实现中华民族伟大复兴而努力奋斗，使中华民族更加坚强有力地自立于世界民族之林，为人类作出新的更大的贡献。\n' +
+            '（央视网消息）';
+        $.ajaxSetup({
+            error: function (e) {
+                console.log(e);
+                alert("后台错误");
+                return false;
+            }
+        });
+
+        $('#content_input').val(content_init);
+        linking();
+
+        function linking(){
+            var content = $.trim($('#content_input').val());
+            if (content != "") {
+                content = content.split(' ').join('');
+                content = content.split('\n').join(' ');
+                $.getJSON("/api/nlp/parse/?content="+content+"&level=4", function (result) {
+                    console.log(result);
+
+                    var text_content = $("#text_content");
+                    var content_plus = "";
+                    var flag = false;
+                    for (var i=0;i<result['seg'].length;i++){
+                        if (result['nel'][i] != ""){
+                            if (!flag) {
+                                getdata(result['nel'][i]);
+                                flag=true;
+                            }
+                            content_plus += "<a onclick=getdata("+result['nel'][i]+")>"+result['seg'][i]+"</a>"
+                        }else{
+                            if (result['seg'][i] == " ")
+                                content_plus += "<br><br>";
+                            else
+                                content_plus += result['seg'][i]
+                        }
+                    }
+                    text_content.html(content_plus);
+
+                });
+                $('#textInputModal').modal('hide');
+            }
+            $('#content_input').val('');
+        }
+
+
+        function getdata(node_id){
+            $.getJSON("/api/graph/graph/?id="+node_id, function (result) {
+                $('#container').graph({
+                    data: result
+                });
+            });
+        }
+    </script>
+
+{% endblock %}

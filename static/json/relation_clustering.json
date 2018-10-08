@@ -1,0 +1,1713 @@
+[
+    {
+        "name": "子女", 
+        "children": [
+            {
+                "name": "儿子", 
+                "value": 1
+            }, 
+            {
+                "name": "女儿", 
+                "value": 1
+            }, 
+            {
+                "name": "子女", 
+                "value": 1
+            }
+        ]
+    }, 
+    {
+        "name": "合作关系", 
+        "children": [
+            {
+                "name": "经纪公司", 
+                "value": 1
+            }, 
+            {
+                "name": "唱片公司", 
+                "value": 1
+            }, 
+            {
+                "name": "合作关系", 
+                "value": 1
+            }
+        ]
+    }, 
+    {
+        "name": "人生经历", 
+        "children": [
+            {
+                "name": "毕业时间", 
+                "value": 1
+            }, 
+            {
+                "name": "入党时间", 
+                "value": 1
+            }, 
+            {
+                "name": "登基时间", 
+                "value": 1
+            }, 
+            {
+                "name": "在位时间", 
+                "value": 1
+            }, 
+            {
+                "name": "退位时间", 
+                "value": 1
+            }, 
+            {
+                "name": "在职时间", 
+                "value": 1
+            }, 
+            {
+                "name": "出现时间", 
+                "value": 1
+            }, 
+            {
+                "name": "出道时间", 
+                "value": 1
+            }, 
+            {
+                "name": "出道地区", 
+                "value": 1
+            }, 
+            {
+                "name": "出道作品", 
+                "value": 1
+            }, 
+            {
+                "name": "退役时间", 
+                "value": 1
+            }, 
+            {
+                "name": "参加工作时间", 
+                "value": 1
+            }, 
+            {
+                "name": "就读学校", 
+                "value": 1
+            }, 
+            {
+                "name": "入伍时间", 
+                "value": 1
+            }, 
+            {
+                "name": "结婚时间", 
+                "value": 1
+            }, 
+            {
+                "name": "入行时间", 
+                "value": 1
+            }, 
+            {
+                "name": "就职时间", 
+                "value": 1
+            }, 
+            {
+                "name": "发生时间", 
+                "value": 1
+            }, 
+            {
+                "name": "退休时间", 
+                "value": 1
+            }, 
+            {
+                "name": "参赛时间", 
+                "value": 1
+            }, 
+            {
+                "name": "辞职时间", 
+                "value": 1
+            }, 
+            {
+                "name": "效力时间", 
+                "value": 1
+            }, 
+            {
+                "name": "重要事件", 
+                "value": 1
+            }, 
+            {
+                "name": "成立时间", 
+                "value": 1
+            }, 
+            {
+                "name": "成立地点", 
+                "value": 1
+            }, 
+            {
+                "name": "简历", 
+                "value": 1
+            }, 
+            {
+                "name": "学历", 
+                "value": 1
+            }, 
+            {
+                "name": "毕业院校", 
+                "value": 1
+            }, 
+            {
+                "name": "学籍", 
+                "value": 1
+            }, 
+            {
+                "name": "人生经历", 
+                "value": 1
+            }
+        ]
+    }, 
+    {
+        "name": "社会关系", 
+        "children": [
+            {
+                "name": "任职关系", 
+                "value": 1
+            }, 
+            {
+                "name": "就职单位", 
+                "value": 1
+            }, 
+            {
+                "name": "工作企业", 
+                "value": 1
+            }, 
+            {
+                "name": "曾效力", 
+                "value": 1
+            }, 
+            {
+                "name": "现效力", 
+                "value": 1
+            }, 
+            {
+                "name": "合作关系", 
+                "value": 1
+            }, 
+            {
+                "name": "经纪公司", 
+                "value": 1
+            }, 
+            {
+                "name": "唱片公司", 
+                "value": 1
+            }, 
+            {
+                "name": "隶属关系", 
+                "value": 1
+            }, 
+            {
+                "name": "所属公司", 
+                "value": 1
+            }, 
+            {
+                "name": "社会关系", 
+                "value": 1
+            }
+        ]
+    }, 
+    {
+        "name": "师徒", 
+        "children": [
+            {
+                "name": "师父", 
+                "value": 1
+            }, 
+            {
+                "name": "徒弟", 
+                "value": 1
+            }, 
+            {
+                "name": "教练", 
+                "value": 1
+            }, 
+            {
+                "name": "导师", 
+                "value": 1
+            }, 
+            {
+                "name": "学生", 
+                "value": 1
+            }, 
+            {
+                "name": "师徒", 
+                "value": 1
+            }
+        ]
+    }, 
+    {
+        "name": "出生情况", 
+        "children": [
+            {
+                "name": "出生时间", 
+                "value": 1
+            }, 
+            {
+                "name": "出生地", 
+                "value": 1
+            }, 
+            {
+                "name": "星座", 
+                "value": 1
+            }, 
+            {
+                "name": "生肖", 
+                "value": 1
+            }, 
+            {
+                "name": "籍贯", 
+                "value": 1
+            }, 
+            {
+                "name": "来源", 
+                "value": 1
+            }, 
+            {
+                "name": "所属作品", 
+                "value": 1
+            }, 
+            {
+                "name": "登场时间", 
+                "value": 1
+            }, 
+            {
+                "name": "配音", 
+                "value": 1
+            }, 
+            {
+                "name": "作者", 
+                "value": 1
+            }, 
+            {
+                "name": "饰演者", 
+                "value": 1
+            }, 
+            {
+                "name": "出生情况", 
+                "value": 1
+            }
+        ]
+    }, 
+    {
+        "name": "亲戚", 
+        "children": [
+            {
+                "name": "兄弟", 
+                "value": 1
+            }, 
+            {
+                "name": "哥哥", 
+                "value": 1
+            }, 
+            {
+                "name": "弟弟", 
+                "value": 1
+            }, 
+            {
+                "name": "姐姐", 
+                "value": 1
+            }, 
+            {
+                "name": "妹妹", 
+                "value": 1
+            }, 
+            {
+                "name": "祖父", 
+                "value": 1
+            }, 
+            {
+                "name": "祖母", 
+                "value": 1
+            }, 
+            {
+                "name": "外祖父", 
+                "value": 1
+            }, 
+            {
+                "name": "外祖母", 
+                "value": 1
+            }, 
+            {
+                "name": "女婿", 
+                "value": 1
+            }, 
+            {
+                "name": "先祖", 
+                "value": 1
+            }, 
+            {
+                "name": "亲戚", 
+                "value": 1
+            }
+        ]
+    }, 
+    {
+        "name": "同伴", 
+        "children": [
+            {
+                "name": "好友", 
+                "value": 1
+            }, 
+            {
+                "name": "搭档", 
+                "value": 1
+            }, 
+            {
+                "name": "同伴", 
+                "value": 1
+            }
+        ]
+    }, 
+    {
+        "name": "身材", 
+        "children": [
+            {
+                "name": "身高", 
+                "value": 1
+            }, 
+            {
+                "name": "体重", 
+                "value": 1
+            }, 
+            {
+                "name": "三围", 
+                "value": 1
+            }, 
+            {
+                "name": "胸围", 
+                "value": 1
+            }, 
+            {
+                "name": "罩杯", 
+                "value": 1
+            }, 
+            {
+                "name": "腰围", 
+                "value": 1
+            }, 
+            {
+                "name": "臀围", 
+                "value": 1
+            }, 
+            {
+                "name": "身材", 
+                "value": 1
+            }
+        ]
+    }, 
+    {
+        "name": "社会属性", 
+        "children": [
+            {
+                "name": "国籍", 
+                "value": 1
+            }, 
+            {
+                "name": "语言", 
+                "value": 1
+            }, 
+            {
+                "name": "党派", 
+                "value": 1
+            }, 
+            {
+                "name": "信仰", 
+                "value": 1
+            }, 
+            {
+                "name": "政治面貌", 
+                "value": 1
+            }, 
+            {
+                "name": "宗教信仰", 
+                "value": 1
+            }, 
+            {
+                "name": "派别", 
+                "value": 1
+            }, 
+            {
+                "name": "所处时代", 
+                "value": 1
+            }, 
+            {
+                "name": "活跃年代", 
+                "value": 1
+            }, 
+            {
+                "name": "居住地", 
+                "value": 1
+            }, 
+            {
+                "name": "曾居住地", 
+                "value": 1
+            }, 
+            {
+                "name": "地点", 
+                "value": 1
+            }, 
+            {
+                "name": "婚姻状况", 
+                "value": 1
+            }, 
+            {
+                "name": "民族", 
+                "value": 1
+            }, 
+            {
+                "name": "家族血统", 
+                "value": 1
+            }, 
+            {
+                "name": "旗籍", 
+                "value": 1
+            }, 
+            {
+                "name": "类别", 
+                "value": 1
+            }, 
+            {
+                "name": "社会属性", 
+                "value": 1
+            }
+        ]
+    }, 
+    {
+        "name": "恋人", 
+        "children": [
+            {
+                "name": "男朋友", 
+                "value": 1
+            }, 
+            {
+                "name": "女朋友", 
+                "value": 1
+            }, 
+            {
+                "name": "未婚夫", 
+                "value": 1
+            }, 
+            {
+                "name": "未婚妻", 
+                "value": 1
+            }, 
+            {
+                "name": "恋人", 
+                "value": 1
+            }
+        ]
+    }, 
+    {
+        "name": "胸围", 
+        "children": [
+            {
+                "name": "罩杯", 
+                "value": 1
+            }, 
+            {
+                "name": "胸围", 
+                "value": 1
+            }
+        ]
+    }, 
+    {
+        "name": "逝世情况", 
+        "children": [
+            {
+                "name": "逝世时间", 
+                "value": 1
+            }, 
+            {
+                "name": "享年", 
+                "value": 1
+            }, 
+            {
+                "name": "逝世地", 
+                "value": 1
+            }, 
+            {
+                "name": "葬处", 
+                "value": 1
+            }, 
+            {
+                "name": "陵墓", 
+                "value": 1
+            }, 
+            {
+                "name": "结局", 
+                "value": 1
+            }, 
+            {
+                "name": "死因", 
+                "value": 1
+            }, 
+            {
+                "name": "逝世情况", 
+                "value": 1
+            }
+        ]
+    }, 
+    {
+        "name": "人际关系", 
+        "children": [
+            {
+                "name": "父母", 
+                "value": 1
+            }, 
+            {
+                "name": "父亲", 
+                "value": 1
+            }, 
+            {
+                "name": "母亲", 
+                "value": 1
+            }, 
+            {
+                "name": "亲生父母", 
+                "value": 1
+            }, 
+            {
+                "name": "生父", 
+                "value": 1
+            }, 
+            {
+                "name": "生母", 
+                "value": 1
+            }, 
+            {
+                "name": "养父母", 
+                "value": 1
+            }, 
+            {
+                "name": "养父", 
+                "value": 1
+            }, 
+            {
+                "name": "养母", 
+                "value": 1
+            }, 
+            {
+                "name": "继父", 
+                "value": 1
+            }, 
+            {
+                "name": "继母", 
+                "value": 1
+            }, 
+            {
+                "name": "子女", 
+                "value": 1
+            }, 
+            {
+                "name": "儿子", 
+                "value": 1
+            }, 
+            {
+                "name": "女儿", 
+                "value": 1
+            }, 
+            {
+                "name": "配偶", 
+                "value": 1
+            }, 
+            {
+                "name": "丈夫", 
+                "value": 1
+            }, 
+            {
+                "name": "妻子", 
+                "value": 1
+            }, 
+            {
+                "name": "妾", 
+                "value": 1
+            }, 
+            {
+                "name": "恋人", 
+                "value": 1
+            }, 
+            {
+                "name": "男朋友", 
+                "value": 1
+            }, 
+            {
+                "name": "女朋友", 
+                "value": 1
+            }, 
+            {
+                "name": "未婚夫", 
+                "value": 1
+            }, 
+            {
+                "name": "未婚妻", 
+                "value": 1
+            }, 
+            {
+                "name": "亲戚", 
+                "value": 1
+            }, 
+            {
+                "name": "兄弟", 
+                "value": 1
+            }, 
+            {
+                "name": "哥哥", 
+                "value": 1
+            }, 
+            {
+                "name": "弟弟", 
+                "value": 1
+            }, 
+            {
+                "name": "姐姐", 
+                "value": 1
+            }, 
+            {
+                "name": "妹妹", 
+                "value": 1
+            }, 
+            {
+                "name": "祖父", 
+                "value": 1
+            }, 
+            {
+                "name": "祖母", 
+                "value": 1
+            }, 
+            {
+                "name": "外祖父", 
+                "value": 1
+            }, 
+            {
+                "name": "外祖母", 
+                "value": 1
+            }, 
+            {
+                "name": "女婿", 
+                "value": 1
+            }, 
+            {
+                "name": "先祖", 
+                "value": 1
+            }, 
+            {
+                "name": "同伴", 
+                "value": 1
+            }, 
+            {
+                "name": "好友", 
+                "value": 1
+            }, 
+            {
+                "name": "搭档", 
+                "value": 1
+            }, 
+            {
+                "name": "前任", 
+                "value": 1
+            }, 
+            {
+                "name": "前妻", 
+                "value": 1
+            }, 
+            {
+                "name": "前夫", 
+                "value": 1
+            }, 
+            {
+                "name": "继任", 
+                "value": 1
+            }, 
+            {
+                "name": "敌人", 
+                "value": 1
+            }, 
+            {
+                "name": "师徒", 
+                "value": 1
+            }, 
+            {
+                "name": "师父", 
+                "value": 1
+            }, 
+            {
+                "name": "徒弟", 
+                "value": 1
+            }, 
+            {
+                "name": "教练", 
+                "value": 1
+            }, 
+            {
+                "name": "导师", 
+                "value": 1
+            }, 
+            {
+                "name": "学生", 
+                "value": 1
+            }, 
+            {
+                "name": "偶像", 
+                "value": 1
+            }, 
+            {
+                "name": "经纪人", 
+                "value": 1
+            }, 
+            {
+                "name": "爱慕者", 
+                "value": 1
+            }, 
+            {
+                "name": "喜欢的人", 
+                "value": 1
+            }, 
+            {
+                "name": "相关人物", 
+                "value": 1
+            }, 
+            {
+                "name": "后妻", 
+                "value": 1
+            }, 
+            {
+                "name": "人际关系", 
+                "value": 1
+            }
+        ]
+    }, 
+    {
+        "name": "隶属关系", 
+        "children": [
+            {
+                "name": "所属公司", 
+                "value": 1
+            }, 
+            {
+                "name": "隶属关系", 
+                "value": 1
+            }
+        ]
+    }, 
+    {
+        "name": "相关人物", 
+        "children": [
+            {
+                "name": "后妻", 
+                "value": 1
+            }, 
+            {
+                "name": "相关人物", 
+                "value": 1
+            }
+        ]
+    }, 
+    {
+        "name": "三围", 
+        "children": [
+            {
+                "name": "胸围", 
+                "value": 1
+            }, 
+            {
+                "name": "罩杯", 
+                "value": 1
+            }, 
+            {
+                "name": "腰围", 
+                "value": 1
+            }, 
+            {
+                "name": "臀围", 
+                "value": 1
+            }, 
+            {
+                "name": "三围", 
+                "value": 1
+            }
+        ]
+    }, 
+    {
+        "name": "能力", 
+        "children": [
+            {
+                "name": "司掌", 
+                "value": 1
+            }, 
+            {
+                "name": "能力", 
+                "value": 1
+            }
+        ]
+    }, 
+    {
+        "name": "任职关系", 
+        "children": [
+            {
+                "name": "就职单位", 
+                "value": 1
+            }, 
+            {
+                "name": "工作企业", 
+                "value": 1
+            }, 
+            {
+                "name": "曾效力", 
+                "value": 1
+            }, 
+            {
+                "name": "现效力", 
+                "value": 1
+            }, 
+            {
+                "name": "任职关系", 
+                "value": 1
+            }
+        ]
+    }, 
+    {
+        "name": "生理特征", 
+        "children": [
+            {
+                "name": "性别", 
+                "value": 1
+            }, 
+            {
+                "name": "身材", 
+                "value": 1
+            }, 
+            {
+                "name": "身高", 
+                "value": 1
+            }, 
+            {
+                "name": "体重", 
+                "value": 1
+            }, 
+            {
+                "name": "三围", 
+                "value": 1
+            }, 
+            {
+                "name": "胸围", 
+                "value": 1
+            }, 
+            {
+                "name": "罩杯", 
+                "value": 1
+            }, 
+            {
+                "name": "腰围", 
+                "value": 1
+            }, 
+            {
+                "name": "臀围", 
+                "value": 1
+            }, 
+            {
+                "name": "头发颜色", 
+                "value": 1
+            }, 
+            {
+                "name": "眼睛颜色", 
+                "value": 1
+            }, 
+            {
+                "name": "血型", 
+                "value": 1
+            }, 
+            {
+                "name": "鞋码", 
+                "value": 1
+            }, 
+            {
+                "name": "年龄", 
+                "value": 1
+            }, 
+            {
+                "name": "生日", 
+                "value": 1
+            }, 
+            {
+                "name": "生理特征", 
+                "value": 1
+            }
+        ]
+    }, 
+    {
+        "name": "身份", 
+        "children": [
+            {
+                "name": "角色", 
+                "value": 1
+            }, 
+            {
+                "name": "身份", 
+                "value": 1
+            }
+        ]
+    }, 
+    {
+        "name": "古代称谓", 
+        "children": [
+            {
+                "name": "字号", 
+                "value": 1
+            }, 
+            {
+                "name": "庙号", 
+                "value": 1
+            }, 
+            {
+                "name": "谥号", 
+                "value": 1
+            }, 
+            {
+                "name": "封号", 
+                "value": 1
+            }, 
+            {
+                "name": "年号", 
+                "value": 1
+            }, 
+            {
+                "name": "追赠", 
+                "value": 1
+            }, 
+            {
+                "name": "古代称谓", 
+                "value": 1
+            }
+        ]
+    }, 
+    {
+        "name": "葬处", 
+        "children": [
+            {
+                "name": "陵墓", 
+                "value": 1
+            }, 
+            {
+                "name": "葬处", 
+                "value": 1
+            }
+        ]
+    }, 
+    {
+        "name": "讨厌的东西", 
+        "children": [
+            {
+                "name": "讨厌的食物", 
+                "value": 1
+            }, 
+            {
+                "name": "讨厌的东西", 
+                "value": 1
+            }
+        ]
+    }, 
+    {
+        "name": "注音", 
+        "children": [
+            {
+                "name": "拼音", 
+                "value": 1
+            }, 
+            {
+                "name": "注音", 
+                "value": 1
+            }
+        ]
+    }, 
+    {
+        "name": "家族血统", 
+        "children": [
+            {
+                "name": "旗籍", 
+                "value": 1
+            }, 
+            {
+                "name": "家族血统", 
+                "value": 1
+            }
+        ]
+    }, 
+    {
+        "name": "配偶", 
+        "children": [
+            {
+                "name": "丈夫", 
+                "value": 1
+            }, 
+            {
+                "name": "妻子", 
+                "value": 1
+            }, 
+            {
+                "name": "妾", 
+                "value": 1
+            }, 
+            {
+                "name": "配偶", 
+                "value": 1
+            }
+        ]
+    }, 
+    {
+        "name": "别名", 
+        "children": [
+            {
+                "name": "笔名", 
+                "value": 1
+            }, 
+            {
+                "name": "艺名", 
+                "value": 1
+            }, 
+            {
+                "name": "昵称", 
+                "value": 1
+            }, 
+            {
+                "name": "曾用名", 
+                "value": 1
+            }, 
+            {
+                "name": "粤语名", 
+                "value": 1
+            }, 
+            {
+                "name": "别名", 
+                "value": 1
+            }
+        ]
+    }, 
+    {
+        "name": "专业领域", 
+        "children": [
+            {
+                "name": "运动项目", 
+                "value": 1
+            }, 
+            {
+                "name": "场上位置", 
+                "value": 1
+            }, 
+            {
+                "name": "球衣号码", 
+                "value": 1
+            }, 
+            {
+                "name": "惯用脚", 
+                "value": 1
+            }, 
+            {
+                "name": "NBA选秀", 
+                "value": 1
+            }, 
+            {
+                "name": "运动状态", 
+                "value": 1
+            }, 
+            {
+                "name": "级别", 
+                "value": 1
+            }, 
+            {
+                "name": "音乐类型", 
+                "value": 1
+            }, 
+            {
+                "name": "科室", 
+                "value": 1
+            }, 
+            {
+                "name": "所属行业", 
+                "value": 1
+            }, 
+            {
+                "name": "专业领域", 
+                "value": 1
+            }
+        ]
+    }, 
+    {
+        "name": "其他信息", 
+        "children": [
+            {
+                "name": "成员", 
+                "value": 1
+            }, 
+            {
+                "name": "组合形式", 
+                "value": 1
+            }, 
+            {
+                "name": "武器", 
+                "value": 1
+            }, 
+            {
+                "name": "武功", 
+                "value": 1
+            }, 
+            {
+                "name": "简介", 
+                "value": 1
+            }, 
+            {
+                "name": "主唱", 
+                "value": 1
+            }, 
+            {
+                "name": "粉丝名", 
+                "value": 1
+            }, 
+            {
+                "name": "神话体系", 
+                "value": 1
+            }, 
+            {
+                "name": "经典语录", 
+                "value": 1
+            }, 
+            {
+                "name": "经典台词", 
+                "value": 1
+            }, 
+            {
+                "name": "门派", 
+                "value": 1
+            }, 
+            {
+                "name": "国家队出场数", 
+                "value": 1
+            }, 
+            {
+                "name": "imdb编号", 
+                "value": 1
+            }, 
+            {
+                "name": "国家队进球数", 
+                "value": 1
+            }, 
+            {
+                "name": "俱乐部进球数", 
+                "value": 1
+            }, 
+            {
+                "name": "班级", 
+                "value": 1
+            }, 
+            {
+                "name": "口头禅", 
+                "value": 1
+            }, 
+            {
+                "name": "鼓手", 
+                "value": 1
+            }, 
+            {
+                "name": "象征", 
+                "value": 1
+            }, 
+            {
+                "name": "人物", 
+                "value": 1
+            }, 
+            {
+                "name": "新浪微博", 
+                "value": 1
+            }, 
+            {
+                "name": "全国ID", 
+                "value": 1
+            }, 
+            {
+                "name": "其他信息", 
+                "value": 1
+            }
+        ]
+    }, 
+    {
+        "name": "前任", 
+        "children": [
+            {
+                "name": "前妻", 
+                "value": 1
+            }, 
+            {
+                "name": "前夫", 
+                "value": 1
+            }, 
+            {
+                "name": "前任", 
+                "value": 1
+            }
+        ]
+    }, 
+    {
+        "name": "所获荣誉", 
+        "children": [
+            {
+                "name": "个人荣誉", 
+                "value": 1
+            }, 
+            {
+                "name": "团队荣誉", 
+                "value": 1
+            }, 
+            {
+                "name": "所获荣誉", 
+                "value": 1
+            }
+        ]
+    }, 
+    {
+        "name": "社会角色", 
+        "children": [
+            {
+                "name": "职业", 
+                "value": 1
+            }, 
+            {
+                "name": "身份", 
+                "value": 1
+            }, 
+            {
+                "name": "角色", 
+                "value": 1
+            }, 
+            {
+                "name": "类型", 
+                "value": 1
+            }, 
+            {
+                "name": "专业领域", 
+                "value": 1
+            }, 
+            {
+                "name": "运动项目", 
+                "value": 1
+            }, 
+            {
+                "name": "场上位置", 
+                "value": 1
+            }, 
+            {
+                "name": "球衣号码", 
+                "value": 1
+            }, 
+            {
+                "name": "惯用脚", 
+                "value": 1
+            }, 
+            {
+                "name": "NBA选秀", 
+                "value": 1
+            }, 
+            {
+                "name": "运动状态", 
+                "value": 1
+            }, 
+            {
+                "name": "级别", 
+                "value": 1
+            }, 
+            {
+                "name": "音乐类型", 
+                "value": 1
+            }, 
+            {
+                "name": "科室", 
+                "value": 1
+            }, 
+            {
+                "name": "所属行业", 
+                "value": 1
+            }, 
+            {
+                "name": "特点", 
+                "value": 1
+            }, 
+            {
+                "name": "特长", 
+                "value": 1
+            }, 
+            {
+                "name": "能力", 
+                "value": 1
+            }, 
+            {
+                "name": "司掌", 
+                "value": 1
+            }, 
+            {
+                "name": "职务", 
+                "value": 1
+            }, 
+            {
+                "name": "职位", 
+                "value": 1
+            }, 
+            {
+                "name": "称号", 
+                "value": 1
+            }, 
+            {
+                "name": "年级", 
+                "value": 1
+            }, 
+            {
+                "name": "曾任", 
+                "value": 1
+            }, 
+            {
+                "name": "家庭成员", 
+                "value": 1
+            }, 
+            {
+                "name": "装扮", 
+                "value": 1
+            }, 
+            {
+                "name": "社会角色", 
+                "value": 1
+            }
+        ]
+    }, 
+    {
+        "name": "性格喜好", 
+        "children": [
+            {
+                "name": "喜欢的东西", 
+                "value": 1
+            }, 
+            {
+                "name": "喜欢的颜色", 
+                "value": 1
+            }, 
+            {
+                "name": "喜欢的城市", 
+                "value": 1
+            }, 
+            {
+                "name": "喜欢的运动", 
+                "value": 1
+            }, 
+            {
+                "name": "喜欢的食物", 
+                "value": 1
+            }, 
+            {
+                "name": "喜欢的电影", 
+                "value": 1
+            }, 
+            {
+                "name": "喜欢的卡通", 
+                "value": 1
+            }, 
+            {
+                "name": "讨厌的东西", 
+                "value": 1
+            }, 
+            {
+                "name": "讨厌的食物", 
+                "value": 1
+            }, 
+            {
+                "name": "宠物", 
+                "value": 1
+            }, 
+            {
+                "name": "座右铭", 
+                "value": 1
+            }, 
+            {
+                "name": "性格", 
+                "value": 1
+            }, 
+            {
+                "name": "爱好", 
+                "value": 1
+            }, 
+            {
+                "name": "性格喜好", 
+                "value": 1
+            }
+        ]
+    }, 
+    {
+        "name": "父母", 
+        "children": [
+            {
+                "name": "父亲", 
+                "value": 1
+            }, 
+            {
+                "name": "母亲", 
+                "value": 1
+            }, 
+            {
+                "name": "亲生父母", 
+                "value": 1
+            }, 
+            {
+                "name": "生父", 
+                "value": 1
+            }, 
+            {
+                "name": "生母", 
+                "value": 1
+            }, 
+            {
+                "name": "养父母", 
+                "value": 1
+            }, 
+            {
+                "name": "养父", 
+                "value": 1
+            }, 
+            {
+                "name": "养母", 
+                "value": 1
+            }, 
+            {
+                "name": "继父", 
+                "value": 1
+            }, 
+            {
+                "name": "继母", 
+                "value": 1
+            }, 
+            {
+                "name": "父母", 
+                "value": 1
+            }
+        ]
+    }, 
+    {
+        "name": "喜欢的东西", 
+        "children": [
+            {
+                "name": "喜欢的颜色", 
+                "value": 1
+            }, 
+            {
+                "name": "喜欢的城市", 
+                "value": 1
+            }, 
+            {
+                "name": "喜欢的运动", 
+                "value": 1
+            }, 
+            {
+                "name": "喜欢的食物", 
+                "value": 1
+            }, 
+            {
+                "name": "喜欢的电影", 
+                "value": 1
+            }, 
+            {
+                "name": "喜欢的卡通", 
+                "value": 1
+            }, 
+            {
+                "name": "喜欢的东西", 
+                "value": 1
+            }
+        ]
+    }, 
+    {
+        "name": "人物称谓", 
+        "children": [
+            {
+                "name": "中文名", 
+                "value": 1
+            }, 
+            {
+                "name": "外文名", 
+                "value": 1
+            }, 
+            {
+                "name": "本名", 
+                "value": 1
+            }, 
+            {
+                "name": "全名", 
+                "value": 1
+            }, 
+            {
+                "name": "简称", 
+                "value": 1
+            }, 
+            {
+                "name": "姓氏", 
+                "value": 1
+            }, 
+            {
+                "name": "古代称谓", 
+                "value": 1
+            }, 
+            {
+                "name": "字号", 
+                "value": 1
+            }, 
+            {
+                "name": "庙号", 
+                "value": 1
+            }, 
+            {
+                "name": "谥号", 
+                "value": 1
+            }, 
+            {
+                "name": "封号", 
+                "value": 1
+            }, 
+            {
+                "name": "年号", 
+                "value": 1
+            }, 
+            {
+                "name": "追赠", 
+                "value": 1
+            }, 
+            {
+                "name": "别名", 
+                "value": 1
+            }, 
+            {
+                "name": "笔名", 
+                "value": 1
+            }, 
+            {
+                "name": "艺名", 
+                "value": 1
+            }, 
+            {
+                "name": "昵称", 
+                "value": 1
+            }, 
+            {
+                "name": "曾用名", 
+                "value": 1
+            }, 
+            {
+                "name": "粤语名", 
+                "value": 1
+            }, 
+            {
+                "name": "注音", 
+                "value": 1
+            }, 
+            {
+                "name": "拼音", 
+                "value": 1
+            }, 
+            {
+                "name": "人物称谓", 
+                "value": 1
+            }
+        ]
+    }, 
+    {
+        "name": "运动项目", 
+        "children": [
+            {
+                "name": "场上位置", 
+                "value": 1
+            }, 
+            {
+                "name": "球衣号码", 
+                "value": 1
+            }, 
+            {
+                "name": "惯用脚", 
+                "value": 1
+            }, 
+            {
+                "name": "NBA选秀", 
+                "value": 1
+            }, 
+            {
+                "name": "运动状态", 
+                "value": 1
+            }, 
+            {
+                "name": "级别", 
+                "value": 1
+            }, 
+            {
+                "name": "运动项目", 
+                "value": 1
+            }
+        ]
+    }, 
+    {
+        "name": "人物成就", 
+        "children": [
+            {
+                "name": "代表作品", 
+                "value": 1
+            }, 
+            {
+                "name": "专辑", 
+                "value": 1
+            }, 
+            {
+                "name": "主要成就", 
+                "value": 1
+            }, 
+            {
+                "name": "典故", 
+                "value": 1
+            }, 
+            {
+                "name": "所获荣誉", 
+                "value": 1
+            }, 
+            {
+                "name": "个人荣誉", 
+                "value": 1
+            }, 
+            {
+                "name": "团队荣誉", 
+                "value": 1
+            }, 
+            {
+                "name": "主要奖项", 
+                "value": 1
+            }, 
+            {
+                "name": "职称", 
+                "value": 1
+            }, 
+            {
+                "name": "地位", 
+                "value": 1
+            }, 
+            {
+                "name": "爵位", 
+                "value": 1
+            }, 
+            {
+                "name": "官职", 
+                "value": 1
+            }, 
+            {
+                "name": "军衔", 
+                "value": 1
+            }, 
+            {
+                "name": "段位", 
+                "value": 1
+            }, 
+            {
+                "name": "人物成就", 
+                "value": 1
+            }
+        ]
+    }
+]
